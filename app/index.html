@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>PST/CTL</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="ctlApp" ng-controller="myCtrl">
+
+  <!-- Select a list -->
+  <select ng-model="selectedList" class="form-control" ng-options="list as list.listName for list in lists">
+    <option value="">Choose A List</option>
+  </select>
+
+  <!-- When selected, show the list -->
+  <div ng-if="selectedList">
+    <img src="{{ selectedList.banner }}" alt="" style="display: block; margin: 0 auto;">
+    <h2>{{ selectedList.listName }}</h2>
+
+    <div ng-repeat="(trophyK, trophyV) in selectedList.trophies" class="trophies">
+      <img src="{{ trophyV.imag }}" alt="">
+      <h3>{{ trophyV.game }}</h3>
+      <p><strong>{{ trophyV.name }}</strong> - {{ trophyV.desc }}</p>
+      <p>Trophy earned? <input type="checkbox"></p>
+      <div style="height: 1px; width: 100%; background: black; display: block; margin: 1em;"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="trophyLists.js"></script>
+
+</body>
+</html>
