@@ -19,7 +19,7 @@ app.controller("myCtrl", function($scope) {
             desc: "You lived through the hunt, and saw another day.",
             imag: "http://www.playstationtrophies.org/images/trophies/2840/4cb.jpg"
         },    {
-            game: "Call of Duty: Advanced Warfare	",
+            game: "Call of Duty: Advanced Warfare",
             name: "A New Era",
             desc: "Complete the campaign on any difficulty.",
             imag: "http://www.playstationtrophies.org/images/trophies/2734/8b5.jpg"
@@ -46,4 +46,17 @@ app.controller("myCtrl", function($scope) {
             imag: "http://i.imgur.com/eQO4sS4.jpg"
         }]
     }];
+
+    $scope.getLocalStorage = function(){
+        console.log("method called!");
+
+        setTimeout(function(){
+            console.log("getting...");
+            var trophiesArray = [];
+
+            angular.forEach(document.querySelectorAll('.trophy .game'), function(gv, gk) {
+                console.log(gv.firstChild.nodeValue);
+            });
+        },100);
+    };
 });
