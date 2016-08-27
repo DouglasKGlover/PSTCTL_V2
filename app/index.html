@@ -8,26 +8,45 @@
 <div ng-app="ctlApp" ng-controller="myCtrl">
 
   <!-- Select a list -->
-  <select ng-model="selectedList" ng-change="getLocalStorage()" class="form-control" ng-options="list as list.listName for list in lists">
+  <select ng-model="selectedList" ng-change="getListLS()" class="form-control" ng-options="list as list.listName for list in lists">
     <option value="">Choose A List</option>
   </select>
 
   <!-- When selected, show the list -->
   <div ng-if="selectedList">
+
+    <!-- Banner Image -->
     <img src="{{ selectedList.banner }}" alt="" style="display: block; margin: 0 auto;">
+
+    <!-- List Name -->
     <h2>{{ selectedList.listName }}</h2>
 
-    <div ng-repeat="(trophyK, trophyV) in selectedList.trophies" class="trophy">
-      <img src="{{ trophyV.imag }}" alt="">
+    <!-- Trophies -->
+    <div ng-repeat="(trophyK, trophyV) in selectedList.trophies" class="trophy" id="t-{{ trophyV.id }}">
+
+      <!-- Trophy Icon -->
+      <img src="{{ trophyV.imag }}" alt="{{ trophyV.game }} - {{ trophyV.name }}">
+
+      <!-- Game Name -->
       <h3 class="game">{{ trophyV.game }}</h3>
+
+      <!-- Trophy Name & Description -->
       <p><strong class="name">{{ trophyV.name }}</strong> - {{ trophyV.desc }}</p>
-      <p>Trophy earned? <input type="checkbox"></p>
+
+      <!-- Trophy Checkbox -->
+      <p>Trophy earned? <input type="checkbox" ng-model="formElem.checkbox" ng-change="saveTrophy(formElem.checkbox)" id="c-{{ trophyV.id }}" /></p>
+
+      <!-- Game Checkbox -->
+      <!--<p>Game owned? <input type="checkbox" ng-model="checkStatus" ng-change="saveGame()" id="{{ trophyV.game }}" /></p>-->
+
+      <!-- Separator -->
       <div style="height: 1px; width: 100%; background: black; display: block; margin: 1em;"></div>
     </div>
   </div>
 
 </div>
 
+<!-- Trophy Lists -->
 <script src="trophyLists.js"></script>
 
 </body>
