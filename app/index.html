@@ -21,23 +21,26 @@
     <!-- List Name -->
     <h2>{{ selectedList.listName }}</h2>
 
+    <!-- Trophy Count -->
+    <h3><span id="trophy_count">0</span>/{{ selectedList.trophies.length }}</h3>
+
     <!-- Trophies -->
-    <div ng-repeat="(trophyK, trophyV) in selectedList.trophies" class="trophy" id="t-{{ trophyV.id }}">
+    <div ng-repeat="(trophyK, trophyV) in selectedList.trophies" class="trophy" id="t-{{ trophyV.name }}">
 
       <!-- Trophy Icon -->
       <img src="{{ trophyV.imag }}" alt="{{ trophyV.game }} - {{ trophyV.name }}">
 
       <!-- Game Name -->
-      <h3 class="game">{{ trophyV.game }}</h3>
+      <h3 class="game" id="g-{{ trophyV.game }}">{{ trophyV.game }}</h3>
 
       <!-- Trophy Name & Description -->
       <p><strong class="name">{{ trophyV.name }}</strong> - {{ trophyV.desc }}</p>
 
       <!-- Trophy Checkbox -->
-      <p>Trophy earned? <input type="checkbox" ng-model="formElem.checkbox" ng-change="saveTrophy(formElem.checkbox)" id="c-{{ trophyV.id }}" /></p>
+      <p>Trophy earned? <input type="checkbox" ng-model="formElem.checkbox" ng-change="saveTrophy(formElem.checkbox)" id="c-{{ trophyV.name }}" /></p>
 
       <!-- Game Checkbox -->
-      <!--<p>Game owned? <input type="checkbox" ng-model="checkStatus" ng-change="saveGame()" id="{{ trophyV.game }}" /></p>-->
+      <p>Game owned? <input type="checkbox" ng-model="formElem.game_checkbox" ng-change="saveGame(formElem.game_checkbox)" id="c-{{ trophyV.game }}" /></p>
 
       <!-- Separator -->
       <div style="height: 1px; width: 100%; background: black; display: block; margin: 1em;"></div>
