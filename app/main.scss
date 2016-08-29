@@ -61,18 +61,30 @@ select.form-control{
   }
 
   &.bottom{
-    padding-bottom: 1em;
+    padding: 0 0 1em 0;
     margin-bottom: 2em;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
 
   .trophy{
-    padding-bottom: 1em;
+    padding: 0 15px 1em 15px;
     border-bottom: 1px solid #ccc;
 
     &:last-child{
       border: 0;
+    }
+
+    &.own_game{
+      background: -moz-linear-gradient(left,  #ffffff 0%, #ffe6b0 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  #ffffff 0%,#ffe6b0 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  #ffffff 0%,#ffe6b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    &.earned_trophy{
+      background: -moz-linear-gradient(left,  #ffffff 0%, #cddeff 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  #ffffff 0%,#cddeff 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  #ffffff 0%,#cddeff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     input[type="checkbox"]{
@@ -87,7 +99,7 @@ select.form-control{
     }
 
     label{
-      background: rgba(0,0,0,0);
+      background: white;
       border: 1px solid #ccc;
       padding: 2px 7px;
       color: rgba(0,0,0,0);

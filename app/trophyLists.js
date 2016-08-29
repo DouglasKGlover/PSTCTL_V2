@@ -4,7 +4,6 @@ app.controller("myCtrl", function($scope) {
     $scope.saveTrophy = function(e) {
         var trophiesChecked = $('input.check-trophy:checked').length;
         $("#trophy_count").html(trophiesChecked);
-
         /* Add or remove trophy name from LS */
         if(e){
             /* Checked */
@@ -23,7 +22,7 @@ app.controller("myCtrl", function($scope) {
     };
 
     /* Click Game Checkbox */
-    $scope.saveGame = function(e) {
+    $scope.saveGame = function(e, v) {
         if(e){
             /* Checked */
             localStorage.setItem("g-" + this.trophyV.game, true);
@@ -31,35 +30,43 @@ app.controller("myCtrl", function($scope) {
             /* Unchecked */
             localStorage.removeItem("g-" + this.trophyV.game);
         }
+        $("#game_count").html($('input.check-game:checked').length);
     };
 
     /* Select a List - Get Local Storage */
     $scope.getListLS = function() {
         var trophyCount = 0;
         setTimeout(function(){
-            /* Reset Trophy Count */
-            document.getElementById("trophy_count").innerHTML = trophyCount.toString();
-
             /* Iterate over Trophies */
             angular.forEach(document.querySelectorAll(".trophy"), function(e){
                 /* If the user has previously checked the Trophy */
                 if(localStorage.getItem(e.id) =="true"){
+                    /* Add class for styling the trophy */
+                    $(e).addClass("earned_trophy");
+
                     /* Find the Checkbox and Check it */
                     document.getElementById(e.id.replace("t-","c-")).checked = true;
 
                     /* Increase the Trophy Count and update the HTML */
                     trophyCount++;
-                    document.getElementById("trophy_count").innerHTML = trophyCount.toString();
                 }
             });
+
             /* Iterate over Games */
             angular.forEach(document.querySelectorAll(".trophy .game"), function(e){
                 /* If the user has previously checked the Trophy */
                 if(localStorage.getItem(e.id) =="true"){
+                    /* Add class for styling the trophy */
+                    $(e).closest(".trophy").addClass("own_game");
+
                     /* Find the Checkbox and Check it */
                     document.getElementById(e.id.replace("g-","c-")).checked = true;
                 }
             });
+
+            /* Update Trophy and Game Count */
+            $("#trophy_count").html(trophyCount);
+            $("#game_count").html($('input.check-game:checked').length);
         },100);
     };
 
@@ -136,7 +143,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/70/047.jpg"
         },{
             game: "Far Cry 3",
-            name: "Never Saw it Coming",
+            name: "Never Saw it Coming (f)",
             desc: "Kill an enemy with a takedown from above from a glider, zipline or parachute (Single Player only).",
             imag: "http://www.playstationtrophies.org/images/trophies/922/E2C.jpg"
         },{
@@ -486,7 +493,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/844/E0E.jpg"
         },{
             game: "Majin and the Forsaken Kingdom",
-            name: "Chatterbox",
+            name: "Chatterbox (m)",
             desc: "Talk to the Majin 100 times.",
             imag: "http://www.playstationtrophies.org/images/trophies/504/27.jpg"
         },{
@@ -661,7 +668,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/593/10.jpg"
         },{
             game: "Oddworld: Munch's Oddysee HD",
-            name: "You Snooze, You Lose",
+            name: "You Snooze, You Lose (o)",
             desc: "Kill a Big Bro Slig in his sleep.",
             imag: "http://www.playstationtrophies.org/images/trophies/1010/587.jpg"
         },{
@@ -951,7 +958,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/450/50.jpg"
         },{
             game: "Far Cry 3",
-            name: "Never Saw it Coming",
+            name: "Never Saw it Coming (f)",
             desc: "Kill an enemy with a takedown from above from a glider, zipline or parachute (Single Player only).",
             imag: "http://www.playstationtrophies.org/images/trophies/922/E2C.jpg"
         },{
@@ -1086,7 +1093,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/39/31.jpg"
         },{
             game: "Call of Duty: Advanced Warfare",
-            name: "Never Saw it Coming",
+            name: "Never Saw it Coming (c)",
             desc: "Boost jump, dash forward, then air stomp on an enemy.",
             imag: "http://www.playstationtrophies.org/images/trophies/2734/56d.jpg"
         },{
@@ -1285,7 +1292,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Catch 200 Pounds of Fish",
             imag: "http://www.playstationtrophies.org/images/trophies/1217/4FA.jpg"
         },{
-            game: "Life is Strange",
+            game: "Life Is Strange",
             name: "Rangefinder",
             desc: "Take optional photo #4 in Episode 4: Dark Room",
             imag: "http://www.playstationtrophies.org/images/trophies/2971/ef9.jpg"
@@ -1640,7 +1647,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Finish game without killing anyone",
             imag: "http://www.playstationtrophies.org/images/trophies/1054/46.jpg"
         },{
-            game: "Metal Gear Solid 4: Guns of the Patriots",
+            game: "METAL GEAR SOLID 4",
             name: "Crop Circle",
             desc: "Found a crop circle and heard a mysterious voice.",
             imag: "http://www.playstationtrophies.org/images/trophies/515/7DD.jpg"
@@ -2241,7 +2248,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/240/36.jpg"
         },{
             game: "Call of Duty: Modern Warfare 3",
-            name: "Unstoppable",
+            name: "Unstoppable (c)",
             desc: "Reach Wave 15 in each mission of Special Ops Survival mode.",
             imag: "http://www.playstationtrophies.org/images/trophies/422/47.jpg"
         },{
@@ -2431,7 +2438,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/2635/7D1.jpg"
         },{
             game: "Hyperdimension Neptunia mk2",
-            name: "Happily Ever After",
+            name: "Happily Ever After (h)",
             desc: "Viewed the True ending.",
             imag: "http://www.playstationtrophies.org/images/trophies/1393/5AF.jpg"
         },{
@@ -2575,7 +2582,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Finish the story with Good Karma",
             imag: "http://www.playstationtrophies.org/images/trophies/1936/000.jpg"
         },{
-            game: "Murdered Soul Suspect",
+            game: "Murdered: Soul Suspect",
             name: "One of Us",
             desc: "Revisited the scene of your murder and discovered there was a witness",
             imag: "http://www.playstationtrophies.org/images/trophies/2525/db1.jpg"
@@ -2886,7 +2893,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/3230/9a7.jpg"
         },{
             game: "inFamous: Second Son",
-            name: "Unstoppable",
+            name: "Unstoppable (i)",
             desc: "Finish the game on Expert difficulty",
             imag: "http://www.playstationtrophies.org/images/trophies/1936/3db.jpg"
         },{
@@ -2961,7 +2968,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/3111/5ae.jpg"
         },{
             game: "The Wolf Among Us",
-            name: "Happily Ever After",
+            name: "Happily Ever After (w)",
             desc: "Completed Episode 5: \"Cry Wolf\"",
             imag: "http://www.playstationtrophies.org/images/trophies/3099/d83.jpg"
         },{
@@ -3380,7 +3387,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Pass through 15 gates while surfing through the sunken city.",
             imag: "http://www.playstationtrophies.org/images/trophies/3570/690.jpg"
         },{
-            game: "Life is Strange",
+            game: "Life Is Strange",
             name: "Shutterbug",
             desc: "Take all optional photos in Episode 4: Dark Room",
             imag: "http://www.playstationtrophies.org/images/trophies/2971/b9b.jpg"
@@ -3441,7 +3448,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/4306/f9c.jpg"
         },{
             game: "Skyrim",
-            name: "Explorer",
+            name: "Explorer (s)",
             desc: "Discover 100 Locations",
             imag: "http://www.playstationtrophies.org/images/trophies/826/40.jpg"
         },{
@@ -3835,7 +3842,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Clear the game in under an hour.",
             imag: "http://www.playstationtrophies.org/images/trophies/405/02.jpg"
         },{
-            game: "Metal Gear Solid 4",
+            game: "METAL GEAR SOLID 4",
             name: "Sounds of the Battlefield",
             desc: "Obtained all iPod® tracks (excluding tracks obtained via password).",
             imag: "http://www.playstationtrophies.org/images/trophies/515/EE1.jpg"
@@ -3860,7 +3867,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Completed Gold Sparkster Mode",
             imag: "http://www.playstationtrophies.org/images/trophies/526/04.jpg"
         },{
-            game: "Sega Mega Drive Ultimate Collection / Sonic's Ultimate Genesis Collection",
+            game: "SEGA MEGA DRIVE Ultimate Collection",
             name: "Master the System",
             desc: "Unlock Everything",
             imag: "http://www.playstationtrophies.org/images/trophies/85/031.jpg"
@@ -4185,7 +4192,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Deliver an unsuspecting victim to the Altruist Cult.",
             imag: "http://www.playstationtrophies.org/images/trophies/3057/127.jpg"
         },{
-            game: "Grim Fandango",
+            game: "Grim Fandango Remastered",
             name: "\"Consider it an homage.\"",
             desc: "Have Olivia recite one of your poems.",
             imag: "http://www.playstationtrophies.org/images/trophies/2909/271.jpg"
@@ -4215,7 +4222,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Find and inspect all gold film canisters.",
             imag: "http://www.playstationtrophies.org/images/trophies/358/41.jpg"
         },{
-            game: "LEGO: The Lord of the Rings",
+            game: "LEGO The Lord of the Rings",
             name: "It won't be that easy!",
             desc: "During 'Prologue', jump into the fires of Mount Doom as Isildur.",
             imag: "http://www.playstationtrophies.org/images/trophies/1535/588.jpg"
@@ -4265,7 +4272,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete chapter 4 of episode 3.",
             imag: "http://www.playstationtrophies.org/images/trophies/3111/f31.jpg"
         },{
-            game: "The Walking Dead Season 2",
+            game: "The Walking Dead: Season 2",
             name: "Still. Not. Bitten.",
             desc: "Took care of yourself.",
             imag: "http://www.playstationtrophies.org/images/trophies/3095/9d5.jpg"
@@ -5686,7 +5693,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/298/39.jpg"
         },{
             game: "Tomb Raider",
-            name: "Chatterbox",
+            name: "Chatterbox (t)",
             desc: "Complete all conversations with the Endurance crew.",
             imag: "http://www.playstationtrophies.org/images/trophies/831/83D.jpg"
         },{
@@ -6180,7 +6187,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Escaped 'The Bullish Man'",
             imag: "http://www.playstationtrophies.org/images/trophies/525/08.jpg"
         },{
-            game: "Sega Mega Drive Ultimate Collection/Sonic's Ultimate Genesis Collection",
+            game: "SEGA MEGA DRIVE Ultimate Collection",
             name: "Get to the Chopper",
             desc: "Super Thunder Blade: Score over 1,500,000 points in the first level",
             imag: "http://www.playstationtrophies.org/images/trophies/85/025.jpg"
@@ -6265,7 +6272,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Find Newt's doll",
             imag: "http://www.playstationtrophies.org/images/trophies/736/FD6.jpg"
         },{
-            game: "Sega Mega Drive Ultimate Collection",
+            game: "SEGA MEGA DRIVE Ultimate Collection",
             name: "Complete Chaos",
             desc: "Sonic The Hedgehog: Obtain a Chaos Emerald",
             imag: "http://www.playstationtrophies.org/images/trophies/173/22.jpg"
@@ -6340,9 +6347,9 @@ app.controller("myCtrl", function($scope) {
             desc: "Finished the game without using Vita-Chambers.",
             imag: "http://www.playstationtrophies.org/images/trophies/309/36.jpg"
         },{
-            game: "The Walking Dead: Season Two",
+            game: "The Walking Dead: Season 2",
             name: "Eye of the Storm",
-            desc: "Completed Episode 3: “In Harm's Way”",
+            desc: "Completed Episode 3: \"In Harm's Way\"",
             imag: "http://www.playstationtrophies.org/images/trophies/2352/24.jpg"
         },{
             game: "The Secret of Monkey Island: Special Edition",
@@ -6360,7 +6367,7 @@ app.controller("myCtrl", function($scope) {
             desc: "You neutralized all key targets using indirect means",
             imag: "http://www.playstationtrophies.org/images/trophies/1123/EAD.jpg"
         },{
-            game: "The Walking Dead: Season 1",
+            game: "The Walking Dead",
             name: "Everything's Going to be Okay",
             desc: "Complete Episode 1: \"A New Day\"",
             imag: "http://www.playstationtrophies.org/images/trophies/1398/3CE.jpg"
@@ -6491,11 +6498,11 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1053/16.jpg"
         },{
             game: "Metal Gear Solid 3",
-            name: "You Snooze, You Lose",
+            name: "You Snooze, You Lose (m)",
             desc: "Sneak up on The End and hold him up",
             imag: "http://www.playstationtrophies.org/images/trophies/1054/42.jpg"
         },{
-            game: "Metal Gear Solid 4: Guns of the Patriots",
+            game: "METAL GEAR SOLID 4",
             name: "Old Sun",
             desc: "Cleared Act 5 (Outer Haven).",
             imag: "http://www.playstationtrophies.org/images/trophies/515/B9F.jpg"
@@ -6906,7 +6913,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/240/36.jpg"
         },{
             game: "Call of Duty: Modern Warfare 3",
-            name: "Unstoppable",
+            name: "Unstoppable (c)",
             desc: "Reach Wave 15 in each mission of Special Ops Survival mode.",
             imag: "http://www.playstationtrophies.org/images/trophies/422/47.jpg"
         },{
@@ -7126,7 +7133,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/216/38.jpg"
         },{
             game: "Mass Effect 2",
-            name: "Explorer",
+            name: "Explorer (m)",
             desc: "Visit 100% of the planets in an unexplored cluster",
             imag: "http://www.playstationtrophies.org/images/trophies/703/44.jpg"
         },{
@@ -7160,7 +7167,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete all instances of Tank Mayhem.",
             imag: "http://www.playstationtrophies.org/images/trophies/746/28.jpg"
         },{
-            game: "Sega Mega Drive Ultimate Genesis",
+            game: "SEGA MEGA DRIVE Ultimate Collection",
             name: "Lots of Zeros",
             desc: "Sonic Spinball: Get 10,000,000 points in the first level",
             imag: "http://www.playstationtrophies.org/images/trophies/173/25.jpg"
@@ -7290,7 +7297,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Climb to the top of the 3 tallest buildings in New Marais",
             imag: "http://www.playstationtrophies.org/images/trophies/571/27.jpg"
         },{
-            game: "Lara Croft and the Guardian of light",
+            game: "Lara Croft and the Guardian of Light",
             name: "Breadwinner",
             desc: "Earn the top score objective in any level",
             imag: "http://www.playstationtrophies.org/images/trophies/433/07.jpg"
@@ -7326,7 +7333,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/704/19.jpg"
         },{
             game: "Rayman Origins",
-            name: "Explorer",
+            name: "Explorer (r)",
             desc: "You found 25 hidden cages",
             imag: "http://www.playstationtrophies.org/images/trophies/651/09.jpg"
         },{
