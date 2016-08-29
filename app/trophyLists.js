@@ -1,33 +1,34 @@
 var app = angular.module("ctlApp", []);
 app.controller("myCtrl", function($scope) {
     /* Click Trophy Checkbox */
-    $scope.saveTrophy = function() {
-        if(this.formElem.checkbox){
+    $scope.saveTrophy = function(e) {
+        var trophiesChecked = $('input.check-trophy:checked').length;
+        $("#trophy_count").html(trophiesChecked);
+
+        /* Add or remove trophy name from LS */
+        if(e){
+            /* Checked */
             localStorage.setItem("t-" + this.trophyV.name, true);
-
-            var trophyCount = document.getElementById("trophy_count").innerHTML;
-            trophyCount = parseInt(trophyCount) + 1;
-            document.getElementById("trophy_count").innerHTML = trophyCount.toString();
-
-            var thisListName = document.getElementById("list_name").innerHTML;
-            localStorage.setItem(thisListName, trophyCount);
         } else {
+            /* Unchecked */
             localStorage.removeItem("t-" + this.trophyV.name);
+        }
 
-            var trophyCount = document.getElementById("trophy_count").innerHTML;
-            trophyCount = parseInt(trophyCount) - 1;
-            document.getElementById("trophy_count").innerHTML = trophyCount.toString();
-
-            var thisListName = document.getElementById("list_name").innerHTML;
-            localStorage.setItem(thisListName, trophyCount);
+        /* Add/update list on LS, or remove if none checked */
+        if(trophiesChecked > 0){
+            localStorage.setItem($("#list_name").html(), trophiesChecked);
+        } else {
+            localStorage.removeItem($("#list_name").html());
         }
     };
 
     /* Click Game Checkbox */
-    $scope.saveGame = function() {
-        if(this.formElem.game_checkbox){
+    $scope.saveGame = function(e) {
+        if(e){
+            /* Checked */
             localStorage.setItem("g-" + this.trophyV.game, true);
         } else {
+            /* Unchecked */
             localStorage.removeItem("g-" + this.trophyV.game);
         }
     };
@@ -47,7 +48,6 @@ app.controller("myCtrl", function($scope) {
                     document.getElementById(e.id.replace("t-","c-")).checked = true;
 
                     /* Increase the Trophy Count and update the HTML */
-                    console.log(trophyCount);
                     trophyCount++;
                     document.getElementById("trophy_count").innerHTML = trophyCount.toString();
                 }
@@ -62,6 +62,22 @@ app.controller("myCtrl", function($scope) {
             });
         },100);
     };
+
+    /* Add trophy total to dropdown menu "Earned/Total" */
+    $(document).ready(function(){
+        $("option").each(function(k,v){
+            if(localStorage.getItem(v.label)){
+                var listTrophyTotal = 0;
+                $($scope.lists).each(function(lk,lv){
+                    if(v.label == lv.listName){
+                        listTrophyTotal = lv.trophies.length;
+                    }
+                });
+
+                v.label = v.label + " (" + localStorage.getItem(v.label) + "/" + listTrophyTotal + ")";
+            }
+        });
+    });
 
     /* Custom Trophy Lists Array */
     $scope.lists = [{
@@ -869,7 +885,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Defeat the Gorog",
             imag: "http://www.playstationtrophies.org/images/trophies/397/04.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Hard Worker",
             desc: "Chop wood, mine ore, and cook food",
             imag: "http://www.playstationtrophies.org/images/trophies/826/27.jpg"
@@ -1024,7 +1040,7 @@ app.controller("myCtrl", function($scope) {
             desc: "You befriended both crab people and gnomes.",
             imag: "http://www.playstationtrophies.org/images/trophies/1314/9B2.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Taking Care of Business",
             desc: "Join the Thieves Guild.",
             imag: "http://www.playstationtrophies.org/images/trophies/826/16.jpg"
@@ -1194,7 +1210,7 @@ app.controller("myCtrl", function($scope) {
             desc: "You defeated the Meth Tweekers while wearing the Evil Cartman goatee and bald cap.",
             imag: "http://www.playstationtrophies.org/images/trophies/1314/959.jpg"
         },{
-            game: "Super Hang-on",
+            game: "Super Hang-On",
             name: "Unforgettable Name",
             desc: "Fill a track ranking with a single name.",
             imag: "http://www.playstationtrophies.org/images/trophies/1543/99C.jpg"
@@ -1659,7 +1675,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete all cases.",
             imag: "http://www.playstationtrophies.org/images/trophies/1378/BE2.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Hail Sithis!",
             desc: "Complete 'Hail Sithis!'",
             imag: "http://www.playstationtrophies.org/images/trophies/826/21.jpg"
@@ -3424,7 +3440,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Get permission to destroy a varl landmark.",
             imag: "http://www.playstationtrophies.org/images/trophies/4306/f9c.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Explorer",
             desc: "Discover 100 Locations",
             imag: "http://www.playstationtrophies.org/images/trophies/826/40.jpg"
@@ -4064,7 +4080,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Place a hogtied woman on the train tracks, and witness her death by train.",
             imag: "http://www.playstationtrophies.org/images/trophies/340/30.jpg"
         },{
-            game: "Rocketbirds",
+            game: "Rocketbirds: Hardboiled Chicken",
             name: "For What Reason?",
             desc: "Launch the silo missile",
             imag: "http://www.playstationtrophies.org/images/trophies/1192/23.jpg"
@@ -4089,7 +4105,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Broke things",
             imag: "http://www.playstationtrophies.org/images/trophies/1554/552.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Master Criminal",
             desc: "Bounty of 1000 gold in all nine holds",
             imag: "http://www.playstationtrophies.org/images/trophies/826/36.jpg"
@@ -4229,7 +4245,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Hijack 5 trucks and collect their cargo.",
             imag: "http://www.playstationtrophies.org/images/trophies/2959/c95.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Snake Tongue",
             desc: "Successfully persuade, bribe, and intimidate",
             imag: "http://www.playstationtrophies.org/images/trophies/826/29.jpg"
@@ -4304,7 +4320,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Incapacitate a Hunter and leave them to bleed out outside of the Tutorials",
             imag: "http://www.playstationtrophies.org/images/trophies/2485/1b3.jpg"
         },{
-            game: "Far Cry 3 Blood Dragon",
+            game: "Far Cry 3: Blood Dragon",
             name: "Just the Tip",
             desc: "Kill a Dragon with the Bow",
             imag: "http://www.playstationtrophies.org/images/trophies/2000/AFD.jpg"
@@ -4314,7 +4330,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Learn to use all enemy abilities",
             imag: "http://www.playstationtrophies.org/images/trophies/1184/7b7.jpg"
         },{
-            game: "God of War II HD",
+            game: "God of War II",
             name: "You Know the Germans Make Good Stuff...",
             desc: "Collect all Uber Chests",
             imag: "http://www.playstationtrophies.org/images/trophies/264/3.jpg"
@@ -4374,7 +4390,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Streets of Rage: Complete 1st Level using all 3 characters",
             imag: "http://www.playstationtrophies.org/images/trophies/85/026.jpg"
         },{
-            game: "Shadow of the Colossus HD",
+            game: "Shadow of the Colossus",
             name: "The Forbidden",
             desc: "Clear the game in normal difficulty",
             imag: "http://www.playstationtrophies.org/images/trophies/874/18.jpg"
@@ -5109,7 +5125,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete Mass Effect 3 twice, or once with a Mass Effect 2 import",
             imag: "http://www.playstationtrophies.org/images/trophies/845/C12.jpg"
         },{
-            game: "Medal of Honor: Frontline",
+            game: "Medal of Honor Frontline",
             name: "Trigger Happy",
             desc: "Fire 5,000 shots",
             imag: "http://www.playstationtrophies.org/images/trophies/772/29.jpg"
@@ -5129,7 +5145,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Get 10 Headshot kills with the Wingstick",
             imag: "http://www.playstationtrophies.org/images/trophies/354/11.jpg"
         },{
-            game: "Ratchet & Clank 3: Up Your Arsenal HD",
+            game: "Ratchet & Clank 3: Up Your Arsenal",
             name: "Secret Agent Clank",
             desc: "Find the Clank Trophy",
             imag: "http://www.playstationtrophies.org/images/trophies/1455/AA0.jpg"
@@ -5474,7 +5490,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Defeat Sir Raleigh the Frog",
             imag: "http://www.playstationtrophies.org/images/trophies/612/22.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "With Friends Like These...",
             desc: "Join the Dark Brotherhood",
             imag: "http://www.playstationtrophies.org/images/trophies/826/19.jpg"
@@ -5649,7 +5665,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Kill everyone in the convoy from ground level, except for Kreidl",
             imag: "http://www.playstationtrophies.org/images/trophies/988/10E.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Master Criminal",
             desc: "Bounty of 1000 gold in all nine holds",
             imag: "http://www.playstationtrophies.org/images/trophies/826/36.jpg"
@@ -6014,7 +6030,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete the game on human difficulty",
             imag: "http://www.playstationtrophies.org/images/trophies/1222/219.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Hero of the People",
             desc: "Complete 50 Misc Objectives",
             imag: "http://www.playstationtrophies.org/images/trophies/826/26.jpg"
@@ -6259,7 +6275,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Manage to escape Blake in the subway station",
             imag: "http://www.playstationtrophies.org/images/trophies/321/27.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Wanted",
             desc: "Escape from jail",
             imag: "http://www.playstationtrophies.org/images/trophies/826/33.jpg"
@@ -6464,12 +6480,12 @@ app.controller("myCtrl", function($scope) {
             desc: "Establish or rekindle a romantic relationship.",
             imag: "http://www.playstationtrophies.org/images/trophies/845/039.jpg"
         },{
-            game: "Medal of Honor: Frontline",
+            game: "Medal of Honor Frontline",
             name: "ET Goin' Home",
             desc: "Find the UFO in 'On Track'",
             imag: "http://www.playstationtrophies.org/images/trophies/772/46.jpg"
         },{
-            game: "Metal Gear Solid 2: Sons of Liberty HD",
+            game: "Metal Gear Solid 2",
             name: "Johnny on the Spot",
             desc: "Hear Johnny's bowel noises in two locations",
             imag: "http://www.playstationtrophies.org/images/trophies/1053/16.jpg"
@@ -6484,7 +6500,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Cleared Act 5 (Outer Haven).",
             imag: "http://www.playstationtrophies.org/images/trophies/515/B9F.jpg"
         },{
-            game: "Oddworld: Abe's Oddysee - New 'n' Tasty",
+            game: "Oddworld: New 'n' Tasty",
             name: "Odd Messiah",
             desc: "Rescue every Mudokon while finishing New 'n' Tasty in Hard mode",
             imag: "http://www.playstationtrophies.org/images/trophies/902/629.jpg"
@@ -6504,13 +6520,13 @@ app.controller("myCtrl", function($scope) {
             desc: "Slipped, where wet.",
             imag: "http://www.playstationtrophies.org/images/trophies/1554/676.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "One with the Shadows",
             desc: "Returned the Thieves Guild to its former glory",
             imag: "http://www.playstationtrophies.org/images/trophies/826/18.jpg"
         },{
             game: "The Saboteur",
-            name: "Saint Honoré",
+            name: "Saint Honore",
             desc: "You spent 75,000 contraband.",
             imag: "http://www.playstationtrophies.org/images/trophies/298/15.jpg"
         },{
@@ -6799,7 +6815,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete game on \"Combat Op\" difficulty.",
             imag: "http://www.playstationtrophies.org/images/trophies/613/6D4.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Citizen",
             desc: "Buy a house",
             imag: "http://www.playstationtrophies.org/images/trophies/826/32.jpg"
@@ -6999,7 +7015,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Cross the checkpoint with 1 second left.",
             imag: "http://www.playstationtrophies.org/images/trophies/1543/241.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Words of Power",
             desc: "Learn all three words of a shout",
             imag: "http://www.playstationtrophies.org/images/trophies/826/46.jpg"
@@ -7279,7 +7295,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Earn the top score objective in any level",
             imag: "http://www.playstationtrophies.org/images/trophies/433/07.jpg"
         },{
-            game: "Little Big Planet",
+            game: "LittleBigPlanet",
             name: "Homemaker",
             desc: "Place 10 stickers or decorations in your pod",
             imag: "http://www.playstationtrophies.org/images/trophies/14/10.jpg"
@@ -7649,7 +7665,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Win 10 rounds without tagging.",
             imag: "http://www.playstationtrophies.org/images/trophies/1085/729.jpg"
         },{
-            game: "The Elder Scrolls V: Skyrim",
+            game: "Skyrim",
             name: "Hail Sithis",
             desc: "Complete 'Hail Sithis!'",
             imag: "http://www.playstationtrophies.org/images/trophies/826/21.jpg"

@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="./main.css">
 
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body>
 
@@ -74,13 +75,13 @@
           </div>
           <div class="col-sm-1 col-xs-6 text-center">
             <!-- Trophy Checkbox -->
-            <input type="checkbox" ng-model="formElem.checkbox" ng-change="saveTrophy(formElem.checkbox)" id="c-{{ trophyV.name }}" />
-            <label for="c-{{ trophyV.name }}">&#10004;</label>
+            <input type="checkbox" ng-model="formElem.checkbox" ng-click="saveTrophy(formElem.checkbox)" id="c-{{ trophyV.name }}" class="check-trophy"/>
+            <label for="c-{{ trophyV.name }}" class="label-trophy">&#10004;</label>
           </div>
           <div class="col-sm-1 col-xs-6 text-center">
             <!-- Game Checkbox -->
-            <input type="checkbox" ng-model="formElem.game_checkbox" ng-change="saveGame(formElem.game_checkbox)" id="c-{{ trophyV.game }}" />
-            <label for="c-{{ trophyV.game }}">&#10004;</label>
+            <input type="checkbox" ng-model="formElem.game_checkbox" ng-click="saveGame(formElem.game_checkbox)" id="c-{{ trophyV.game }}" class="check-game"/>
+            <label for="c-{{ trophyV.game }}" class="label-game">&#10004;</label>
           </div>
         </div>
       </div>
