@@ -1063,7 +1063,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1398/C89.jpg"
         },{
             game: "The Witcher 3: Wild Hunt",
-            name: "Gwent Master",
+            name: "Card Collector",
             desc: "Acquire all gwent cards available in the base version of the game.",
             imag: "http://www.playstationtrophies.org/images/trophies/1904/034.jpg"
         },{
