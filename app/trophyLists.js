@@ -4297,7 +4297,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Get killed by the Alien 100 times",
             imag: "http://www.playstationtrophies.org/images/trophies/2453/8f7.jpg"
         },{
-            game: "Assassin's Creed: Unity",
+            game: "Assassin's Creed Unity",
             name: "Panoramic View",
             desc: "Synchronize all Viewpoints.",
             imag: "http://www.playstationtrophies.org/images/trophies/2628/5b6.jpg"
@@ -4482,7 +4482,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Collect 8 schematics",
             imag: "http://www.playstationtrophies.org/images/trophies/26/023.jpg"
         },{
-            game: "Deus Ex: Human Revolution / Deus Ex: Human Revolution - Director's Cut",
+            game: "Deus Ex: Human Revolution",
             name: "Doctorate",
             desc: "Read all 29 XP books within a single playthrough.",
             imag: "http://www.playstationtrophies.org/images/trophies/2341/9E5.jpg"
@@ -4607,7 +4607,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete 3 missions with less than 5 kills and with no enemies alerted to your presence.",
             imag: "http://www.playstationtrophies.org/images/trophies/51/46.jpg"
         },{
-            game: "Assassin's Creed III: Liberation",
+            game: "Assassin's Creed III Liberation",
             name: "Umbrella",
             desc: "Kill 25 enemies with the Parasol Gun",
             imag: "http://www.playstationtrophies.org/images/trophies/1155/1D2.jpg"
@@ -4867,7 +4867,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete 50% of all missions, cases, favors, events, jobs and races.",
             imag: "http://www.playstationtrophies.org/images/trophies/2959/ed4.jpg"
         },{
-            game: "South Park: Stick of Truth",
+            game: "South Park: The Stick of Truth",
             name: "Mastery",
             desc: "You've unlocked all of the upgrades for a New Kid ability.",
             imag: "http://www.playstationtrophies.org/images/trophies/1314/BAA.jpg"
@@ -4877,7 +4877,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete all Instruction Builds in Story Mode.",
             imag: "http://www.playstationtrophies.org/images/trophies/2182/39B.jpg"
         },{
-            game: "Thomas Was Alone ",
+            game: "Thomas Was Alone",
             name: "Experienced Jumper",
             desc: "Jump 1600 times.",
             imag: "http://www.playstationtrophies.org/images/trophies/1947/297.jpg"
@@ -4962,7 +4962,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Defeat Seymour Omnis",
             imag: "http://www.playstationtrophies.org/images/trophies/1184/5d8.jpg"
         },{
-            game: "Game of Thrones",
+            game: "Game Of Thrones",
             name: "Warlord",
             desc: "Reach the maximum level",
             imag: "http://www.playstationtrophies.org/images/trophies/1275/AAB.jpg"
@@ -5892,7 +5892,7 @@ app.controller("myCtrl", function($scope) {
         banner: "http://www.playstationtrophies.org/images/news/cl_banner_sylar.png",
         award: "http://i.imgur.com/wwthqeC.png",
         trophies: [{
-            game: "Assassin's Creed: Liberation HD",
+            game: "Assassin's Creed III Liberation",
             name: "Machete",
             desc: "Kill 5 guards in 15 seconds using only the Sugarcane Machete (without using the Chain Kill).",
             imag: "http://www.playstationtrophies.org/images/trophies/2277/e63.jpg"
@@ -5937,7 +5937,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Collect the Chaos Form Ability",
             imag: "http://www.playstationtrophies.org/images/trophies/276/30.jpg"
         },{
-            game: "Game of Thrones",
+            game: "Game Of Thrones",
             name: "Hear me roar",
             desc: "Finish chapter 4",
             imag: "http://www.playstationtrophies.org/images/trophies/1565/8F8.jpg"
