@@ -719,6 +719,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/42/017.jpg"
         },{
             game: "LittleBigPlanet Vita",
+            game: "LittleBigPlanet Vita",
             name: "Arcade Champion",
             desc: "Complete all achievements in all games from The Arcade.",
             imag: "http://www.playstationtrophies.org/images/trophies/1107/DCB.jpg"
