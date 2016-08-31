@@ -52,6 +52,10 @@ select.form-control{
   background: white;
   border: 1px solid #ccc;
 
+  #bbcode, #reset_bbcode{
+    display: none;
+  }
+
   &.top{
     border-bottom: none;
     padding-top: 1em;

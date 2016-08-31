@@ -44,17 +44,28 @@
     <!-- Trophies -->
     <div class="container trophy_list top">
       <div class="row">
-        <div class="col-sm-1 col-sm-offset-10 col-xs-6 text-center">
+        <div class="col-sm-10 col-xs-12 text-center">
+          <p class="no-margin"><button ng-click="hide_collected()"><span id="hide_collected">Hide &#10004;</span></button>&nbsp;<button ng-click="get_bbcode()">BBCODE</button><span id="reset_bbcode">&nbsp;<button ng-click="reset_bbcode()">Clear</button></span></p>
+        </div>
+        <div class="col-sm-1 col-xs-6 text-center">
           <p class="no-margin"><strong>TROPHY</strong></p>
         </div>
         <div class="col-sm-1 col-xs-6 text-center">
           <p class="no-margin"><strong>GAME</strong></p>
         </div>
       </div>
+
+      <br>
+
+      <div class="row" id="bbcode">
+        <div class="col-xs-12">
+          <pre></pre>
+        </div>
+      </div>
     </div>
 
     <div class="container trophy_list bottom">
-      <div ng-repeat="(trophyK, trophyV) in selectedList.trophies" class="trophy" id="t-{{ trophyV.name }}">
+      <div ng-repeat="(trophyK, trophyV) in selectedList.trophies | orderBy: 'game'" class="trophy" id="t-{{ trophyV.name }}">
 
         <div class="row">
           <div class="col-sm-12">
@@ -109,7 +120,7 @@
 </script>
 
 <!-- Trophy Lists -->
-<script src="trophyLists.js?u=1"></script>
+<script src="trophyLists.js?2"></script>
 
 </body>
 </html>
