@@ -25,6 +25,19 @@
     <option value="">Choose A List</option>
   </select>
 
+  <!-- Show all Games -->
+  <!--<div id="show_all_games">
+    <label for="show_games">Show all games</label> <input type="checkbox" ng-click="orderList()" ng-model="show_games" id="show_games">
+
+    <div ng-if="show_games" id="shown_games">
+      <div ng-repeat="(k, v) in lists">
+        <div ng-repeat="(kk, vv) in v.trophies | orderBy: 'listname.game'">
+          <p>{{vv.game}}</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
   <!-- When selected, show the list -->
   <div ng-if="selectedList">
 
@@ -120,7 +133,7 @@
 </script>
 
 <!-- Trophy Lists -->
-<script src="trophyLists.js?2"></script>
+<script src="trophyLists.js?3"></script>
 
 </body>
 </html>
