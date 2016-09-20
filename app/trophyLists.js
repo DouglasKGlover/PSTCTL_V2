@@ -6366,7 +6366,7 @@ app.controller("myCtrl", function($scope) {
                 imag: "http://www.playstationtrophies.org/images/trophies/150/11.jpg"
             },{
                 game: "Deus Ex: Human Revolution",
-                name: "Ghost",
+                name: "Ghost (d)",
                 desc: "You made it through an entire hostile area without so much as a squeak.",
                 imag: "http://www.playstationtrophies.org/images/trophies/2341/887.jpg"
             },{
@@ -6404,11 +6404,6 @@ app.controller("myCtrl", function($scope) {
                 name: "A Good Man Is Hard to Find",
                 desc: "Achieve a camouflage index of 100%",
                 imag: "http://www.playstationtrophies.org/images/trophies/1054/29.jpg"
-            },{
-                game: "METAL GEAR SOLID 4",
-                name: "Stealth Camouflage",
-                desc: "Obtained the Stealth Camouflage",
-                imag: "http://www.playstationtrophies.org/images/trophies/515/720.jpg"
             },{
                 game: "METAL GEAR SOLID V: THE PHANTOM PAIN",
                 name: "Interrogation",
@@ -6474,6 +6469,11 @@ app.controller("myCtrl", function($scope) {
                 name: "Shh Sleep Now",
                 desc: "Stealth take-down 30 enemies",
                 imag: "http://www.playstationtrophies.org/images/trophies/2388/6d2.jpg"
+            },{
+                game: "Volume",
+                name: "Ghost from the...",
+                desc: "Fire 40 figments in core levels",
+                imag: "http://www.playstationtrophies.org/images/trophies/2351/4d8.jpg"
             }
         ]
     },{
