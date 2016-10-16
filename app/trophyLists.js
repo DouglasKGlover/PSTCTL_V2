@@ -6704,7 +6704,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1835/B7F.jpg"
         }]
     },{
-        listName: "Slamma's Super Sexy & Sensually Seductive Selection",
+        listName: "Slamma's Super Sexy and Sensually Seductive Selection",
         banner: "http://i.imgur.com/ahw8CJQ.jpg",
         award: "http://i.imgur.com/XsHZSXe.jpg",
         trophies: [{
