@@ -21,6 +21,9 @@ select.form-control{
   bottom: .5em;
   right: .5em;
 }
+.text-right{
+  text-align: right;
+}
 
 /* Show All Games */
 #show_all_games{
@@ -49,6 +52,37 @@ select.form-control{
     img{
       box-shadow: 2px 2px 3px black;
     }
+  }
+}
+
+/* List of Lists */
+.list{
+  display: block;
+  background: white;
+  border: 1px solid lightgray;
+  border-bottom: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background .25s linear;
+
+  a{
+    color: #333;
+  }
+
+  &:hover{
+    background: #cddeff;
+  }
+
+  &:first-of-type{
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &:last-of-type{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid lightgray;
   }
 }
 

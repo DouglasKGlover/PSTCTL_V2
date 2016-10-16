@@ -7,10 +7,10 @@ app.controller("myCtrl", function($scope) {
         /* Add or remove trophy name from LS */
         if(e){
             /* Checked */
-            localStorage.setItem("t-" + this.trophyV.name, true);
+            localStorage.setItem("t-" + this.trophy.name, true);
         } else {
             /* Unchecked */
-            localStorage.removeItem("t-" + this.trophyV.name);
+            localStorage.removeItem("t-" + this.trophy.name);
         }
 
         /* Add/update list on LS, or remove if none checked */
@@ -25,10 +25,10 @@ app.controller("myCtrl", function($scope) {
     $scope.saveGame = function(e, v) {
         if(e){
             /* Checked */
-            localStorage.setItem("g-" + this.trophyV.game, true);
+            localStorage.setItem("g-" + this.trophy.game, true);
         } else {
             /* Unchecked */
-            localStorage.removeItem("g-" + this.trophyV.game);
+            localStorage.removeItem("g-" + this.trophy.game);
         }
         $("#game_count").html($('input.check-game:checked').length);
     };
@@ -120,9 +120,26 @@ app.controller("myCtrl", function($scope) {
         }
     };
 
-    /* Add trophy total to dropdown menu "Earned/Total" */
+    /* Page Load */
     $(document).ready(function(){
-        $("option").each(function(k,v){
+        /* Fill List of Lists with collected trophy data */
+        /*$.forEach(document.querySelectorAll(".list"), function(e){
+            /!* Check if the user has entered data for this list *!/
+            console.log("hey");
+            if(localStorage.getItem(e.id) =="true"){
+
+            }
+        });*/
+        $(".list").each(function(k,v){
+            var thisList = $(v).attr("id").toString();
+            if(localStorage.getItem(thisList)){
+                // console.log($("#" + thisList));
+                $(this).find(".total-earned").html(localStorage.getItem(thisList));
+            }
+        });
+
+        /* Add trophy total to dropdown menu "Earned/Total" */
+        $("#list-dropdown option").each(function(k,v){
             if(localStorage.getItem(v.label)){
                 var listTrophyTotal = 0;
                 $($scope.lists).each(function(lk,lv){
@@ -156,6 +173,11 @@ app.controller("myCtrl", function($scope) {
                     "</p>");
             });
         },1000);
+    };
+
+    /* Selected List Scope */
+    $scope.select = function(list) {
+        $scope.selected = list;
     };
 
     /* Custom Trophy Lists Array */

@@ -21,37 +21,44 @@
 
 <div ng-app="ctlApp" ng-controller="myCtrl">
 
-  <!-- Select a list -->
-  <select ng-model="selectedList" ng-change="getListLS()" class="form-control" ng-options="list as list.listName for list in lists">
-    <option value="">Choose A List</option>
+  <!-- List of Lists -->
+  <div class="list-of-lists container" ng-hide="showList" ng-click="showList = ! showList">
+    <br>
+    <img src="./img/PSTLists.png" alt="PST Lists">
+    
+    <div class="list row" ng-repeat="list in lists" ng-click="select(list); getListLS()" id="{{list.listName}}">
+      <a href="#">
+        <div class="col-xs-6 col-md-1">
+          <img src="{{list.award}}" alt="{{list.listName}} Award Image" class="list-icon">
+        </div>
+
+        <div class="col-xs-6 col-md-2 col-md-push-9">
+          <h3 class="text-right"><span class="total-earned">0</span>/<span class="total-possible">{{list.trophies.length}}</span></h3>
+        </div>
+
+        <div class="col-xs-12 col-md-9 col-md-pull-2">
+          <h3 class="list-name">{{list.listName}}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- List Selected -->
+  <select ng-model="selected" ng-change="getListLS()" class="form-control" ng-options="list as list.listName for list in lists" ng-show="showList" id="list-dropdown">
   </select>
 
-  <!-- Show all Games -->
-  <!--<div id="show_all_games">
-    <label for="show_games">Show all games</label> <input type="checkbox" ng-click="orderList()" ng-model="show_games" id="show_games">
-
-    <div ng-if="show_games" id="shown_games">
-      <div ng-repeat="(k, v) in lists">
-        <div ng-repeat="(kk, vv) in v.trophies | orderBy: 'listname.game'">
-          <p>{{vv.game}}</p>
-        </div>
-      </div>
-    </div>
-  </div>-->
-
-  <!-- When selected, show the list -->
-  <div ng-if="selectedList">
-
-    <div class="header" style="background: url(./headerbg.png) repeat, url({{ selectedList.banner }}) no-repeat; background-size: auto, cover;">
+  <div class="list-selected" ng-show="showList">
+    <!-- Header -->
+    <div class="header" style="background: url(./headerbg.png) repeat, url('{{ selected.banner }}') no-repeat; background-size: auto, cover;">
       <div class="content">
         <!-- List Name -->
-        <h2 id="list_name">{{ selectedList.listName }}</h2>
+        <h2 id="list_name">{{ selected.listName }}</h2>
 
         <!-- Award Image -->
-        <img src="{{ selectedList.award }}" alt="">
+        <img src="{{ selected.award }}" alt="">
 
         <!-- Trophy Count -->
-        <h3><span id="trophy_count">0</span>/<span id="game_count">0</span>/{{ selectedList.trophies.length }}</h3>
+        <h3><span id="trophy_count">0</span>/<span id="game_count">0</span>/{{ selected.trophies.length }}</h3>
       </div>
     </div>
 
@@ -79,39 +86,38 @@
     </div>
 
     <div class="container trophy_list bottom">
-      <div ng-repeat="(trophyK, trophyV) in selectedList.trophies | orderBy: 'game'" class="trophy" id="t-{{ trophyV.name }}">
+      <div ng-repeat="trophy in selected.trophies | orderBy: 'game'" class="trophy" id="t-{{ trophy.name }}">
 
         <div class="row">
           <div class="col-sm-12">
             <!-- Game Name -->
-            <h3 class="game" id="g-{{ trophyV.game }}">{{ trophyV.game }}</h3>
+            <h3 class="game" id="g-{{ trophy.game }}">{{ trophy.game }}</h3>
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-1">
             <!-- Trophy Icon -->
-            <img src="{{ trophyV.imag }}" alt="{{ trophyV.game }} - {{ trophyV.name }}" class="img-responsive">
+            <img src="{{ trophy.imag }}" alt="{{ trophy.game }} - {{ trophy.name }}" class="img-responsive">
           </div>
           <div class="col-sm-9">
             <!-- Trophy Name & Description -->
-            <p><strong class="name">{{ trophyV.name }}</strong></p>
-            <p>{{ trophyV.desc }}</p>
+            <p><strong class="name">{{ trophy.name }}</strong></p>
+            <p>{{ trophy.desc }}</p>
           </div>
           <div class="col-sm-1 col-xs-6 text-center">
             <!-- Trophy Checkbox -->
-            <input type="checkbox" ng-model="formElem.checkbox" ng-click="saveTrophy(formElem.checkbox)" id="c-{{ trophyV.name }}" class="check-trophy"/>
-            <label for="c-{{ trophyV.name }}" class="label-trophy">&#10004;</label>
+            <input type="checkbox" ng-model="formElem.checkbox" ng-click="saveTrophy(formElem.checkbox)" id="c-{{ trophy.name }}" class="check-trophy"/>
+            <label for="c-{{ trophy.name }}" class="label-trophy">&#10004;</label>
           </div>
           <div class="col-sm-1 col-xs-6 text-center">
             <!-- Game Checkbox -->
-            <input type="checkbox" ng-model="formElem.game_checkbox" ng-click="saveGame(formElem.game_checkbox)" id="c-{{ trophyV.game }}" class="check-game"/>
-            <label for="c-{{ trophyV.game }}" class="label-game">&#10004;</label>
+            <input type="checkbox" ng-model="formElem.game_checkbox" ng-click="saveGame(formElem.game_checkbox)" id="c-{{ trophy.game }}" class="check-game"/>
+            <label for="c-{{ trophy.game }}" class="label-game">&#10004;</label>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="back_top"><a href="#">Back to Top</a></div>
@@ -119,7 +125,7 @@
 </div>
 
 <footer>
-  <p>&copy; 2016 <a href="http://douglasglover.ca">Douglas Glover</a></p>
+  <p>&copy; 2016 <a href="http://douglasglover.ca" target="_blank">Douglas Glover</a></p>
 </footer>
 
 <script>
@@ -134,7 +140,7 @@
 </script>
 
 <!-- Trophy Lists -->
-<script src="trophyLists.js?25"></script>
+<script src="trophyLists.js?27"></script>
 
 </body>
 </html>
