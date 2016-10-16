@@ -6682,6 +6682,161 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1835/B7F.jpg"
         }]
     },{
+        listName: "Slamma's Super Sexy & Sensually Seductive Selection",
+        banner: "http://i.imgur.com/ahw8CJQ.jpg",
+        award: "http://i.imgur.com/XsHZSXe.jpg",
+        trophies: [{
+            game: "Assassin's Creed II",
+            name: "Red Light Addict",
+            desc: "Spend 5000 florins on Courtesans.",
+            imag: "http://www.playstationtrophies.org/images/trophies/260/49.jpg"
+        },{
+            game: "Back to the Future: The Game",
+            name: "Seven Minutes in Heaven",
+            desc: "Got caught making out with Jennifer. :pps3:",
+            imag: "http://www.playstationtrophies.org/images/trophies/840/04.jpg"
+        },{
+            game: "Batman: Arkham City",
+            name: "Family Jewels",
+            desc: "Retrieve your stolen goods ",
+            imag: "http://www.playstationtrophies.org/images/trophies/398/55.jpg"
+        },{
+            game: "Bayonetta",
+            name: "You Want To Touch Me?",
+            desc: "Engage Witch Time successfully 10 times.",
+            imag: "http://www.playstationtrophies.org/images/trophies/52/24.jpg"
+        },{
+            game: "BioShock",
+            name: "Brass Balls",
+            desc: "Complete the game on Hard difficulty without using a Vita-Chamber",
+            imag: "http://www.playstationtrophies.org/images/trophies/23/51.jpg"
+        },{
+            game: "Brütal Legend",
+            name: "Thick as a Baby's Arm",
+            desc: "Completed 'Lair of the Metal Queen'",
+            imag: "http://www.playstationtrophies.org/images/trophies/196/03.jpg"
+        },{
+            game: "Call of Duty Classic",
+            name: "Pea Shooter",
+            desc: "Complete a mission using only a pistol and no melee attacks.",
+            imag: "http://www.playstationtrophies.org/images/trophies/277/36.jpg"
+        },{
+            game: "Call of Duty: Modern Warfare 3",
+            name: "Ménage à Trois",
+            desc: "Destroy 3 tanks with a single 105mm shot in 'Iron Lady.' ",
+            imag: "http://www.playstationtrophies.org/images/trophies/422/36.jpg"
+        },{
+            game: "Dragon Age: Origins",
+            name: "Easy Lover",
+            desc: "Experienced the thrill of romance with Zevran",
+            imag: "http://www.playstationtrophies.org/images/trophies/270/38.jpg"
+        },{
+            game: "Duke Nukem Forever",
+            name: "Beating the One-Eyed Worm",
+            desc: "Defeat the Leech",
+            imag: "http://www.playstationtrophies.org/images/trophies/730/46.jpg"
+        },{
+            game: "Fat Princess",
+            name: "Got wood?",
+            desc: "Deliver 15 resources of wood or metal to the team's stockpile in online games",
+            imag: "http://www.playstationtrophies.org/images/trophies/182/02.jpg"
+        },{
+            game: "Far Cry 3: Blood Dragon",
+            name: "Just the Tip",
+            desc: "Kill a Dragon with the Bow",
+            imag: "http://www.playstationtrophies.org/images/trophies/2000/AFD.jpg"
+        },{
+            game: "God of War II",
+            name: "Blowin' Your Wad",
+            desc: "Max out all Weapons and Magic",
+            imag: "http://www.playstationtrophies.org/images/trophies/264/2.jpg"
+        },{
+            game: "God of War III",
+            name: "Are You Horny to Win?",
+            desc: "Collect all of the Minotaur Horns",
+            imag: "http://www.playstationtrophies.org/images/trophies/319/002.jpg"
+        },{
+            game: "Grand Theft Auto IV",
+            name: "Warm Coffee",
+            desc: "You were invited into your girlfriend's house.",
+            imag: "http://www.playstationtrophies.org/images/trophies/33/023.jpg"
+        },{
+            game: "Guacamelee!",
+            name: "Cock of the Walk",
+            desc: "Defeat an enemy as a chicken",
+            imag: "http://www.playstationtrophies.org/images/trophies/1568/848.jpg"
+        },{
+            game: "Hatoful Boyfriend",
+            name: "A Pudding Odyssey",
+            desc: "Get Okosan full ending (ED no.07)",
+            imag: "http://www.playstationtrophies.org/images/trophies/3230/663.jpg"
+        },{
+            game: "Hotline Miami",
+            name: "Always On Top",
+            desc: "Perform every ground kill in the game",
+            imag: "http://www.playstationtrophies.org/images/trophies/1923/F87.jpg"
+        },{
+            game: "Jurassic Park: The Cavalry",
+            name: "You Must Be This Tall to Ride",
+            desc: "Find the Mr. DNA sign. ",
+            imag: "http://www.playstationtrophies.org/images/trophies/1278/8DD.jpg"
+        },{
+            game: "Prince of Persia",
+            name: "Be gentle with her",
+            desc: "Elika saves you fewer than 100 times in the whole game.",
+            imag: "http://www.playstationtrophies.org/images/trophies/59/016.jpg"
+        },{
+            game: "Red Dead Redemption",
+            name: "Bearly Legal",
+            desc: "Kill and skin 18 grizzly bears.",
+            imag: "http://www.playstationtrophies.org/images/trophies/340/23.jpg"
+        },{
+            game: "Sam & Max: Beyond Time and Space - Episode 1: Ice Station Santa",
+            name: "My Package!",
+            desc: "Obtain the Horseman of Famine from Bosco. ",
+            imag: "http://www.playstationtrophies.org/images/trophies/1226/04.jpg"
+        },{
+            game: "Sam & Max: The Devil's Playhouse - Episode 5: The City That Dares Not Sleep",
+            name: "The Happy Ending",
+            desc: "Discovered a last-minute way to save Max",
+            imag: "http://www.playstationtrophies.org/images/trophies/717/05.jpg"
+        },{
+            game: "Saints Row: The Third",
+            name: "Gotta Break Em In",
+            desc: "Complete 'The Ho Boat'. ",
+            imag: "http://www.playstationtrophies.org/images/trophies/746/07.jpg"
+        },{
+            game: "Sly Cooper: Thieves in Time",
+            name: "Hubba Hubba",
+            desc: "Don't miss a beat in the Carmelita dance game.",
+            imag: "http://www.playstationtrophies.org/images/trophies/810/E3F.jpg"
+        },{
+            game: "South Park: The Stick of Truth",
+            name: "Two Girls, One Stick",
+            desc: "You defeated Princess Kenny in your girl makeover disguise.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4715/8b6.jpg"
+        },{
+            game: "STAR WARS Battlefront",
+            name: "Judge me by my size, do you?",
+            desc: "Reach Rank 25",
+            imag: "http://www.playstationtrophies.org/images/trophies/2097/d29.jpg"
+        },{
+            game: "The Saboteur",
+            name: "Pint and a Shag",
+            desc: "You got lucky with Skylar.",
+            imag: "http://www.playstationtrophies.org/images/trophies/298/26.jpg"
+        },{
+            game: "Tomb Raider",
+            name: "Down and Dirty",
+            desc: "Perform 15 finishers.",
+            imag: "http://www.playstationtrophies.org/images/trophies/831/84A.jpg"
+        },{
+            game: "Transistor",
+            name: "Reveal()",
+            desc: "Inspect all completed Function Files.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2113/cdb.jpg"
+        }]
+    },{
         listName: "Sylar's Super List",
         banner: "http://www.playstationtrophies.org/images/news/cl_banner_sylar.png",
         award: "http://i.imgur.com/wwthqeC.png",
@@ -8535,161 +8690,6 @@ app.controller("myCtrl", function($scope) {
             name: "Friend of Alexander",
             desc: "Collect 25 Turtles",
             imag: "http://www.playstationtrophies.org/images/trophies/251/16.jpg"
-        }]
-    },{
-        listName: "Slamma's Super Sexy & Sensually Seductive Selection",
-        banner: "http://i.imgur.com/ahw8CJQ.jpg",
-        award: "http://i.imgur.com/XsHZSXe.jpg",
-        trophies: [{
-            game: "Assassin's Creed II",
-            name: "Red Light Addict",
-            desc: "Spend 5000 florins on Courtesans.",
-            imag: "http://www.playstationtrophies.org/images/trophies/260/49.jpg"
-        },{
-            game: "Back to the Future: The Game",
-            name: "Seven Minutes in Heaven",
-            desc: "Got caught making out with Jennifer. :pps3:",
-            imag: "http://www.playstationtrophies.org/images/trophies/840/04.jpg"
-        },{
-            game: "Batman: Arkham City",
-            name: "Family Jewels",
-            desc: "Retrieve your stolen goods ",
-            imag: "http://www.playstationtrophies.org/images/trophies/398/55.jpg"
-        },{
-            game: "Bayonetta",
-            name: "You Want To Touch Me?",
-            desc: "Engage Witch Time successfully 10 times.",
-            imag: "http://www.playstationtrophies.org/images/trophies/52/24.jpg"
-        },{
-            game: "BioShock",
-            name: "Brass Balls",
-            desc: "Complete the game on Hard difficulty without using a Vita-Chamber",
-            imag: "http://www.playstationtrophies.org/images/trophies/23/51.jpg"
-        },{
-            game: "Brütal Legend",
-            name: "Thick as a Baby's Arm",
-            desc: "Completed 'Lair of the Metal Queen'",
-            imag: "http://www.playstationtrophies.org/images/trophies/196/03.jpg"
-        },{
-            game: "Call of Duty Classic",
-            name: "Pea Shooter",
-            desc: "Complete a mission using only a pistol and no melee attacks.",
-            imag: "http://www.playstationtrophies.org/images/trophies/277/36.jpg"
-        },{
-            game: "Call of Duty: Modern Warfare 3",
-            name: "Ménage à Trois",
-            desc: "Destroy 3 tanks with a single 105mm shot in 'Iron Lady.' ",
-            imag: "http://www.playstationtrophies.org/images/trophies/422/36.jpg"
-        },{
-            game: "Dragon Age: Origins",
-            name: "Easy Lover",
-            desc: "Experienced the thrill of romance with Zevran",
-            imag: "http://www.playstationtrophies.org/images/trophies/270/38.jpg"
-        },{
-            game: "Duke Nukem Forever",
-            name: "Beating the One-Eyed Worm",
-            desc: "Defeat the Leech",
-            imag: "http://www.playstationtrophies.org/images/trophies/730/46.jpg"
-        },{
-            game: "Fat Princess",
-            name: "Got wood?",
-            desc: "Deliver 15 resources of wood or metal to the team's stockpile in online games",
-            imag: "http://www.playstationtrophies.org/images/trophies/182/02.jpg"
-        },{
-            game: "Far Cry 3: Blood Dragon",
-            name: "Just the Tip",
-            desc: "Kill a Dragon with the Bow",
-            imag: "http://www.playstationtrophies.org/images/trophies/2000/AFD.jpg"
-        },{
-            game: "God of War II",
-            name: "Blowin' Your Wad",
-            desc: "Max out all Weapons and Magic",
-            imag: "http://www.playstationtrophies.org/images/trophies/264/2.jpg"
-        },{
-            game: "God of War III",
-            name: "Are You Horny to Win?",
-            desc: "Collect all of the Minotaur Horns",
-            imag: "http://www.playstationtrophies.org/images/trophies/319/002.jpg"
-        },{
-            game: "Grand Theft Auto IV",
-            name: "Warm Coffee",
-            desc: "You were invited into your girlfriend's house.",
-            imag: "http://www.playstationtrophies.org/images/trophies/33/023.jpg"
-        },{
-            game: "Guacamelee!",
-            name: "Cock of the Walk",
-            desc: "Defeat an enemy as a chicken",
-            imag: "http://www.playstationtrophies.org/images/trophies/1568/848.jpg"
-        },{
-            game: "Hatoful Boyfriend",
-            name: "A Pudding Odyssey",
-            desc: "Get Okosan full ending (ED no.07)",
-            imag: "http://www.playstationtrophies.org/images/trophies/3230/663.jpg"
-        },{
-            game: "Hotline Miami",
-            name: "Always On Top",
-            desc: "Perform every ground kill in the game",
-            imag: "http://www.playstationtrophies.org/images/trophies/1923/F87.jpg"
-        },{
-            game: "Jurassic Park: The Cavalry",
-            name: "You Must Be This Tall to Ride",
-            desc: "Find the Mr. DNA sign. ",
-            imag: "http://www.playstationtrophies.org/images/trophies/1278/8DD.jpg"
-        },{
-            game: "Prince of Persia",
-            name: "Be gentle with her",
-            desc: "Elika saves you fewer than 100 times in the whole game.",
-            imag: "http://www.playstationtrophies.org/images/trophies/59/016.jpg"
-        },{
-            game: "Red Dead Redemption",
-            name: "Bearly Legal",
-            desc: "Kill and skin 18 grizzly bears.",
-            imag: "http://www.playstationtrophies.org/images/trophies/340/23.jpg"
-        },{
-            game: "Sam & Max: Beyond Time and Space - Episode 1: Ice Station Santa",
-            name: "My Package!",
-            desc: "Obtain the Horseman of Famine from Bosco. ",
-            imag: "http://www.playstationtrophies.org/images/trophies/1226/04.jpg"
-        },{
-            game: "Sam & Max: The Devil's Playhouse - Episode 5: The City That Dares Not Sleep",
-            name: "The Happy Ending",
-            desc: "Discovered a last-minute way to save Max",
-            imag: "http://www.playstationtrophies.org/images/trophies/717/05.jpg"
-        },{
-            game: "Saints Row: The Third",
-            name: "Gotta Break Em In",
-            desc: "Complete 'The Ho Boat'. ",
-            imag: "http://www.playstationtrophies.org/images/trophies/746/07.jpg"
-        },{
-            game: "Sly Cooper: Thieves in Time",
-            name: "Hubba Hubba",
-            desc: "Don't miss a beat in the Carmelita dance game.",
-            imag: "http://www.playstationtrophies.org/images/trophies/810/E3F.jpg"
-        },{
-            game: "South Park: The Stick of Truth",
-            name: "Two Girls, One Stick",
-            desc: "You defeated Princess Kenny in your girl makeover disguise.",
-            imag: "http://www.playstationtrophies.org/images/trophies/4715/8b6.jpg"
-        },{
-            game: "STAR WARS Battlefront",
-            name: "Judge me by my size, do you?",
-            desc: "Reach Rank 25",
-            imag: "http://www.playstationtrophies.org/images/trophies/2097/d29.jpg"
-        },{
-            game: "The Saboteur",
-            name: "Pint and a Shag",
-            desc: "You got lucky with Skylar.",
-            imag: "http://www.playstationtrophies.org/images/trophies/298/26.jpg"
-        },{
-            game: "Tomb Raider",
-            name: "Down and Dirty",
-            desc: "Perform 15 finishers.",
-            imag: "http://www.playstationtrophies.org/images/trophies/831/84A.jpg"
-        },{
-            game: "Transistor",
-            name: "Reveal()",
-            desc: "Inspect all completed Function Files.",
-            imag: "http://www.playstationtrophies.org/images/trophies/2113/cdb.jpg"
         }]
     }/*,{
         listName: "LISTNAME",
