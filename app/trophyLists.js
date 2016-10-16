@@ -210,7 +210,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/39/08.jpg"
         },{
             game: "Brink",
-            name: "Brinkmanship",
+            name: "Brinksmanship",
             desc: "Complete an Operative Primary Objective within 5 seconds of breaking disguise",
             imag: "http://www.ps3trophies.org/images/trophies/356/26.jpg "
         },{
@@ -230,7 +230,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/41/012.jpg "
         },{
             game: "Catherine",
-            name: "Altar Conquered",
+            name: "Altar Conquered!",
             desc: "Complete Stage 1 of Babel.",
             imag: "http://www.ps3trophies.org/images/trophies/380/40.jpg"
         },{
@@ -299,7 +299,7 @@ app.controller("myCtrl", function($scope) {
             desc: "You got a turkey in 10 pin bowling.",
             imag: "http://www.ps3trophies.org/images/trophies/33/008.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Gold Finger",
             desc: "The Lizard - Cut your finger using axe, knife or pliers + disinfect or cauterize the wound",
             imag: "http://www.ps3trophies.org/images/trophies/321/25.jpg"
@@ -334,7 +334,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete all story levels without dying, with the exception of those levels that only end when you die",
             imag: "http://www.ps3trophies.org/images/trophies/14/41.jpg"
         },{
-            game: "Marvel vs. Capcom 3",
+            game: "MARVEL VS. CAPCOM 3",
             name: "Combat Specialist",
             desc: "In Ranked Match, surpass the '1st' class rank, or fight someone who has",
             imag: "http://www.ps3trophies.org/images/trophies/538/13.jpg"
@@ -405,7 +405,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/298/44.jpg "
         },{
             game: "Uncharted 2: Among Thieves",
-            name: "Steel Fist Expert",
+            name: "Steel Fist Expert (u)",
             desc: "Defeat ten enemies in a row with a single punch, after softening them up with gunfire:pps4:",
             imag: "http://www.ps3trophies.org/images/trophies/214/42.jpg "
         },{
@@ -445,7 +445,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/700/1E4.jpg"
         },{
             game: "Borderlands 2",
-            name: "Tribute to a Vault Hunter",
+            name: "Tribute To A Vault Hunter",
             desc: "Got an item from Michael Mamaril",
             imag: "http://www.ps3trophies.org/images/trophies/1145/140.jpg"
         },{
@@ -525,7 +525,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/1217/CF1.jpg"
         },{
             game: "Kingdoms of Amalur: Reckoning",
-            name: "Streaker",
+            name: "Streaker (d)",
             desc: "You spoke to someone while not wearing clothes.",
             imag: "http://www.ps3trophies.org/images/trophies/669/740.jpg"
         },{
@@ -630,7 +630,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/613/153.jpg"
         },{
             game: "Starhawk",
-            name: "Only the Beginning",
+            name: "Only the Beginning...",
             desc: "Complete the campaign on Mercenary difficulty.",
             imag: "http://www.ps3trophies.org/images/trophies/421/62D.jpg"
         },{
@@ -655,7 +655,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.ps3trophies.org/images/trophies/1317/767.jpg"
         },{
             game: "Tomb Raider",
-            name: "Chatterbox",
+            name: "Chatterbox (t)",
             desc: "Complete all conversations with the Endurance crew.",
             imag: "http://www.ps3trophies.org/images/trophies/831/83D.jpg"
         },{
@@ -839,7 +839,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Stun 5 criminals with the T62 CEW in Single Player",
             imag: "http://www.playstationtrophies.org/images/trophies/2806/e59.jpg"
         },{
-            game: "Binding of Isaac: Rebirth",
+            game: "The Binding of Isaac: Rebirth",
             name: "Boss Rush",
             desc: "Beat the Boss Rush",
             imag: "http://www.playstationtrophies.org/images/trophies/2220/ee7.jpg"
@@ -939,9 +939,9 @@ app.controller("myCtrl", function($scope) {
             desc: "Dance 100 Times",
             imag: "http://www.playstationtrophies.org/images/trophies/1954/C2A.jpg"
         },{
-            game: "Sonic & All-Stars Racing Transformed",
+            game: "Sonic & All-Stars Racing Transformed (Vita)",
             name: "Swirling Ranger!",
-            desc: "(Vita only!) Survive a Twister attack without crashing or being hit",
+            desc: "Survive a Twister attack without crashing or being hit",
             imag: "http://www.playstationtrophies.org/images/trophies/1655/25E.jpg"
         },{
             game: "Spelunky",
@@ -999,7 +999,7 @@ app.controller("myCtrl", function($scope) {
             desc: "You've collected a lot of memories. It's proof that you went on a long journey.",
             imag: "http://www.playstationtrophies.org/images/trophies/1610/DAA.jpg"
         },{
-            game: "Atelier Escha & Logy: Alchemists of Dusk Sky",
+            game: "Atelier Escha & Logy: Alchemists of the Dusk Sky",
             name: "A Grand Triumph",
             desc: "Stopped Flameu after she released her true power.",
             imag: "http://www.playstationtrophies.org/images/trophies/2147/2D4.jpg"
@@ -1190,7 +1190,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/70/022.jpg"
         },{
             game: "God of War III",
-            name: "I didn't do it...But I wish I did!",
+            name: "I didn't do it... But I wish I did!",
             desc: "Kill the Poseidon Princess",
             imag: "http://www.playstationtrophies.org/images/trophies/319/001.jpg"
         },{
@@ -1209,7 +1209,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Defeat an enemy as a chicken",
             imag: "http://www.playstationtrophies.org/images/trophies/1568/848.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Smart Girl",
             desc: "The Doc - Do not drink the Doc's beverage",
             imag: "http://www.playstationtrophies.org/images/trophies/321/34.jpg"
@@ -1405,11 +1405,11 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/2054/A3E.jpg"
         },{
             game: "GRID: Autosport",
-            name: "Endured with the best",
+            name: "Endured with the Best",
             desc: "Complete an Endurance Championship with the Ravenwest team.",
             imag: "http://www.playstationtrophies.org/images/trophies/2701/e48.jpg"
         },{
-            game: "Hatsune Miku: Project DIVA f",
+            game: "Hatsune Miku: Project DIVA F",
             name: "Concert Tour",
             desc: "You earned the title \"Concert Tour\"!",
             imag: "http://www.playstationtrophies.org/images/trophies/2251/F69.jpg"
@@ -1749,13 +1749,13 @@ app.controller("myCtrl", function($scope) {
             desc: "Capture the Housefly",
             imag: "http://www.playstationtrophies.org/images/trophies/3234/72d.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "The Chef",
             desc: "Eureka - Prepare a good omelette on time",
             imag: "http://www.playstationtrophies.org/images/trophies/321/37.jpg"
         },{
             game: "inFAMOUS First Light",
-            name: "That's So Fetch!",
+            name: "That's So Fetch",
             desc: "Complete all Neon Graffiti",
             imag: "http://www.playstationtrophies.org/images/trophies/2878/9f5.jpg"
         },{
@@ -2270,7 +2270,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/826/21.jpg"
         },{
             game: "Uncharted 2: Among Thieves",
-            name: "Charted! - Crushing",
+            name: "Charted! - Easy",
             desc: "Easy - Finish the game in Easy Mode",
             imag: "http://www.playstationtrophies.org/images/trophies/214/43.jpg"
         },{
@@ -2309,7 +2309,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Destroy 50 scarab eggs before they hatch",
             imag: "http://www.playstationtrophies.org/images/trophies/1870/38D.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Smart Girl",
             desc: "The Doc - Do not drink the Doc's beverage",
             imag: "http://www.playstationtrophies.org/images/trophies/321/34.jpg"
@@ -2465,7 +2465,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/398/45.jpg"
         },{
             game: "Borderlands",
-            name: "My Brother Is an Italian Plumber",
+            name: "My Brother is an Italian Plumber",
             desc: "Killed an enemy plumber-style",
             imag: "http://www.playstationtrophies.org/images/trophies/39/06.jpg"
         },{
@@ -2504,7 +2504,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Defeat an arena without taking any damage",
             imag: "http://www.playstationtrophies.org/images/trophies/1568/409.jpg"
         },{
-            game: "Hitman Absolution",
+            game: "Hitman: Absolution",
             name: "Whoops",
             desc: "Achieve your first accidental kill",
             imag: "http://www.playstationtrophies.org/images/trophies/678/B77.jpg"
@@ -2570,7 +2570,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/826/45.jpg"
         },{
             game: "South Park: The Stick of Truth",
-            name: "Stick Saviour",
+            name: "Stick Savior",
             desc: "You defeated Princess Kenny and recovered the stick of truth",
             imag: "http://www.playstationtrophies.org/images/trophies/1314/11C.jpg"
         },{
@@ -2654,7 +2654,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete the Challenge of the Gods",
             imag: "http://www.playstationtrophies.org/images/trophies/263/3.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Electrified",
             desc: "The Butterfly - Complete the Butterfly Trial successfully",
             imag: "http://www.playstationtrophies.org/images/trophies/321/22.jpg"
@@ -2915,7 +2915,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/831/5FE.jpg"
         },{
             game: "Uncharted: Drake's Fortune",
-            name: "Charted! - Easy",
+            name: "Charted! - Crushing",
             desc: "Crushing - Finish the game in Crushing Mode",
             imag: "http://www.playstationtrophies.org/images/trophies/8/3.jpg"
         },{
@@ -2950,7 +2950,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/2956/859.jpg"
         },{
             game: "Ar tonelico Qoga: Knell of Ar Ciel",
-            name: "'Nothing, Ma!'",
+            name: "\"Nothing, Ma!\"",
             desc: "Hit the Panic Button 100 times.",
             imag: "http://www.playstationtrophies.org/images/trophies/931/03.jpg"
         },{
@@ -2964,7 +2964,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Play Spectator mode.",
             imag: "http://www.playstationtrophies.org/images/trophies/2205/CB0.jpg"
         },{
-            game: "Disgaea 3: Absence of Justice",
+            game: "Disgaea 3",
             name: "ABC's of Hitting",
             desc: "Get hit by ABC Gum.",
             imag: "http://www.playstationtrophies.org/images/trophies/178/1.jpg"
@@ -3009,7 +3009,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Dealt 99,999 damage with a single attack.",
             imag: "http://www.playstationtrophies.org/images/trophies/890/4C2.jpg"
         },{
-            game: "Hatsune Miku: Project DIVA f",
+            game: "Hatsune Miku: Project DIVA F",
             name: "Art Collection",
             desc: "You earned the title \"Art Collection\"!",
             imag: "http://www.playstationtrophies.org/images/trophies/2251/3A4.jpg"
@@ -3054,7 +3054,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Turn small by being attacked (ie, by Amy's↓+P, etc) in Arcade Mode or Offline Versus",
             imag: "http://www.playstationtrophies.org/images/trophies/1826/4E7.jpg"
         },{
-            game: "Soul Calibur II HD Online",
+            game: "SOULCALIBUR II HD ONLINE",
             name: "Soul Calibur",
             desc: "Acquired Soul Calibur in Weapon Master",
             imag: "http://www.playstationtrophies.org/images/trophies/2190/4D4.jpg"
@@ -3110,7 +3110,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/3439/b89.jpg"
         },{
             game: "Bloodborne",
-            name: "Honoring Wishes",
+            name: "Honouring Wishes",
             desc: "Captivated by the Moon Presence, you pledge to watch over the Hunter's Dream.",
             imag: "http://www.playstationtrophies.org/images/trophies/2840/513.jpg"
         },{
@@ -3604,7 +3604,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Score a minimum of 2500 points in single player mode in Pillow Fight.",
             imag: "http://www.playstationtrophies.org/images/trophies/136/07.jpg"
         },{
-            game: "Fallout New Vegas",
+            game: "Fallout: New Vegas",
             name: "Making Friends",
             desc: "Reactivated all of the Sink's robotic assistants.",
             imag: "http://www.playstationtrophies.org/images/trophies/343/63.jpg"
@@ -3840,7 +3840,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/533/09.jpg"
         },{
             game: "Mirror's Edge",
-            name: "aaaand Safe!",
+            name: "aaaand safe!",
             desc: "String together the following: wallrun, jump, coil (over obstacle), skill roll",
             imag: "http://www.playstationtrophies.org/images/trophies/43/035.jpg"
         },{
@@ -3904,7 +3904,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Mike cut off his fingers to free himself from the bear trap",
             imag: "http://www.playstationtrophies.org/images/trophies/1672/a33.jpg"
         },{
-            game: "The Order 1886",
+            game: "The Order: 1886",
             name: "Brilliant!",
             desc: "Shoot an airborne grenade during Blacksight",
             imag: "http://www.playstationtrophies.org/images/trophies/2104/89e.jpg"
@@ -4139,7 +4139,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Entertain the Persian harem",
             imag: "http://www.playstationtrophies.org/images/trophies/1068/12.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Perfect Crime",
             desc: "Clean Manfred's shop of evidence + Let Lauren, Hassan and Kramer die + Kill Madison and Jayden",
             imag: "http://www.playstationtrophies.org/images/trophies/321/56.jpg"
@@ -4804,7 +4804,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Have Olivia recite one of your poems.",
             imag: "http://www.playstationtrophies.org/images/trophies/2909/271.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Nerd",
             desc: "Find all clues using ARI (Crime scene + Mad Jack + Fish tank) and find the Origami Killer",
             imag: "http://www.playstationtrophies.org/images/trophies/321/54.jpg"
@@ -5125,7 +5125,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/678/321.jpg"
         },{
             game: "inFAMOUS",
-            name: "Just Scratched The Surface",
+            name: "Just Scratched the Surface",
             desc: "Collect all Dead Drops in the Neon District.",
             imag: "http://www.playstationtrophies.org/images/trophies/122/1.jpg"
         },{
@@ -5399,7 +5399,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Discerned the full attributes of 100 enemies.",
             imag: "http://www.playstationtrophies.org/images/trophies/307/35.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Nerd",
             desc: "Find all clues using ARI (Crime scene + Mad Jack + Fish tank) and find the Origami Killer",
             imag: "http://www.playstationtrophies.org/images/trophies/321/54.jpg"
@@ -5579,7 +5579,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Die enough to get offered Easy Mode",
             imag: "http://www.playstationtrophies.org/images/trophies/263/1.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "I'm a Killer...",
             desc: "The Shark - Kill the Drug Dealer",
             imag: "http://www.playstationtrophies.org/images/trophies/321/32.jpg"
@@ -5675,7 +5675,7 @@ app.controller("myCtrl", function($scope) {
         award: "http://www.playstationtrophies.org/forum/images/awards/cl_dp64.png",
         trophies: [{
             game: "Army of Two: The Devil's Cartel",
-            name: "Army of TWO",
+            name: "Army Of TWO",
             desc: "Perform 250 Flank, Surprise and/or Tag Team kills",
             imag: "http://www.playstationtrophies.org/images/trophies/1656/490.jpg"
         },{
@@ -5695,7 +5695,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1145/390.jpg"
         },{
             game: "Brink",
-            name: "It's a Trap!",
+            name: "It's a trap!",
             desc: "Take down an enemy with a Satchel Charge",
             imag: "http://www.playstationtrophies.org/images/trophies/356/30.jpg"
         },{
@@ -5724,7 +5724,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete your path to enlightenment... or not",
             imag: "http://www.playstationtrophies.org/images/trophies/687/05c.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Four Heroes",
             desc: "Complete the story with four characters alive",
             imag: "http://www.playstationtrophies.org/images/trophies/321/52.jpg"
@@ -5889,7 +5889,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete the Bonus Level.",
             imag: "http://www.playstationtrophies.org/images/trophies/1535/772.jpg"
         },{
-            game: "LEGO The Lord of the Rings",
+            game: "LEGO The Lord of the Rings (Vita)",
             name: "Hobbits really are amazing creatures.",
             desc: "Complete all the HUB mini games.",
             imag: "http://www.playstationtrophies.org/images/trophies/1784/131.jpg"
@@ -6204,7 +6204,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Achieve 100% completion.",
             imag: "http://www.playstationtrophies.org/images/trophies/4198/eb7.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "All Endings",
             desc: "See all endings",
             imag: "http://www.playstationtrophies.org/images/trophies/321/57.jpg"
@@ -6499,7 +6499,7 @@ app.controller("myCtrl", function($scope) {
             game: "Burnout Paradise",
             name: "Smash 60 Burnout Billboards",
             desc: "Awarded when you smash through your 60th pristine Burnout Billboard",
-            imag: "http://www.playstationtrophies.org/images/trophies/1/018.jpg"
+            imag: "http://www.playstationtrophies.org/images/trophies/1/007.jpg"
         },{
             game: "Catherine",
             name: "Text Junkie",
@@ -6512,7 +6512,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/755/32.jpg"
         },{
             game: "Dead Space 2",
-            name: "Looking Good",
+            name: "Looking good",
             desc: "Purchase the Advanced Suit.",
             imag: "http://www.playstationtrophies.org/images/trophies/355/27.jpg"
         },{
@@ -6847,7 +6847,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1549/16B.jpg"
         },{
             game: "Batman: Arkham Asylum",
-            name: "Rope-a-dope-a-dope",
+            name: "Rope-A-Dope-A-Dope",
             desc: "String up one henchman and drop him to surprise a second (any play mode).",
             imag: "http://www.playstationtrophies.org/images/trophies/192/24.jpg"
         },{
@@ -6906,7 +6906,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Landed 10 gravity kicks without landing or taking damage.",
             imag: "http://www.playstationtrophies.org/images/trophies/1392/28.jpg"
         },{
-            game: "Hatsune Miku: Project Diva F",
+            game: "Hatsune Miku: Project DIVA F",
             name: "Skilled Player",
             desc: "You earned the title \"Skilled Player\"!",
             imag: "http://www.playstationtrophies.org/images/trophies/2251/398.jpg"
@@ -7051,7 +7051,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Sonic The Hedgehog: Obtain a Chaos Emerald",
             imag: "http://www.playstationtrophies.org/images/trophies/173/22.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Fugitive",
             desc: "Manage to escape Blake in the subway station",
             imag: "http://www.playstationtrophies.org/images/trophies/321/27.jpg"
@@ -7307,7 +7307,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/826/18.jpg"
         },{
             game: "The Saboteur",
-            name: "Saint Honore",
+            name: "Saint Honoré",
             desc: "You spent 75,000 contraband.",
             imag: "http://www.playstationtrophies.org/images/trophies/298/15.jpg"
         },{
@@ -7876,7 +7876,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Collected a total of 40,000 precious gems.",
             imag: "http://www.playstationtrophies.org/images/trophies/1392/39.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "FBI Investigator",
             desc: "Crime Scene - Find all clues related to the Origami Killer in the scene",
             imag: "http://www.playstationtrophies.org/images/trophies/321/07.jpg"
@@ -8056,7 +8056,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Play the game with an unlocked costume",
             imag: "http://www.playstationtrophies.org/images/trophies/1068/34.jpg"
         },{
-            game: "Heavy Rain",
+            game: "HEAVY RAIN",
             name: "Butcher (h)",
             desc: "The lizard, cut your finger using saw or scissors",
             imag: "http://www.playstationtrophies.org/images/trophies/321/26.jpg"
@@ -8306,7 +8306,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Rescued All Classmates.",
             imag: "http://www.playstationtrophies.org/images/trophies/1134/4D7.jpg"
         },{
-            game: "Marvel vs. Capcom 3: Fate of Two Worlds",
+            game: "MARVEL VS. CAPCOM 3",
             name: "Avengers Assemble!",
             desc: "Make a team composed of the Big 3 and win a match. (Arcade/online only)",
             imag: "http://www.playstationtrophies.org/images/trophies/538/28.jpg"
