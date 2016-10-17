@@ -84,6 +84,44 @@ select.form-control{
     border-bottom-right-radius: 10px;
     border-bottom: 1px solid lightgray;
   }
+
+  &.bronze{
+    background: sandybrown;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #d8ad6c 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#d8ad6c 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#d8ad6c 100%);
+  }
+
+  &.silver{
+    background: silver;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #cecece 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#cecece 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#cecece 100%);
+  }
+
+  &.gold{
+    background: orange;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #ffb200 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#ffb200 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#ffb200 100%);
+  }
+
+  &.platinum{
+    background: lightblue;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #6499ff 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#6499ff 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#6499ff 100%);
+
+  }
+
+  &.perfect{
+    background: rgb(9, 9, 9);
+    background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 60%, rgba(19,19,19,1) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(17,17,17,1) 60%,rgba(19,19,19,1) 100%);
+    background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(17,17,17,1) 60%,rgba(19,19,19,1) 100%);
+    h3{color: white;}
+
+  }
 }
 
 /* Trophy List */
@@ -119,15 +157,15 @@ select.form-control{
     }
 
     &.own_game{
-      background: -moz-linear-gradient(left,  #ffffff 0%, #ffe6b0 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(left,  #ffffff 0%,#ffe6b0 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right,  #ffffff 0%,#ffe6b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      background: -moz-linear-gradient(left,  #ffffff 0%, #ffe6b0 100%);
+      background: -webkit-linear-gradient(left,  #ffffff 0%,#ffe6b0 100%);
+      background: linear-gradient(to right,  #ffffff 0%,#ffe6b0 100%);
     }
 
     &.earned_trophy{
-      background: -moz-linear-gradient(left,  #ffffff 0%, #cddeff 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(left,  #ffffff 0%,#cddeff 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right,  #ffffff 0%,#cddeff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      background: -moz-linear-gradient(left,  #ffffff 0%, #cddeff 100%);
+      background: -webkit-linear-gradient(left,  #ffffff 0%,#cddeff 100%);
+      background: linear-gradient(to right,  #ffffff 0%,#cddeff 100%);
     }
 
     input[type="checkbox"]{

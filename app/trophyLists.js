@@ -130,8 +130,33 @@ app.controller("myCtrl", function($scope) {
         $(".list").each(function(k,v){
             var thisList = $(v).attr("id");
             if(localStorage.getItem(thisList)){
-                // console.log($("#" + thisList));
-                $(this).find(".total-earned").html(localStorage.getItem(thisList));
+                var totalEarned = localStorage.getItem(thisList);
+                $(this).find(".total-earned").html(totalEarned);
+
+                /* Add class to style based on progress */
+                if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0"){
+                    if(totalEarned > 0 && totalEarned <= 9){
+                        $(this).addClass("bronze");
+                    }else if(totalEarned > 9 && totalEarned <= 19){
+                        $(this).addClass("silver");
+                    } else if(totalEarned > 19 && totalEarned <= 29){
+                        $(this).addClass("gold");
+                    } else if(totalEarned > 29 && totalEarned <= 34){
+                        $(this).addClass("platinum");
+                    } else if(totalEarned == 35){
+                        $(this).addClass("perfect");
+                    }
+                } else {
+                    if(totalEarned > 19 && totalEarned <= 29){
+                        $(this).addClass("bronze");
+                    }else if(totalEarned > 29 && totalEarned <= 39){
+                        $(this).addClass("silver");
+                    } else if(totalEarned > 39 && totalEarned <= 49){
+                        $(this).addClass("gold");
+                    } else if(totalEarned == 50){
+                        $(this).addClass("platinum");
+                    }
+                }
             }
         });
 
