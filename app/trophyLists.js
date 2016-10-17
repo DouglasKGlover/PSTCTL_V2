@@ -120,18 +120,15 @@ app.controller("myCtrl", function($scope) {
         }
     };
 
+    /* Sorting */
+    $scope.orderByField = '';
+    $scope.reverseSort = false;
+
     /* Page Load */
     $(document).ready(function(){
         /* Fill List of Lists with collected trophy data */
-        /*$.forEach(document.querySelectorAll(".list"), function(e){
-            /!* Check if the user has entered data for this list *!/
-            console.log("hey");
-            if(localStorage.getItem(e.id) =="true"){
-
-            }
-        });*/
         $(".list").each(function(k,v){
-            var thisList = $(v).attr("id").toString();
+            var thisList = $(v).attr("id");
             if(localStorage.getItem(thisList)){
                 // console.log($("#" + thisList));
                 $(this).find(".total-earned").html(localStorage.getItem(thisList));

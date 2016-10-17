@@ -21,25 +21,52 @@
 
 <div ng-app="ctlApp" ng-controller="myCtrl">
 
+    <!--<div ng-repeat="list in lists|orderBy:orderByField:reverseSort">
+      <p>{{list.listName}}</p>
+    </div>-->
+<!--  <div class="container">
+    <div class="list row">
+      <a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">
+        List Name <span ng-show="orderByField == 'listName'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span></a>
+    </div>
+  </div>-->
+
   <!-- List of Lists -->
-  <div class="list-of-lists container" ng-hide="showList" ng-click="showList = ! showList">
+
+  <div class="list-of-lists container" ng-hide="showList">
     <br>
     <img src="./img/PSTLists.png" alt="PST Lists">
-    
-    <div class="list row" ng-repeat="list in lists" ng-click="select(list); getListLS()" id="{{list.listName}}">
-      <a href="#">
-        <div class="col-xs-6 col-md-1">
-          <img src="{{list.award}}" alt="{{list.listName}} Award Image" class="list-icon">
-        </div>
 
-        <div class="col-xs-6 col-md-2 col-md-push-9">
-          <h3 class="text-right"><span class="total-earned">0</span>/<span class="total-possible">{{list.trophies.length}}</span></h3>
-        </div>
+    <!--<div class="list row top-row">
+      <div class="col-xs-6 col-md-1">
+        Order by:
+      </div>
 
-        <div class="col-xs-12 col-md-9 col-md-pull-2">
-          <h3 class="list-name">{{list.listName}}</h3>
-        </div>
-      </a>
+      <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
+        <a href="#" ng-click="orderByField=$('.list-progress').text(); reverseSort = !reverseSort">Progress</a>
+      </div>
+
+      <div class="col-xs-12 col-md-9 col-md-pull-2">
+        <a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>
+      </div>
+    </div>-->
+
+    <div ng-click="showList = ! showList" id="list-of-lists">
+      <div class="list row" ng-repeat="list in lists|orderBy:orderByField:reverseSort" ng-click="select(list); getListLS()" id="{{list.listName}}">
+        <a href="#">
+          <div class="col-xs-6 col-md-1">
+            <img src="{{list.award}}" alt="{{list.listName}} Award Image" class="list-icon">
+          </div>
+
+          <div class="col-xs-6 col-md-2 col-md-push-9">
+            <h3 class="text-right list-progress"><span class="total-earned">0</span>/<span class="total-possible">{{list.trophies.length}}</span></h3>
+          </div>
+
+          <div class="col-xs-12 col-md-9 col-md-pull-2">
+            <h3 class="list-name">{{list.listName}}</h3>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
