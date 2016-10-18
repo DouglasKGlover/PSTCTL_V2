@@ -143,7 +143,7 @@ app.controller("myCtrl", function($scope) {
                         $(this).addClass("gold");
                     } else if(totalEarned > 29 && totalEarned <= 34){
                         $(this).addClass("platinum");
-                    } else if(totalEarned == 35){
+                    } else if(totalEarned >= 35){
                         $(this).addClass("perfect");
                     }
                 } else {
