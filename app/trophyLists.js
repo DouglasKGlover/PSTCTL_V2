@@ -1,4 +1,41 @@
 var app = angular.module("ctlApp", []);
+
+/* Update list progress */
+function updateListProgress(){
+    $(".list").each(function(k,v){
+        var thisList = $(v).attr("id");
+        if(localStorage.getItem(thisList)){
+            var totalEarned = localStorage.getItem(thisList);
+            $(this).find(".total-earned").html(totalEarned);
+
+            /* Add class to style based on progress */
+            if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0"){
+                if(totalEarned > 0 && totalEarned <= 9){
+                    $(this).addClass("bronze");
+                }else if(totalEarned > 9 && totalEarned <= 19){
+                    $(this).addClass("silver");
+                } else if(totalEarned > 19 && totalEarned <= 29){
+                    $(this).addClass("gold");
+                } else if(totalEarned > 29 && totalEarned <= 34){
+                    $(this).addClass("platinum");
+                } else if(totalEarned >= 35){
+                    $(this).addClass("perfect");
+                }
+            } else {
+                if(totalEarned > 19 && totalEarned <= 29){
+                    $(this).addClass("bronze");
+                }else if(totalEarned > 29 && totalEarned <= 39){
+                    $(this).addClass("silver");
+                } else if(totalEarned > 39 && totalEarned <= 49){
+                    $(this).addClass("gold");
+                } else if(totalEarned == 50){
+                    $(this).addClass("platinum");
+                }
+            }
+        }
+    });
+}
+
 app.controller("myCtrl", function($scope) {
     /* Click Trophy Checkbox */
     $scope.saveTrophy = function(e) {
@@ -124,43 +161,13 @@ app.controller("myCtrl", function($scope) {
     $scope.orderByField = '';
     $scope.reverseSort = false;
 
-    /* Page Load */
-    $(document).ready(function(){
-        /* Fill List of Lists with collected trophy data */
-        $(".list").each(function(k,v){
-            var thisList = $(v).attr("id");
-            if(localStorage.getItem(thisList)){
-                var totalEarned = localStorage.getItem(thisList);
-                $(this).find(".total-earned").html(totalEarned);
+    /* Selected List Scope */
+    $scope.select = function(list) {
+        $scope.selected = list;
+    };
 
-                /* Add class to style based on progress */
-                if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0"){
-                    if(totalEarned > 0 && totalEarned <= 9){
-                        $(this).addClass("bronze");
-                    }else if(totalEarned > 9 && totalEarned <= 19){
-                        $(this).addClass("silver");
-                    } else if(totalEarned > 19 && totalEarned <= 29){
-                        $(this).addClass("gold");
-                    } else if(totalEarned > 29 && totalEarned <= 34){
-                        $(this).addClass("platinum");
-                    } else if(totalEarned >= 35){
-                        $(this).addClass("perfect");
-                    }
-                } else {
-                    if(totalEarned > 19 && totalEarned <= 29){
-                        $(this).addClass("bronze");
-                    }else if(totalEarned > 29 && totalEarned <= 39){
-                        $(this).addClass("silver");
-                    } else if(totalEarned > 39 && totalEarned <= 49){
-                        $(this).addClass("gold");
-                    } else if(totalEarned == 50){
-                        $(this).addClass("platinum");
-                    }
-                }
-            }
-        });
-
-        /* Add trophy total to dropdown menu "Earned/Total" */
+    /* Add trophy total to dropdown menu "Earned/Total" */
+    $scope.updateDropdown = function(){
         $("#list-dropdown option").each(function(k,v){
             if(localStorage.getItem(v.label)){
                 var listTrophyTotal = 0;
@@ -174,33 +181,13 @@ app.controller("myCtrl", function($scope) {
                 v.label = v.label + " (" + localStorage.getItem(v.label) + "/" + listTrophyTotal + ")";
             }
         });
+    };
+
+    /* On Load*/
+    angular.element(document).ready(function () {
+        updateListProgress();
+        $scope.updateDropdown();
     });
-
-    /* Show all Games */
-    $scope.orderList = function() {
-        var tempArray = [];
-
-        setTimeout(function(){
-
-            $("#shown_games p").each(function(){
-                tempArray.push($(this).text());
-            });
-
-            $("#shown_games").html("");
-
-            $.unique(tempArray.sort());
-            $(tempArray).each(function(e,v){
-                $("#shown_games").append("<p>" +
-                    v +
-                    "</p>");
-            });
-        },1000);
-    };
-
-    /* Selected List Scope */
-    $scope.select = function(list) {
-        $scope.selected = list;
-    };
 
     /* Custom Trophy Lists Array */
     $scope.lists = [{
@@ -6871,7 +6858,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/298/26.jpg"
         },{
             game: "Tomb Raider",
-            name: "Down and Dirty",
+            name: "Down and Dirty (t)",
             desc: "Perform 15 finishers.",
             imag: "http://www.playstationtrophies.org/images/trophies/831/84A.jpg"
         },{
