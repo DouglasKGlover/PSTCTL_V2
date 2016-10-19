@@ -13,7 +13,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css?33">
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -37,22 +37,23 @@
     <img src="./img/PSTLists.png" alt="PST Lists">
 
     <!-- List Sorting -->
-    <!--<div class="list row top-row">
+    <div class="list row top-row">
       <div class="col-xs-6 col-md-1">
-        Order by:
+        Sort by:
       </div>
 
       <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
-        <a href="#" ng-click="orderByField=$('.list-progress').text(); reverseSort = !reverseSort">Progress</a>
+        <a href="#" onclick="sortByProgress()">Progress</a>
       </div>
 
       <div class="col-xs-12 col-md-9 col-md-pull-2">
-        <a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>
+        <!--<a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>-->
+        <a href="#" onclick="sortByName()">Name</a>
       </div>
-    </div>-->
+    </div>
 
     <div ng-click="showList = ! showList" id="list-of-lists">
-      <div class="list row" ng-repeat="list in lists|orderBy:orderByField:reverseSort" ng-click="select(list); getListLS()" id="{{list.listName}}">
+      <div class="list row" data-sort="0" ng-repeat="list in lists|orderBy:orderByField:reverseSort" ng-click="select(list); getListLS()" id="{{list.listName}}">
         <a href="#">
           <div class="col-xs-6 col-md-1">
             <img src="{{list.award}}" alt="{{list.listName}} Award Image" class="list-icon">

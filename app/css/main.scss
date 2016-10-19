@@ -72,14 +72,14 @@ select.form-control{
       color: #333;
     }
 
-    &:hover{
+    &:hover:not(.top-row){
       transform: translateX(-10px);
       border-radius: 10px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
-    &:first-of-type {
+    &.top-row {
       margin-top: 10px;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;

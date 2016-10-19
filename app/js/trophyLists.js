@@ -7,6 +7,7 @@ function updateListProgress(){
         if(localStorage.getItem(thisList)){
             var totalEarned = localStorage.getItem(thisList);
             $(this).find(".total-earned").html(totalEarned);
+            $(this).attr("data-sort",totalEarned);
 
             /* Add class to style based on progress */
             if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0"){
@@ -34,6 +35,28 @@ function updateListProgress(){
             }
         }
     });
+}
+
+/* Sorting by list progress */
+function sortByProgress(){
+    var sorted = $("#list-of-lists .list").sort(function (a, b) {
+        var contentA = parseInt( $(a).data("sort"));
+        var contentB = parseInt( $(b).data("sort"));
+        return (contentA > contentB) ? -1 : (contentA < contentB) ? 1 : 0;
+    });
+
+    $("#list-of-lists").html(sorted);
+}
+
+/* Sorting by list name */
+function sortByName(){
+    var sorted = $("#list-of-lists .list").sort(function (a, b) {
+        var contentA = $(a).attr("id");
+        var contentB = $(b).attr("id");
+        return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+    });
+
+    $("#list-of-lists").html(sorted);
 }
 
 app.controller("myCtrl", function($scope) {
