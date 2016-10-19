@@ -186,6 +186,7 @@ app.controller("myCtrl", function($scope) {
 
     /* Selected List Scope */
     $scope.select = function(list) {
+        console.log(list);
         $scope.selected = list;
     };
 

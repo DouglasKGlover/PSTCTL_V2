@@ -79,7 +79,7 @@ select.form-control{
       border-bottom-right-radius: 0;
     }
 
-    &.top-row {
+    &:first-of-type {
       margin-top: 10px;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;

@@ -37,7 +37,7 @@
     <img src="./img/PSTLists.png" alt="PST Lists">
 
     <!-- List Sorting -->
-    <div class="list row top-row">
+    <!--<div class="list row top-row">
       <div class="col-xs-6 col-md-1">
         Sort by:
       </div>
@@ -47,10 +47,10 @@
       </div>
 
       <div class="col-xs-12 col-md-9 col-md-pull-2">
-        <!--<a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>-->
+        &lt;!&ndash;<a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>&ndash;&gt;
         <a href="#" onclick="sortByName()">Name</a>
       </div>
-    </div>
+    </div>-->
 
     <div ng-click="showList = ! showList" id="list-of-lists">
       <div class="list row" data-sort="0" ng-repeat="list in lists|orderBy:orderByField:reverseSort" ng-click="select(list); getListLS()" id="{{list.listName}}">
