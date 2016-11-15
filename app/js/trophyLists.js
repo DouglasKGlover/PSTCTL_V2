@@ -8386,7 +8386,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Solve all of the puzzles in \"Candy, Please!\"",
             imag: "http://www.playstationtrophies.org/images/trophies/3883/765.jpg"
         },{
-            game: "The Walking Dead Season 2",
+            game: "The Walking Dead: Season 2",
             name: "Fresh Fish",
             desc: "Arrived at your new home.",
             imag: "http://www.playstationtrophies.org/images/trophies/2352/17.jpg"
