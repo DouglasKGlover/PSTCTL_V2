@@ -52,6 +52,21 @@
       </div>
     </div>-->
 
+    <!-- List Totals -->
+    <div class="list row top-row">
+      <div class="col-xs-6 col-md-1">
+        <h3>Total</h3>
+      </div>
+
+      <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
+        <h3 class="text-right all-progress"><!-- Javascript: updateListProgress() --></h3>
+      </div>
+
+      <div class="col-xs-12 col-md-9 col-md-pull-2">
+
+      </div>
+    </div>
+
     <div ng-click="showList = ! showList" id="list-of-lists">
       <div class="list row" data-sort="0" ng-repeat="list in lists|orderBy:orderByField:reverseSort" ng-click="select(list); getListLS()" id="{{list.listName}}">
         <a href="#">

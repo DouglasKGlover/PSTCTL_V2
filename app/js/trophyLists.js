@@ -3,39 +3,50 @@ var app = angular.module("ctlApp", []);
 /* Update list progress */
 function updateListProgress(){
     ga('send', 'pageview', 'Overview');
+
+    var allEarned = 0,
+        allLists = 0;
     $(".list").each(function(k,v){
         var thisList = $(v).attr("id");
         if(localStorage.getItem(thisList)){
             var totalEarned = localStorage.getItem(thisList);
+            allEarned = allEarned + parseInt(totalEarned);
+
             $(this).find(".total-earned").html(totalEarned);
             $(this).attr("data-sort",totalEarned);
 
             /* Add class to style based on progress */
+            var color;
             if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0"){
-                if(totalEarned > 0 && totalEarned <= 9){
-                    $(this).addClass("bronze");
-                }else if(totalEarned > 9 && totalEarned <= 19){
-                    $(this).addClass("silver");
-                } else if(totalEarned > 19 && totalEarned <= 29){
-                    $(this).addClass("gold");
-                } else if(totalEarned > 29 && totalEarned <= 34){
-                    $(this).addClass("platinum");
-                } else if(totalEarned >= 35){
-                    $(this).addClass("perfect");
-                }
+                if(totalEarned > 0){ color = "bronze" }
+                if(totalEarned > 9){ color = "silver" }
+                if(totalEarned > 19){ color = "gold" }
+                if(totalEarned > 29){ color = "platinum" }
+                if(totalEarned >= 35){ color = "perfect" }
+                $(this).addClass(color);
             } else {
-                if(totalEarned > 19 && totalEarned <= 29){
-                    $(this).addClass("bronze");
-                }else if(totalEarned > 29 && totalEarned <= 39){
-                    $(this).addClass("silver");
-                } else if(totalEarned > 39 && totalEarned <= 49){
-                    $(this).addClass("gold");
-                } else if(totalEarned == 50){
-                    $(this).addClass("platinum");
-                }
+                if(totalEarned > 19){ color = "bronze" }
+                if(totalEarned > 29){ color = "silver" }
+                if(totalEarned > 39){ color = "gold" }
+                if(totalEarned == 50){ color = "platinum" }
+                $(this).addClass(color);
             }
         }
     });
+
+    $(".total-possible").each(function(){
+        allLists = allLists + parseInt($(this).context.textContent);
+    });
+
+    var color;
+    if(allEarned > allLists*.1){ color = "bronze" }
+    if(allEarned > allLists*.25){ color = "silver" }
+    if(allEarned > allLists*.5){ color = "gold" }
+    if(allEarned > allLists*.75){ color = "platinum" }
+    if(allEarned == allLists){ color = "perfect" }
+    $(".top-row").addClass(color);
+
+    $(".all-progress").html(allEarned + "/" + allLists);
 }
 
 /* Sorting by list progress */
