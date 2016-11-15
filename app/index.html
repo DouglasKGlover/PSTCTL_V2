@@ -72,7 +72,7 @@
   </div>
 
   <!-- List Selected -->
-  <select ng-model="selected" ng-change="getListLS()" class="form-control" ng-options="list as list.listName for list in lists" ng-show="showList" id="list-dropdown">
+  <select ng-model="selected" ng-change="getListLS(e)" class="form-control" ng-options="list as list.listName for list in lists" ng-show="showList" id="list-dropdown">
   </select>
 
   <div class="list-selected" ng-show="showList">
@@ -163,12 +163,11 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-48989090-8', 'auto');
-  ga('send', 'pageview');
 
 </script>
 
 <!-- Trophy Lists -->
-<script src="js/trophyLists.js?35"></script>
+<script src="js/trophyLists.js?36"></script>
 
 </body>
 </html>

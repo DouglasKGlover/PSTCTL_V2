@@ -2,6 +2,7 @@ var app = angular.module("ctlApp", []);
 
 /* Update list progress */
 function updateListProgress(){
+    ga('send', 'pageview', 'Overview');
     $(".list").each(function(k,v){
         var thisList = $(v).attr("id");
         if(localStorage.getItem(thisList)){
@@ -95,7 +96,19 @@ app.controller("myCtrl", function($scope) {
 
     /* Select a List - Get Local Storage */
     $scope.getListLS = function() {
-        var trophyCount = 0;
+        var trophyCount = 0,
+          selectedList = null;
+
+        /* Analytics - List Selected */
+        if(this.list){
+            selectedList = this.list.listName;
+        } else if(this.selected){
+            selectedList = this.selected.listName;
+        }
+        if(selectedList){
+            ga('send', 'pageview', selectedList);
+        }
+
         setTimeout(function(){
             /* Iterate over Trophies */
             angular.forEach(document.querySelectorAll(".trophy"), function(e){
@@ -186,7 +199,6 @@ app.controller("myCtrl", function($scope) {
 
     /* Selected List Scope */
     $scope.select = function(list) {
-        console.log(list);
         $scope.selected = list;
     };
 
