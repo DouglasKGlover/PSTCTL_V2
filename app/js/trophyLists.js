@@ -7565,6 +7565,31 @@ app.controller("myCtrl", function($scope) {
             name: "The Deadman defeated",
             desc: "WWE Universe - Defeat Undertaker at WrestleMania using a custom Superstar.",
             imag: "http://www.playstationtrophies.org/images/trophies/2786/ca2.jpg"
+        },{
+            game: "Assassin's Creed Syndicate",
+            name: "WHAT IS WRONG WITH YOU",
+            desc: "Flip five vehicles by shooting their horses.",
+            imag: "http://www.playstationtrophies.org/images/trophies/3634/351.jpg"
+        },{
+            game: "Fallout 4",
+            name: "Unlikely Valentine",
+            desc: "Complete \"Unlikely Valentine\"",
+            imag: "http://www.playstationtrophies.org/images/trophies/2430/949.jpg"
+        },{
+            game: "METAL GEAR SOLID V: THE PHANTOM PAIN",
+            name: "Speechless",
+            desc: "Make Quiet available for deployment.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1704/fa9.jpg"
+        },{
+            game: "The Witcher 3: Wild Hunt",
+            name: "Friends With Benefits",
+            desc: "Complete the subplot involving Keira Metz.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1904/3b2.jpg"
+        },{
+            game: "Zombie Army Trilogy",
+            name: "You want me to salute that pile of..?",
+            desc: "Kill an Occult General",
+            imag: "http://www.playstationtrophies.org/images/trophies/3340/083.jpg"
         }]
     },{
         listName: "TheManUtdFan's Saints, Sinners and More",
@@ -8225,6 +8250,161 @@ app.controller("myCtrl", function($scope) {
             name: "Nothing More to Collect",
             desc: "Unlock all the playable characters and bonus items.",
             imag: "http://www.playstationtrophies.org/images/trophies/235/12.jpg"
+        }]
+    },{
+        listName: "Velvet's You Are What You Eat List",
+        banner: "http://i.imgur.com/lDahFij.png",
+        award: "http://i.imgur.com/sHbrV15.jpg",
+        trophies: [{
+            game: "Act It Out! A Game of Charades",
+            name: "Truffle Shuffle",
+            desc: "Used the 'shuffle' option more than 50 times during a single game",
+            imag: "http://www.playstationtrophies.org/images/trophies/4286/cea.jpg"
+        },{
+            game: "Albedo: Eyes From Outer Space",
+            name: "FANCY A COLA?",
+            desc: "To cola! The cause of... and solution to... all of life's problems!",
+            imag: "http://www.playstationtrophies.org/images/trophies/4297/ac6.jpg"
+        },{
+            game: "Alice: Madness Returns",
+            name: "Nothing Like the Smell of Bacon",
+            desc: "Pepper All Snouts in a Chapter",
+            imag: "http://www.playstationtrophies.org/images/trophies/671/25.jpg"
+        },{
+            game: "Back to the Future - Episode 4: Double Visions Trophies",
+            name: "Let Them Eat, Um, Cake",
+            desc: "Offered Algae Cakes to Everyone",
+            imag: "http://www.playstationtrophies.org/images/trophies/841/06.jpg"
+        },{
+            game: "Broken Age",
+            name: "Picky Eater",
+            desc: "Examine all breakfast options",
+            imag: "http://www.playstationtrophies.org/images/trophies/3501/5d6.jpg"
+        },{
+            game: "Brothers: A Tale of Two Sons",
+            name: "Turtle Soup",
+            desc: "You helped the turtles to the sea.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1745/1EA.jpg"
+        },{
+            game: "Bully",
+            name: "Soda 'Licious",
+            desc: "Buy 100 sodas.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4480/4f8.jpg"
+        },{
+            game: "Color Guardians",
+            name: "Lollilollilollilollipop",
+            desc: "Collect 100 big color orbs.",
+            imag: "http://www.playstationtrophies.org/images/trophies/3438/bf6.jpg"
+        },{
+            game: "Danganronpa: Trigger Happy Havoc",
+            name: "Mystic Donut",
+            desc: "Filled in every page of Aoi's Report Card",
+            imag: "http://www.playstationtrophies.org/images/trophies/2542/810.jpg"
+        },{
+            game: "Day of the Tentacle Remastered",
+            name: "Chef",
+            desc: "Cook the hamster in Maniac Mansion (Don't try this at home, kids!)",
+            imag: "http://www.playstationtrophies.org/images/trophies/4077/a11.jpg"
+        },{
+            game: "God of War",
+            name: "Get Me a Beer Kid",
+            desc: "Free yourself from the depths of Hades",
+            imag: "http://www.playstationtrophies.org/images/trophies/263/1.jpg"
+        },{
+            game: "Guacamelee!",
+            name: "Delicious",
+            desc: "Complete the World's Greatest Enchilada quest",
+            imag: "http://www.playstationtrophies.org/images/trophies/1568/DDE.jpg"
+        },{
+            game: "Hatoful Boyfriend",
+            name: "A Pudding Odyssey",
+            desc: "Get Okosan full ending (ED no.07)",
+            imag: "http://www.playstationtrophies.org/images/trophies/3230/663.jpg"
+        },{
+            game: "inFamous",
+            name: "Good Eats",
+            desc: "Good guys feed the needy.",
+            imag: "http://www.playstationtrophies.org/images/trophies/122/1.jpg"
+        },{
+            game: "Jak and Daxter: The Precursor Legacy HD",
+            name: "Eggs Over Hard",
+            desc: "Push the Flut Flut Egg Off the Cliff",
+            imag: "http://www.playstationtrophies.org/images/trophies/1217/366.jpg"
+        },{
+            game: "Kung Fu Rabbit",
+            name: "THE BIG FAT CARROT",
+            desc: "Pick up a gold carrot. These carrots are worth more than ordinary carrots, and reappear at the end of a level. Play levels over to collect the carrots.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2163/429.jpg"
+        },{
+            game: "LEGO Jurassic World",
+            name: "...And an apple turnover!",
+            desc: "Complete Chapter 4",
+            imag: "http://www.playstationtrophies.org/images/trophies/3377/025.jpg"
+        },{
+            game: "LEGO The Hobbit",
+            name: "The People Need Food",
+            desc: "Use all the fishing spots in the game as Bard",
+            imag: "http://www.playstationtrophies.org/images/trophies/2664/738.jpg"
+        },{
+            game: "Lone Survivor",
+            name: "Candyman",
+            desc: "Eat five fruit drops, no more than once a day",
+            imag: "http://www.playstationtrophies.org/images/trophies/1967/8ED.jpg"
+        },{
+            game: "Minecraft",
+            name: "Bake Bread",
+            desc: "Turn wheat into bread.",
+            imag: "http://www.playstationtrophies.org/images/trophies/3104/c48.jpg"
+        },{
+            game: "PlayStation All-Stars Battle Royale",
+            name: "Cake, please!",
+            desc: "Complete Arcade Mode with Fat Princess",
+            imag: "http://www.playstationtrophies.org/images/trophies/1308/9B4.jpg"
+        },{
+            game: "Road Not Taken",
+            name: "Savory Stew",
+            desc: "Ate Raccoon Stew",
+            imag: "http://www.playstationtrophies.org/images/trophies/2447/00e.jpg"
+        },{
+            game: "Saints Row IV",
+            name: "Ooo A Piece of Candy!",
+            desc: "Find 100 Data Clusters.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1971/BBB.jpg"
+        },{
+            game: "Sam & Max: Beyond Time and Space - Episode 1: Ice Station Santa",
+            name: "A Sinful Dessert",
+            desc: "Get the Christmas Spirits to take care of that pesky demon.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1226/10.jpg"
+        },{
+            game: "Snoopy's Grand Adventure",
+            name: "Jelly Beans",
+            desc: "Complete Chapter 4",
+            imag: "http://www.playstationtrophies.org/images/trophies/3788/888.jpg"
+        },{
+            game: "The Quiet Collection",
+            name: "Candy, please!",
+            desc: "Solve all of the puzzles in \"Candy, Please!\"",
+            imag: "http://www.playstationtrophies.org/images/trophies/3883/765.jpg"
+        },{
+            game: "The Walking Dead Season 2",
+            name: "Fresh Fish",
+            desc: "Arrived at your new home.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2352/17.jpg"
+        },{
+            game: "Tower of Guns",
+            name: "Eating Your Cake Too",
+            desc: "Finish a 10th run",
+            imag: "http://www.playstationtrophies.org/images/trophies/3543/316.jpg"
+        },{
+            game: "Ultratron",
+            name: "Healthy Diet",
+            desc: "Consumed 10 consecutive fruits",
+            imag: "http://www.playstationtrophies.org/images/trophies/3622/3b3.jpg"
+        },{
+            game: "Whispering Willows",
+            name: "Wine Not",
+            desc: "Open the Wine Cellar Passage",
+            imag: "http://www.playstationtrophies.org/images/trophies/3764/c5b.jpg"
         }]
     },{
         listName: "Vy's Glow in the Dark Role Playing Mix",
