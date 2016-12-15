@@ -382,7 +382,7 @@ app.controller("myCtrl", function($scope) {
             desc: "The Lizard - Cut your finger using axe, knife or pliers + disinfect or cauterize the wound",
             imag: "http://www.ps3trophies.org/images/trophies/321/25.jpg"
         },{
-            game: "inFAMOUS",
+            game: "inFamous",
             name: "Hotfoot",
             desc: "Travel 25 kilometers while riding the rails.",
             imag: "http://www.ps3trophies.org/images/trophies/122/1.jpg"
@@ -3407,7 +3407,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Discover Santa Luchita",
             imag: "http://www.playstationtrophies.org/images/trophies/1568/5F0.jpg"
         },{
-            game: "inFAMOUS",
+            game: "inFamous",
             name: "Member of the Mineral Club",
             desc: "Find 50% of the Shards",
             imag: "http://www.playstationtrophies.org/images/trophies/122/1.jpg"
@@ -5227,7 +5227,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Collect all evidence",
             imag: "http://www.playstationtrophies.org/images/trophies/678/321.jpg"
         },{
-            game: "inFAMOUS",
+            game: "inFamous",
             name: "Just Scratched the Surface",
             desc: "Collect all Dead Drops in the Neon District.",
             imag: "http://www.playstationtrophies.org/images/trophies/122/1.jpg"
@@ -7539,7 +7539,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Completed 'The Wasteland Survival Guide'",
             imag: "http://www.playstationtrophies.org/images/trophies/70/016.jpg"
         },{
-            game: "inFAMOUS",
+            game: "inFamous",
             name: "Clean Up Your Act",
             desc: "Defeat Sasha",
             imag: "http://www.playstationtrophies.org/images/trophies/122/2.jpg"
@@ -8654,7 +8654,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Pepper All Snouts in a Chapter",
             imag: "http://www.playstationtrophies.org/images/trophies/671/25.jpg"
         },{
-            game: "Back to the Future - Episode 4: Double Visions Trophies",
+            game: "Back to the Future: The Game",
             name: "Let Them Eat, Um, Cake",
             desc: "Offered Algae Cakes to Everyone",
             imag: "http://www.playstationtrophies.org/images/trophies/841/06.jpg"
@@ -8709,7 +8709,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Good guys feed the needy.",
             imag: "http://www.playstationtrophies.org/images/trophies/122/1.jpg"
         },{
-            game: "Jak and Daxter: The Precursor Legacy HD",
+            game: "Jak and Daxter: The Precursor Legacy",
             name: "Eggs Over Hard",
             desc: "Push the Flut Flut Egg Off the Cliff",
             imag: "http://www.playstationtrophies.org/images/trophies/1217/366.jpg"
@@ -8719,13 +8719,13 @@ app.controller("myCtrl", function($scope) {
             desc: "Pick up a gold carrot. These carrots are worth more than ordinary carrots, and reappear at the end of a level. Play levels over to collect the carrots.",
             imag: "http://www.playstationtrophies.org/images/trophies/2163/429.jpg"
         },{
-            game: "LEGO Jurassic World",
+            game: "LEGO Jurassic World (Vita)",
             name: "...And an apple turnover!",
             desc: "Complete Chapter 4",
             imag: "http://www.playstationtrophies.org/images/trophies/3377/025.jpg"
         },{
-            game: "LEGO The Hobbit",
-            name: "The People Need Food",
+            game: "LEGO The Hobbit (Vita)",
+            name: "The people need food",
             desc: "Use all the fishing spots in the game as Bard",
             imag: "http://www.playstationtrophies.org/images/trophies/2664/738.jpg"
         },{
@@ -8765,7 +8765,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/3788/888.jpg"
         },{
             game: "The Quiet Collection",
-            name: "Candy, please!",
+            name: "Candy, Please!",
             desc: "Solve all of the puzzles in \"Candy, Please!\"",
             imag: "http://www.playstationtrophies.org/images/trophies/3883/765.jpg"
         },{
@@ -9069,7 +9069,7 @@ app.controller("myCtrl", function($scope) {
             desc: "Complete the game on Poozer of Enforcer difficulty.",
             imag: "http://www.playstationtrophies.org/images/trophies/679/13.jpg"
         },{
-            game: "inFAMOUS",
+            game: "inFamous",
             name: "Goody Two Shoes",
             desc: "Reach full positive Karma.",
             imag: "http://www.playstationtrophies.org/images/trophies/122/2.jpg"
