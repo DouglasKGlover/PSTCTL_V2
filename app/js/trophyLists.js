@@ -5461,7 +5461,7 @@ app.controller("myCtrl", function($scope) {
             name: "Shooting Stars",
             desc: "Shoot down 40 UFOs.",
             imag: "http://www.playstationtrophies.org/images/trophies/1350/415.jpg"
-        },{
+        }/*,{
             game: "Bully",
             name: "Skidmark",
             desc: "Give 50 wedgies.",
@@ -5486,7 +5486,7 @@ app.controller("myCtrl", function($scope) {
             name: "\"...so large\"",
             desc: "Meet the mechanics.",
             imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
-        }]
+        }*/]
     },{
         listName: "Olsen's Dick Move",
         banner: "http://i.imgur.com/Iu5gkG9.png",
