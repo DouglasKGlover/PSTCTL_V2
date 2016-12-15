@@ -5233,7 +5233,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/122/1.jpg"
         },{
             game: "inFAMOUS 2",
-            name: "Shardcore",
+            name: "Shardcore (i)",
             desc: "Pick up 50% of blast shards scattered around New Marais.",
             imag: "http://www.playstationtrophies.org/images/trophies/571/05.jpg"
         },{
@@ -8040,7 +8040,7 @@ app.controller("myCtrl", function($scope) {
             imag: "http://www.playstationtrophies.org/images/trophies/1537/30C.jpg"
         },{
             game: "inFamous: Second Son",
-            name: "Shardcore",
+            name: "Shardcore (s)",
             desc: "Collect all the Blast Shards",
             imag: "http://www.playstationtrophies.org/images/trophies/1936/dfb.jpg"
         },{
