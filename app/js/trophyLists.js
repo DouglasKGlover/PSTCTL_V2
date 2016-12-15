@@ -5461,6 +5461,211 @@ app.controller("myCtrl", function($scope) {
             name: "Shooting Stars",
             desc: "Shoot down 40 UFOs.",
             imag: "http://www.playstationtrophies.org/images/trophies/1350/415.jpg"
+        },{
+            game: "Bully",
+            name: "Skidmark",
+            desc: "Give 50 wedgies.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4480/854.jpg"
+        },{
+            game: "Call of Duty: Modern Warfare Remastered",
+            name: "Deep and Hard",
+            desc: "Complete the game on Hardened or Veteran difficulty.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4594/5e1.jpg"
+        },{
+            game: "Fallout 4",
+            name: "Masshole",
+            desc: "Kill 300 People",
+            imag: "http://www.playstationtrophies.org/images/trophies/2430/72e.jpg"
+        },{
+            game: "Grand Theft Auto: San Andreas",
+            name: "Beat the Cock",
+            desc: "Win the Beat the Cock marathon.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4201/7b7.jpg"
+        },{
+            game: "Grim Fandango Remastered",
+            name: "\"...so large\"",
+            desc: "Meet the mechanics.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
+        }]
+    },{
+        listName: "Olsen's Dick Move",
+        banner: "http://i.imgur.com/Iu5gkG9.png",
+        award: "http://i.imgur.com/H6Xk8YB.png",
+        trophies: [{
+            game: "Alpha Protocol",
+            name: "Antisocial",
+            desc: "Get 3 people to hate you (who must all hate you at the same time).",
+            imag: "http://www.playstationtrophies.org/images/trophies/51/38.jpg"
+        },{
+            game: "Castle Crashers",
+            name: "The Traitor",
+            desc: "Defeat any boss by playing one of his own minions.",
+            imag: "http://www.playstationtrophies.org/images/trophies/387/03.jpg"
+        },{
+            game: "Deadpool",
+            name: "Makin' a Game",
+            desc: "Playing with Deadpool's junk",
+            imag: "http://www.playstationtrophies.org/images/trophies/1641/2D0.jpg"
+        },{
+            game: "Dead Rising 2",
+            name: "Zombie Genocide Master",
+            desc: "Kill 72,000 zombies",
+            imag: "http://www.playstationtrophies.org/images/trophies/325/04.jpg"
+        },{
+            game: "Dead to Rights: Retribution",
+            name: "Scrotality",
+            desc: "Perform a Shadow groin takedown",
+            imag: "http://www.playstationtrophies.org/images/trophies/376/33.jpg"
+        },{
+            game: "Demon's Souls",
+            name: "Penetrator's Trophy",
+            desc: "Slayer of Demon 'Penetrator'",
+            imag: "http://www.playstationtrophies.org/images/trophies/245/30.jpg"
+        },{
+            game: "Destiny",
+            name: "Flawless Raider",
+            desc: "Complete a Raid without anyone in your fireteam dying.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1542/b42.jpg"
+        },{
+            game: "Diablo III",
+            name: "All That Glitters",
+            desc: "Pick up 5,000,000 gold.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1935/042.jpg"
+        },{
+            game: "Dragon Age: Origins",
+            name: "Slayer",
+            desc: "Sided with the werewolves in 'Nature of the Beast'",
+            imag: "http://www.playstationtrophies.org/images/trophies/270/46.jpg"
+        },{
+            game: "Duke Nukem Forever",
+            name: "Balls of Steel",
+            desc: "Earn a 1,000,000 pinball score in SP",
+            imag: "http://www.playstationtrophies.org/images/trophies/730/30.jpg"
+        },{
+            game: "Escape Plan",
+            name: "Trippin'",
+            desc: "Trip up Lil in 5 rooms",
+            imag: "http://www.playstationtrophies.org/images/trophies/2405/017.jpg"
+        },{
+            game: "Fallout 3",
+            name: "The Power of the Atom",
+            desc: "Completed 'The Power of the Atom'",
+            imag: "http://www.playstationtrophies.org/images/trophies/70/023.jpg"
+        },{
+            game: "Far Cry 3: Blood Dragon",
+            name: "Just the Tip",
+            desc: "Kill a Dragon with the Bow",
+            imag: "http://www.playstationtrophies.org/images/trophies/2000/AFD.jpg"
+        },{
+            game: "God of War III",
+            name: "Shoe Delivery",
+            desc: "Kill Hermes and acquire his Boots",
+            imag: "http://www.playstationtrophies.org/images/trophies/3489/ec7.jpg"
+        },{
+            game: "Infamous Second Son",
+            name: "Everyone's a Critic",
+            desc: "Take out 10 street musicians",
+            imag: "http://www.playstationtrophies.org/images/trophies/1936/afe.jpg"
+        },{
+            game: "LittleBigPlanet 2",
+            name: "Turbo Slapper",
+            desc: "Slap more than one player at once",
+            imag: "http://www.playstationtrophies.org/images/trophies/533/29.jpg"
+        },{
+            game: "LEGO Lord of the Rings",
+            name: "Return of the Mushroom King",
+            desc: "Equip Aragorn with the Mushroom Crown.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1535/901.jpg"
+        },{
+            game: "Mercenaries 2: World in Flames",
+            name: "No More Mr. Nice Guy",
+            desc: "You pissed off everyone in Venezuela",
+            imag: "http://www.playstationtrophies.org/images/trophies/56/028.jpg"
+        },{
+            game: "No Man's Sky",
+            name: "The Sentinel",
+            desc: "Attain ‘Everlasting’ status in Longest Lifespan",
+            imag: "http://www.playstationtrophies.org/images/trophies/2440/927.jpg"
+        },{
+            game: "PAIN",
+            name: "Harder Dick's Balls",
+            desc: "Get all of Dick's Balls in the Block Party Dumpster without resetting the scene",
+            imag: "http://www.playstationtrophies.org/images/trophies/10/12.jpg"
+        },{
+            game: "Prototype",
+            name: "Pt",
+            desc: "Achieve a Platinum Medal in all Events.",
+            imag: "http://www.playstationtrophies.org/images/trophies/3803/82b.jpg"
+        },{
+            game: "Red Dead Redemption",
+            name: "Dastardly",
+            desc: "Place a hogtied woman on the train tracks, and witness her death by train.",
+            imag: "http://www.playstationtrophies.org/images/trophies/340/30.jpg"
+        },{
+            game: "Saints Row: The Third",
+            name: "Stay Classy Steelport",
+            desc: "Kill 25 Gang Members each with 'the Penetrator' AND the Fart in a Jar.",
+            imag: "http://www.playstationtrophies.org/images/trophies/746/50.jpg"
+        },{
+            game: "South Park: The Stick of Truth",
+            name: "Perverted",
+            desc: "You watched your parents have sex for 60 seconds.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1314/543.jpg"
+        },{
+            game: "Starhawk",
+            name: "Mancake!",
+            desc: "Kill an enemy by dropping a structure on them.",
+            imag: "http://www.playstationtrophies.org/images/trophies/421/B2B.jpg"
+        },{
+            game: "Starlight Inception",
+            name: "Death Blossom",
+            desc: "Achieve 100% accuracy in any mission",
+            imag: "http://www.playstationtrophies.org/images/trophies/2662/cce.jpg"
+        },{
+            game: "Star Wars: The Force Unleashed II",
+            name: "Sith Kicker",
+            desc: "Drop kick 10 Ewoks.",
+            imag: "http://www.playstationtrophies.org/images/trophies/397/55.jpg"
+        },{
+            game: "Until Dawn",
+            name: "Fatal Grudge",
+            desc: "Chris chose to shoot Ashley",
+            imag: "http://www.playstationtrophies.org/images/trophies/1672/454.jpg"
+        },{
+            game: "Wipeout HD",
+            name: "Beat Zico",
+            desc: "Equal or beat the lap time of 30.82 seconds on Anulpha Pass (Forward), Speed Lap, Venom using the Piranha.",
+            imag: "http://www.playstationtrophies.org/images/trophies/21/025.jpg"
+        },{
+            game: "XCOM: Enemy Unknown",
+            name: "Lone Wolf",
+            desc: "Clear a UFO crash site with one soldier on Classic or Impossible difficulty.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1350/B6E.jpg"
+        },{
+            game: "Bully",
+            name: "Skidmark",
+            desc: "Give 50 wedgies.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4480/854.jpg"
+        },{
+            game: "Call of Duty: Modern Warfare Remastered",
+            name: "Deep and Hard",
+            desc: "Complete the game on Hardened or Veteran difficulty.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4594/5e1.jpg"
+        },{
+            game: "Fallout 4",
+            name: "Masshole",
+            desc: "Kill 300 People",
+            imag: "http://www.playstationtrophies.org/images/trophies/2430/72e.jpg"
+        },{
+            game: "Grand Theft Auto: San Andreas",
+            name: "Beat the Cock",
+            desc: "Win the Beat the Cock marathon.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4201/7b7.jpg"
+        },{
+            game: "Grim Fandango Remastered",
+            name: "\"...so large\"",
+            desc: "Meet the mechanics.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
         }]
     },{
         listName: "Orthmann's Life is Study",
@@ -7768,6 +7973,161 @@ app.controller("myCtrl", function($scope) {
             name: "Tears in the Rain",
             desc: "Saw Luna's ending.",
             imag: "http://www.playstationtrophies.org/images/trophies/1796/E64.jpg"
+        }]
+    },{
+        listName: "themindisacity's Punderfully Puntastic Custom List",
+        banner: "http://i.imgur.com/Ei4D97q.png",
+        award: "http://i.imgur.com/OcV8YMY.png",
+        trophies: [{
+            game: "Adventure Time: Secret of the Nameless Kingdom",
+            name: "Ambitreacherous",
+            desc: "Beat the game without upgrading Finn's Thumps, Sword, or Armor.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2759/8a4.jpg"
+        },{
+            game: "Alice: Madness Returns",
+            name: "Brollyant",
+            desc: "Kill 10 Bitch Babies with Deflection",
+            imag: "http://www.playstationtrophies.org/images/trophies/671/39.jpg"
+        },{
+            game: "Assassin's Creed: Brotherhood",
+            name: "Principessa in Another Castello",
+            desc: "Complete DNA Sequence 4.",
+            imag: "http://www.playstationtrophies.org/images/trophies/362/07.jpg"
+        },{
+            game: "Batman: Arkham Asylum",
+            name: "Baneful Payback",
+            desc: "Defeat Bane",
+            imag: "http://www.playstationtrophies.org/images/trophies/192/07.jpg"
+        },{
+            game: "Broken Age",
+            name: "Knot Too Difficult",
+            desc: "Clear up a tangled situation in one attempt",
+            imag: "http://www.playstationtrophies.org/images/trophies/3501/540.jpg"
+        },{
+            game: "Broken Sword 5: The Serpent's Curse",
+            name: "Notorious P.U.G.",
+            desc: "Found all the hidden pugs in the neighbour's apartment",
+            imag: "http://www.playstationtrophies.org/images/trophies/3701/9ad.jpg"
+        },{
+            game: "Bully",
+            name: "Eggsellent!",
+            desc: "Egg 25 cars.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4480/90a.jpg"
+        },{
+            game: "Catlateral Damage",
+            name: "Purrfessional Cathlete",
+            desc: "Play with 100 cat toys",
+            imag: "http://www.playstationtrophies.org/images/trophies/4454/756.jpg"
+        },{
+            game: "Danganronpa: Trigger Happy Havoc",
+            name: "Four by Gore",
+            desc: "Finished Chapter 4",
+            imag: "http://www.playstationtrophies.org/images/trophies/2542/166.jpg"
+        },{
+            game: "Danganronpa 2: Goodbye Despair",
+            name: "Life's a Real Beach",
+            desc: "Saw every possible Island Mode ending",
+            imag: "http://www.playstationtrophies.org/images/trophies/3041/f33.jpg"
+        },{
+            game: "Day of the Tentacle Remastered",
+            name: "Chateau Eau Neaux",
+            desc: "Make vinegar",
+            imag: "http://www.playstationtrophies.org/images/trophies/4077/8ac.jpg"
+        },{
+            game: "Doctor Who: The Eternity Clock",
+            name: "Crate Work",
+            desc: "Use the gold bullion crate to smash your way out of the Bank of England",
+            imag: "http://www.playstationtrophies.org/images/trophies/1537/30C.jpg"
+        },{
+            game: "inFamous: Second Son",
+            name: "Shardcore",
+            desc: "Collect all the Blast Shards",
+            imag: "http://www.playstationtrophies.org/images/trophies/1936/dfb.jpg"
+        },{
+            game: "Jak and Daxter: The Precursor Legacy",
+            name: "Open Sez Me",
+            desc: "Open the Precursor Door",
+            imag: "http://www.playstationtrophies.org/images/trophies/1217/185.jpg"
+        },{
+            game: "LEGO Harry Potter: Years 5-7",
+            name: "Weasley Does It",
+            desc: "Use a Weasley box with every Weasley",
+            imag: "http://www.playstationtrophies.org/images/trophies/1031/38.jpg"
+        },{
+            game: "Magus",
+            name: "Thoroughly Rune-ed",
+            desc: "Equip a Rune for the first time.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2578/73F.jpg"
+        },{
+            game: "Master Reboot",
+            name: "Smack My Glitch Up",
+            desc: "Hit all the viruses in the Graveyard Level.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2524/3C4.jpg"
+        },{
+            game: "Oxenfree",
+            name: "Renjamin Spanklin",
+            desc: "Slap Ren in the face.",
+            imag: "http://www.playstationtrophies.org/images/trophies/4313/241.jpg"
+        },{
+            game: "Saints Row: The Third",
+            name: "Tank You Very Much",
+            desc: "Complete all instances of Tank Mayhem.",
+            imag: "http://www.playstationtrophies.org/images/trophies/746/28.jpg"
+        },{
+            game: "South Park: The Stick of Truth",
+            name: "Face Hoff",
+            desc: "You defeated Princess Kenny while looking like David Hasselhoff.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1314/A9C.jpg"
+        },{
+            game: "The Book of Unwritten Tales 2",
+            name: "Math Magician",
+            desc: "Ask the right math problem at the first go",
+            imag: "http://www.playstationtrophies.org/images/trophies/3959/0b4.jpg"
+        },{
+            game: "The LEGO Movie Videogame",
+            name: "Glues Your Daddy?",
+            desc: "Use the Kragle Gun to shoot Ma and Pa Bad Cop in the Relic Room.",
+            imag: "http://www.playstationtrophies.org/images/trophies/2483/2EA.jpg"
+        },{
+            game: "The Saboteur",
+            name: "Knockwurst",
+            desc: "You bested your opponents in the bar fight.",
+            imag: "http://www.playstationtrophies.org/images/trophies/298/02.jpg"
+        },{
+            game: "The Testament of Sherlock Holmes",
+            name: "Finders Key-pers",
+            desc: "You handled that with less than your usual – that is to say, you handled it well. You found the key!",
+            imag: "http://www.playstationtrophies.org/images/trophies/1737/FCB.jpg"
+        },{
+            game: "Thief",
+            name: "Cache Dispenser",
+            desc: "Use 40,000 gold",
+            imag: "http://www.playstationtrophies.org/images/trophies/2236/485.jpg"
+        },{
+            game: "Tomb Raider: Legend",
+            name: "This is Ghana Be Good",
+            desc: "Complete the level 'Ghana – Pursuing James Rutland'",
+            imag: "http://www.playstationtrophies.org/images/trophies/856/17.jpg"
+        },{
+            game: "Uncharted 3: Drake's Deception",
+            name: "He's Gonna Need a Sturgeon",
+            desc: "Hit three enemies with fish in the market",
+            imag: "http://www.playstationtrophies.org/images/trophies/373/47.jpg"
+        },{
+            game: "Uncharted 4: A Thief's End",
+            name: "On Porpoise",
+            desc: "Get three dolphins to follow the boat",
+            imag: "http://www.playstationtrophies.org/images/trophies/2388/147.jpg"
+        },{
+            game: "Whispering Willows",
+            name: "Irish He Was Alive",
+            desc: "Set Darby Free",
+            imag: "http://www.playstationtrophies.org/images/trophies/3764/825.jpg"
+        },{
+            game: "Zero Escape: Virtue's Last Reward",
+            name: "Why'd You Do That, You Dumas!",
+            desc: "Opened the eighth lock.",
+            imag: "http://www.playstationtrophies.org/images/trophies/1773/483.jpg"
         }]
     },{
         listName: "Trik's Troll Toll",
