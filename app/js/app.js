@@ -34,7 +34,6 @@ function updateListProgress(){
         var thisList = $(v).data("list-name");
         if(localStorage.getItem(thisList)){
             var totalEarned = localStorage.getItem(thisList);
-            allEarned = allEarned + parseInt(totalEarned);
 
             $(this).find(".total-earned").html(totalEarned);
 
@@ -57,15 +56,19 @@ function updateListProgress(){
         }
     });
 
+    allEarned = 0;
+    for(var i = 0; i < $(".total-earned").length; i++){
+        allEarned = allEarned + parseInt($("#list-" + i).find(".total-earned").html());
+    }
+    $("#all-earned").html(allEarned);
+
     var color;
     if(allEarned > allLists*.1){ color = "bronze" }
     if(allEarned > allLists*.25){ color = "silver" }
     if(allEarned > allLists*.5){ color = "gold" }
     if(allEarned > allLists*.75){ color = "platinum" }
     if(allEarned == allLists){ color = "perfect" }
-    $(".top-row").addClass(color);
-
-    $("#all-earned").html(allEarned);
+    $(".list-totals").addClass(color);
 }
 
 // Sorting by list progress
