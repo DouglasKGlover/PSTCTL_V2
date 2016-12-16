@@ -13,159 +13,89 @@
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css?35">
+<link rel="stylesheet" href="css/main.css?36">
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <body>
 
-<div ng-app="ctlApp" ng-controller="myCtrl">
+<!-- List of Lists -->
+<div class="list-of-lists container">
+  <br>
+  <img src="./img/PSTLists.png" alt="PST Lists">
 
-    <!--<div ng-repeat="list in lists|orderBy:orderByField:reverseSort">
-      <p>{{list.listName}}</p>
-    </div>-->
-<!--  <div class="container">
-    <div class="list row">
-      <a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">
-        List Name <span ng-show="orderByField == 'listName'"><span ng-show="!reverseSort">^</span><span ng-show="reverseSort">v</span></span></a>
-    </div>
-  </div>-->
-
-  <!-- List of Lists -->
-  <div class="list-of-lists container" ng-hide="showList">
-    <br>
-    <img src="./img/PSTLists.png" alt="PST Lists">
-
-    <!-- List Sorting -->
-    <!--<div class="list row top-row">
-      <div class="col-xs-6 col-md-1">
-        Sort by:
-      </div>
-
-      <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
-        <a href="#" onclick="sortByProgress()">Progress</a>
-      </div>
-
-      <div class="col-xs-12 col-md-9 col-md-pull-2">
-        &lt;!&ndash;<a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>&ndash;&gt;
-        <a href="#" onclick="sortByName()">Name</a>
-      </div>
-    </div>-->
-
-    <!-- List Totals -->
-    <div class="list row top-row">
-      <div class="col-xs-6 col-md-1">
-        <h3>Total</h3>
-      </div>
-
-      <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
-        <h3 class="text-right all-progress"><!-- Javascript: updateListProgress() --></h3>
-      </div>
-
-      <div class="col-xs-12 col-md-9 col-md-pull-2">
-
-      </div>
+  <!-- List Sorting -->
+  <div class="list row data-row top-row">
+    <div class="col-xs-6 col-md-1">
+      Sort by:
     </div>
 
-    <div ng-click="showList = ! showList" id="list-of-lists">
-      <div class="list row" data-sort="0" ng-repeat="list in lists|orderBy:orderByField:reverseSort" ng-click="select(list); getListLS()" id="{{list.listName}}">
-        <a href="#">
-          <div class="col-xs-6 col-md-1">
-            <img src="{{list.award}}" alt="{{list.listName}} Award Image" class="list-icon">
-          </div>
+    <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
+      <a href="#" onclick="sortByProgress()">Progress</a>
+    </div>
 
-          <div class="col-xs-6 col-md-2 col-md-push-9">
-            <h3 class="text-right list-progress"><span class="total-earned">0</span>/<span class="total-possible">{{list.trophies.length}}</span></h3>
-          </div>
-
-          <div class="col-xs-12 col-md-9 col-md-pull-2">
-            <h3 class="list-name">{{list.listName}}</h3>
-          </div>
-        </a>
-      </div>
+    <div class="col-xs-12 col-md-9 col-md-pull-2">
+      <!--<a href="#" ng-click="orderByField='listName'; reverseSort = !reverseSort">List Name</a>-->
+      <a href="#" onclick="sortByName()">Name</a>
     </div>
   </div>
 
-  <!-- List Selected -->
-  <select ng-model="selected" ng-change="getListLS(e)" class="form-control" ng-options="list as list.listName for list in lists" ng-show="showList" id="list-dropdown">
-  </select>
-
-  <div class="list-selected" ng-show="showList">
-    <!-- Header -->
-    <div class="header" style="background: url(img/headerbg.png) repeat, url('{{ selected.banner }}') no-repeat; background-size: auto, cover;">
-      <div class="content">
-        <!-- List Name -->
-        <h2 id="list_name">{{ selected.listName }}</h2>
-
-        <!-- Award Image -->
-        <img src="{{ selected.award }}" alt="">
-
-        <!-- Trophy Count -->
-        <h3><span id="trophy_count">0</span>/<span id="game_count">0</span>/{{ selected.trophies.length }}</h3>
-      </div>
+  <!-- List Totals -->
+  <div class="list row data-row">
+    <div class="col-xs-6 col-md-1">
+      <h3>Total</h3>
     </div>
 
-    <!-- Trophies -->
-    <div class="container trophy_list top">
-      <div class="row">
-        <div class="col-sm-10 col-xs-12 text-center">
-          <p class="no-margin"><button ng-show="showList" onclick="updateListProgress();" ng-click="showList = ! showList">Overview</button>&nbsp;<button ng-click="hide_collected()"><span id="hide_collected">Hide &#10004;</span></button>&nbsp;<button ng-click="get_bbcode()">BBCODE</button><span id="reset_bbcode">&nbsp;<button ng-click="reset_bbcode()">Clear</button></span>&nbsp;<a href="http://www.playstationtrophies.org/forum/custom-trophy-lists-and-clubs/237518-custom-list-sign-up-thread.html" target="_blank"><button>Sign Up!</button></a></p>
-        </div>
-        <div class="col-sm-1 col-xs-6 text-center">
-          <p class="no-margin"><strong>TROPHY</strong></p>
-        </div>
-        <div class="col-sm-1 col-xs-6 text-center">
-          <p class="no-margin"><strong>GAME</strong></p>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="row" id="bbcode">
-        <div class="col-xs-12">
-          <pre></pre>
-        </div>
-      </div>
+    <div class="col-xs-6 col-md-2 col-md-push-9 text-right">
+      <h3 class="text-right all-progress"><span id="all-earned">0</span>/<span id="all-total">0</span></h3>
     </div>
 
-    <div class="container trophy_list bottom">
-      <div ng-repeat="trophy in selected.trophies | orderBy: 'game'" class="trophy" id="t-{{ trophy.name }}">
-
-        <div class="row">
-          <div class="col-sm-12">
-            <!-- Game Name -->
-            <h3 class="game" id="g-{{ trophy.game }}">{{ trophy.game }}</h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-1">
-            <!-- Trophy Icon -->
-            <img src="{{ trophy.imag }}" alt="{{ trophy.game }} - {{ trophy.name }}" class="img-responsive">
-          </div>
-          <div class="col-sm-9">
-            <!-- Trophy Name & Description -->
-            <p><strong class="name">{{ trophy.name }}</strong></p>
-            <p>{{ trophy.desc }}</p>
-          </div>
-          <div class="col-sm-1 col-xs-6 text-center">
-            <!-- Trophy Checkbox -->
-            <input type="checkbox" ng-model="formElem.checkbox" ng-click="saveTrophy(formElem.checkbox)" id="c-{{ trophy.name }}" class="check-trophy"/>
-            <label for="c-{{ trophy.name }}" class="label-trophy">&#10004;</label>
-          </div>
-          <div class="col-sm-1 col-xs-6 text-center">
-            <!-- Game Checkbox -->
-            <input type="checkbox" ng-model="formElem.game_checkbox" ng-click="saveGame(formElem.game_checkbox)" id="c-{{ trophy.game }}" class="check-game"/>
-            <label for="c-{{ trophy.game }}" class="label-game">&#10004;</label>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="col-xs-12 col-md-9 col-md-pull-2"></div>
   </div>
 
-  <div class="back_top"><a href="#">Back to Top</a></div>
-
+  <div id="list-of-lists">
+    <!-- Javascript: showListOfLists() -->
+  </div>
 </div>
+
+<!-- List Selected -->
+<!--<select class="form-control" id="list-dropdown">&lt;!&ndash; Javascript: placeholder() &ndash;&gt;</select>-->
+
+<div id="list-selected">
+  <div id="list-header"><!-- Javascript --></div>
+
+  <!-- Trophies -->
+  <div class="container trophy_list top">
+    <div class="row">
+      <div class="col-sm-10 col-xs-12 text-center">
+        <p class="no-margin">
+          <button class="toggle-view">Overview</button>&nbsp;
+          <button class="hide-collected"><span class="collected-shown">Hide &#10004;</span><span class="collected-shown">Show &#10004;</span></button>&nbsp;
+          <button class="get-bbcode">BBCODE</button>&nbsp;
+          <span id="reset_bbcode"><button class="reset-bbcode">Clear</button>&nbsp;</span>
+          <a href="http://www.playstationtrophies.org/forum/newreply.php?do=newreply&noquote=1&p=4527773" target="_blank"><button>Sign Up!</button></a>
+        </p>
+      </div>
+      <div class="col-sm-1 col-xs-6 text-center">
+        <p class="no-margin"><strong>TROPHY</strong></p>
+      </div>
+      <div class="col-sm-1 col-xs-6 text-center">
+        <p class="no-margin"><strong>GAME</strong></p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row" id="bbcode">
+      <div class="col-xs-12">
+        <pre></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="container trophy_list bottom" id="trophy-list"><!-- Javascript --></div>
+</div>
+
+<div class="back_top"><a href="#">Back to Top</a></div>
 
 <footer>
   <p>&copy; 2016 <a href="http://douglasglover.ca" target="_blank">Douglas Glover</a></p>
@@ -173,8 +103,8 @@
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-48989090-8', 'auto');
@@ -182,7 +112,8 @@
 </script>
 
 <!-- Trophy Lists -->
-<script src="js/trophyLists.js?40"></script>
+<script src="js/lists.js?001"></script>
+<script src="js/app.js?001"></script>
 
 </body>
 </html>

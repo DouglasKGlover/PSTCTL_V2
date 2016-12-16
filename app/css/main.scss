@@ -88,7 +88,7 @@ select.form-control{
       color: $black;
     }
 
-    &:hover:not(.top-row){
+    &:hover:not(.data-row){
       transform: translateX(-10px);
       border-radius: 10px 0 0 10px;
     }
