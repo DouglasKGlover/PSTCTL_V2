@@ -1320,7 +1320,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/826/27.jpg"
     }]
 },{
-    listName: "Bread's \"Y U No Play These Gamez?!\"",
+    listName: "Bread's ''Y U No Play These Gamez?!''",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_bread.png",
     award: "http://www.playstationtrophies.org/forum/images/awards/cl_breadskin64.png",
     trophies: [{
@@ -2275,7 +2275,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/113/044.jpg"
     }]
 },{
-    listName: "Fletch's \"Valar Morghulis\"",
+    listName: "Fletch's ''Valar Morghulis''",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_fletch.png",
     award: "http://www.playstationtrophies.org/forum/images/awards/cl_fletchar64.png",
     trophies: [{
@@ -3445,7 +3445,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/3447/34b.jpg"
     }]
 },{
-    listName: "Harry's \"Bestest of Friends\"",
+    listName: "Harry's ''Bestest of Friends''",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_harry.png",
     award: "http://i.imgur.com/4E4mP4k.png",
     trophies: [{
@@ -4090,7 +4090,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/2756/79a.jpg"
     }]
 },{
-    listName: "Lab's \"Did Someone Say Chimichanga?\" List",
+    listName: "Lab's ''Did Someone Say Chimichanga?'' List",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_lab.png",
     award: "http://www.playstationtrophies.org/forum/images/awards/cl_labartu64.png",
     trophies: [{
@@ -5740,7 +5740,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/2250/09a.jpg"
     }]
 },{
-    listName: "Phantom's \"Odds and Sods\" List",
+    listName: "Phantom's ''Odds and Sods'' List",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_phantom.png",
     award: "http://www.playstationtrophies.org/forum/images/awards/cl_dp64.png",
     trophies: [{
@@ -6050,7 +6050,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/251/03.jpg"
     }]
 },{
-    listName: "Reys' \"I'm Mr. Meeseeks\" List",
+    listName: "Reys' ''I'm Mr. Meeseeks'' List",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_reys.png",
     award: "http://i.imgur.com/F8z7PEU.png",
     trophies: [{
@@ -6547,7 +6547,7 @@ var lists = [{
         }
     ]
 },{
-    listName: "Shadow's \"Box of Variety\"",
+    listName: "Shadow's ''Box of Variety''",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_shadow.png",
     award: "http://www.playstationtrophies.org/forum/images/awards/cl_shadow64.png",
     trophies: [{
@@ -7217,7 +7217,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/113/035.jpg"
     }]
 },{
-    listName: "Terminator's \"Journey to Salvation\"",
+    listName: "Terminator's ''Journey to Salvation''",
     banner: "http://www.playstationtrophies.org/images/news/cl_banner_terminator.png",
     award: "http://www.playstationtrophies.org/forum/images/awards/cl_terminator64.png",
     trophies: [{

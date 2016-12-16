@@ -1,32 +1,3 @@
-/* Add trophy total to dropdown menu "Earned/Total" */
-/*function updateDropdown(){
-    $("#list-dropdown option").each(function(k,v){
-        if(localStorage.getItem(v.label)){
-            var listTrophyTotal = 0;
-            $($scope.lists).each(function(lk,lv){
-                if(v.label == lv.listName){
-                    listTrophyTotal = lv.trophies.length;
-                }
-            });
-
-            v.text = v.label + " (" + localStorage.getItem(v.label) + "/" + listTrophyTotal + ")";
-            v.label = v.label + " (" + localStorage.getItem(v.label) + "/" + listTrophyTotal + ")";
-        }
-    });
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Overview Page */
 // Create the List of lists
 var allLists = 0;
@@ -125,8 +96,10 @@ function toggleView(){
 }
 
 // Show selected list
+var selectedListNumber;
 function listSelected(clickedList){
-    var selectedList = lists[clickedList[0].id.replace("list-","")];
+    selectedListNumber = clickedList[0].id.replace("list-","");
+    var selectedList = lists[selectedListNumber];
     toggleView();
 
     // Fill out trophy List
@@ -256,6 +229,8 @@ function saveTrophy(e) {
     } else {
         localStorage.removeItem($("#list_name").html());
     }
+
+    updateListProgress();
 }
 
 // Click Game Checkbox
