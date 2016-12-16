@@ -1,14 +1,30 @@
+/* Variables & Mixins */
+$white: #f4f4f4;
+$offwhite: #e8e8e8;
+$black: #141414;
+$bronze: #d8ad6c;
+$silver: #cecece;
+$gold: #ffb200;
+$platinum: #6499ff;
+
+@mixin gradientBG($from, $to){
+  background: $to;
+  background: -moz-linear-gradient(left, $from 0%, $to 100%);
+  background: -webkit-linear-gradient(left, $from 0%, $to 100%);
+  background: linear-gradient(to right, $from 0%, $to 100%);
+}
+
 /* Overrides */
 html, body{
   margin: 0;
-  background: #e8e8e8;
+  background: $offwhite;
 }
 select.form-control{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: white;
+  background: $white;
   z-index: 999;
 }
 
@@ -31,12 +47,12 @@ select.form-control{
 }
 
 /* Header */
-.header{
+#list-header{
   position: relative;
   text-align: center;
   padding: 12% 0 3% 0;
   margin-bottom: 50px;
-  box-shadow: inset 0 0 100px black;
+  box-shadow: inset 0 0 100px $black;
 
   .content{
     width: 100%;
@@ -45,12 +61,12 @@ select.form-control{
       display: block;
       width: 95%;
       margin: 1em auto;
-      color: white !important;
-      text-shadow: 2px 2px 3px black;
+      color: $white !important;
+      text-shadow: 2px 2px 3px $black;
     }
 
     img{
-      box-shadow: 2px 2px 3px black;
+      box-shadow: 2px 2px 3px $black;
     }
   }
 }
@@ -61,28 +77,25 @@ select.form-control{
   .list {
     opacity: 1;
     display: block;
-    background: white;
-    border: 1px solid lightgray;
+    background: $white;
+    border: 1px solid $silver;
     border-bottom: none;
     padding: 10px;
     cursor: pointer;
     transition: background .25s linear, opacity .25s linear, transform .25s linear, border-radius .25s linear;
 
     a {
-      color: #333;
+      color: $black;
     }
 
     &:hover:not(.top-row){
       transform: translateX(-10px);
-      border-radius: 10px;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+      border-radius: 10px 0 0 10px;
     }
 
     &.top-row {
       margin-top: 10px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      border-radius: 10px 10px 0 0;
 
       h3{
         margin: 0.5em 0 0.25em 0;
@@ -90,39 +103,14 @@ select.form-control{
     }
 
     &:last-of-type {
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      border-bottom: 1px solid lightgray;
+      border-radius: 0 0 10px 10px;
+      border-bottom: 1px solid $silver;
     }
 
-    &.bronze {
-      background: sandybrown;
-      background: -moz-linear-gradient(left, #ffffff 0%, #d8ad6c 100%);
-      background: -webkit-linear-gradient(left, #ffffff 0%, #d8ad6c 100%);
-      background: linear-gradient(to right, #ffffff 0%, #d8ad6c 100%);
-    }
-
-    &.silver {
-      background: silver;
-      background: -moz-linear-gradient(left, #ffffff 0%, #cecece 100%);
-      background: -webkit-linear-gradient(left, #ffffff 0%, #cecece 100%);
-      background: linear-gradient(to right, #ffffff 0%, #cecece 100%);
-    }
-
-    &.gold {
-      background: orange;
-      background: -moz-linear-gradient(left, #ffffff 0%, #ffb200 100%);
-      background: -webkit-linear-gradient(left, #ffffff 0%, #ffb200 100%);
-      background: linear-gradient(to right, #ffffff 0%, #ffb200 100%);
-    }
-
-    &.platinum {
-      background: lightblue;
-      background: -moz-linear-gradient(left, #ffffff 0%, #6499ff 100%);
-      background: -webkit-linear-gradient(left, #ffffff 0%, #6499ff 100%);
-      background: linear-gradient(to right, #ffffff 0%, #6499ff 100%);
-    }
-
+    &.bronze { @include gradientBG($white, $bronze); }
+    &.silver { @include gradientBG($white, $silver); }
+    &.gold { @include gradientBG($white, $gold); }
+    &.platinum { @include gradientBG($white, $platinum); }
     &.perfect {
       background: rgb(9, 9, 9);
       background: -moz-linear-gradient(-45deg, rgba(76, 76, 76, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(17, 17, 17, 1) 60%, rgba(19, 19, 19, 1) 100%);
@@ -136,9 +124,12 @@ select.form-control{
 }
 
 /* Trophy List */
+#list-selected{
+  display: none;
+}
 .trophy_list{
-  background: white;
-  border: 1px solid #ccc;
+  background: $white;
+  border: 1px solid $silver;
 
   #bbcode, #reset_bbcode{
     display: none;
@@ -146,17 +137,14 @@ select.form-control{
 
   &.top{
     border-bottom: none;
-    padding-top: 1em;
-    padding-bottom: .5em;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding: 1em 0 .5em 0;
+    border-radius: 10px 10px 0 0;
   }
 
   &.bottom{
     padding: 0 0 1em 0;
     margin-bottom: 2em;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0 0 10px 10px;
   }
 
   .trophy{
@@ -167,17 +155,8 @@ select.form-control{
       border: 0;
     }
 
-    &.own_game{
-      background: -moz-linear-gradient(left,  #ffffff 0%, #ffe6b0 100%);
-      background: -webkit-linear-gradient(left,  #ffffff 0%,#ffe6b0 100%);
-      background: linear-gradient(to right,  #ffffff 0%,#ffe6b0 100%);
-    }
-
-    &.earned_trophy{
-      background: -moz-linear-gradient(left,  #ffffff 0%, #cddeff 100%);
-      background: -webkit-linear-gradient(left,  #ffffff 0%,#cddeff 100%);
-      background: linear-gradient(to right,  #ffffff 0%,#cddeff 100%);
-    }
+    &.own_game{ @include gradientBG($white, $gold); }
+    &.earned_trophy{ @include gradientBG($white, $platinum); }
 
     input[type="checkbox"]{
       visibility: hidden;
@@ -211,4 +190,12 @@ footer{
   z-index: 999;
   position: relative;
   margin: 3em 1em 1em 1em;
+}
+
+.collected-shown{
+  display: block;
+
+  &:last-of-type{
+    display: none;
+  }
 }
