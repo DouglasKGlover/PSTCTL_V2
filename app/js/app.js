@@ -292,4 +292,66 @@ $(document).ready(function () {
         toggleView();
     });
 
+
+
+
+
+
+
+    /* Testing */
+    function sort_unique(arr) {
+        return arr.sort(function(a,b){
+            return (a > b) ? 1 : -1;
+        }).filter(function(el,i,a) {
+            return (i==a.indexOf(el));
+        });
+    }
+
+    // console.log(lists);
+    var gamesList = [];
+    for(var a = 0; a < lists.length; a++){
+        // console.log(lists[a].trophies);
+        for(var b = 0; b < lists[a].trophies.length; b++){
+            var gameName = lists[a].trophies[b].game;
+            gamesList.push(gameName);
+        }
+    }
+    gamesList = sort_unique(gamesList);
+
+    // console.log(gamesList);
+
+    $(".get-games").click(function(){
+        for(var i = 0; i < gamesList.length; i++){
+            $("#all-games").append("" +
+                "<div id=\"game-list-"+ i +"\">" +
+                "<strong>" + gamesList[i] + "</strong><br/>" +
+                "<span class=\"game-list-trophies\"></span>" +
+                "</div>" +
+                "<br/>");
+        }
+
+        for(var a = 0; a < lists.length; a++){
+            // console.log(lists[a].trophies);
+            for(var b = 0; b < lists[a].trophies.length; b++){
+                var trophyName = lists[a].trophies[b].name,
+                    gameName = lists[a].trophies[b].game,
+                    listName = lists[a].listName;
+
+                if($.inArray(gameName, gamesList) !== -1){
+                    var gameID = $.inArray(gameName, gamesList),
+                        trophyGOT = "";
+
+                    if(localStorage.getItem("t-" + trophyName)){
+                        trophyGOT = " <span style='color:red'>&#10004;</span>";
+                    }
+
+                    // console.log(trophyName + " found at: " + $.inArray(gameName, gamesList));
+                    $("#game-list-" + gameID).find(".game-list-trophies").append("<span class=\"game-list-trophy "+ trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() +"\">" + trophyName + trophyGOT +"<br/></span>");
+                    $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() + ":not(:first)").remove();
+                    $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase()).append("<em>"+ listName +"</em><br/>");
+                }
+            }
+        }
+    });
+
 });

@@ -3865,7 +3865,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/2971/b9b.jpg"
     },{
         game: "LittleBigPlanet",
-        name: " Incredible Height!",
+        name: "Incredible Height!",
         desc: "Travel to an incredible height",
         imag: "http://www.playstationtrophies.org/images/trophies/14/18.jpg"
     },{
@@ -7766,7 +7766,7 @@ var lists = [{
         desc: "Clear up a tangled situation in one attempt",
         imag: "http://www.playstationtrophies.org/images/trophies/3501/540.jpg"
     },{
-        game: "Broken Sword 5: The Serpent's Curse",
+        game: "Broken Sword 5 - The Serpent's Curse",
         name: "Notorious P.U.G.",
         desc: "Found all the hidden pugs in the neighbour's apartment",
         imag: "http://www.playstationtrophies.org/images/trophies/3701/9ad.jpg"
