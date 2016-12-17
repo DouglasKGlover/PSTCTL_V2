@@ -176,11 +176,9 @@ select.form-control{
       color: rgba(0,0,0,0);
       font-size: 1.2em;
       border-radius: 5px;
-      transition: color .25s linear, background .25s linear;
 
       &:hover{
         cursor: pointer;
-        color: rgba(0,0,0,0.5);
       }
     }
   }
