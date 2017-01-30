@@ -182,6 +182,26 @@ select.form-control{
       }
     }
   }
+
+  &.all-games{
+
+    .trophy{
+      cursor: pointer;
+      padding-bottom: 0;
+
+      .game-list-trophies{
+        display: none;
+
+        .all-games-trophy h4{
+          padding-left: 20px;
+        }
+
+        .listsList{
+          padding-left: 40px;
+        }
+      }
+    }
+  }
 }
 
 footer{
@@ -196,13 +216,4 @@ footer{
   &:last-of-type{
     display: none;
   }
-}
-
-
-
-
-/* Testing */
-.game-list-trophy {
-  display: block;
-  margin-bottom: 1em;
 }
