@@ -324,6 +324,9 @@ $(document).ready(function () {
     $(".get-games").click(function(){
         toggleView();
 
+        // Analytics
+        ga('send', 'pageview', "All Games Checklist");
+
         // Fill out trophy List
         var trophyCount = 0,
             gameCount = 0;
@@ -378,18 +381,23 @@ $(document).ready(function () {
             }
         }
 
-        // Analytics
-        // ga('send', 'pageview', "All Games Checklist");
+        // Fill out header
+        $("#list-header")
+            .html("" +
+                "<div class=\"content\">" +
+                "<h2 id=\"list_name\">"+ selectedList.listName +"</h2>" +
+                "<img src=\""+ selectedList.award +"\" alt=\""+ selectedList.listName +" Site Award\">" +
+                "<h3><span id=\"trophy_count\">"+ trophyCount +"</span>/<span id=\"game_count\">"+ gameCount +"</span>/"+ selectedList.trophies.length +"</h3>" +
+                "</div>" +
+                "")
+            .attr("style","background: url('img/headerbg.png') repeat, url('"+ selectedList.banner +"') no-repeat; background-size: auto, cover;");
 
     });
 
-    /*$(".all-games").click(function(e){
-        // $(".trophy").find(".game-list-trophies").show();
-        console.log($(e));
-    });*/
-
+    // Click game on all games list, show trophies
     $("#trophy-list").on("click", ".all-trophy", function(e){
         $(this).find(".game-list-trophies").slideToggle(200);
+        ga('send', 'event', "Games List / Clicked Game", $(this).find("h3").text());
     });
 
 });
