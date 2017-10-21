@@ -13,20 +13,26 @@
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="css/main.css?37">
+<link rel="stylesheet" href="css/main.css?38">
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <body>
 
-<div id="games-list">
-  <button class="get-games">Get Games</button>
+<!--<div id="games-list" class="list row data-row">
   <div id="all-games"></div>
-</div>
+</div>-->
 
 <!-- List of Lists -->
 <div class="list-of-lists container">
   <br>
-  <img src="./img/PSTLists.png" alt="PST Lists">
+  <div class="row">
+    <div class="col-xs-6">
+      <img src="./img/PSTLists.png" alt="PST Lists">
+    </div>
+    <div class="col-xs-6 text-right">
+      <button class="get-games">By Game</button>
+    </div>
+  </div>
 
   <!-- List Sorting -->
   <div class="list row data-row top-row">
@@ -116,8 +122,8 @@
 </script>
 
 <!-- Trophy Lists -->
-<script src="js/lists.js?001"></script>
-<script src="js/app.js?001"></script>
+<script src="js/lists.js?010"></script>
+<script src="js/app.js?010"></script>
 
 </body>
 </html>
