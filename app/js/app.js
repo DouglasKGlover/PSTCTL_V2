@@ -95,6 +95,7 @@ function sortByName(){
 
 // Toggle between Overview and List
 function toggleView(){
+    $(".all-games").removeClass("all-games");
     $(".list-of-lists, #list-selected").toggle();
 }
 
@@ -170,10 +171,10 @@ function listSelected(clickedList){
 
     // Reset hide/show button
     /*$("#hide_collected").html("Hide &#10004;");
-    hide_toggle = 0;
-    $("input.check-trophy:checked").each(function(){
-        $(this).closest(".trophy").show();
-    });*/
+     hide_toggle = 0;
+     $("input.check-trophy:checked").each(function(){
+     $(this).closest(".trophy").show();
+     });*/
 
     // Analytics
     ga('send', 'pageview', selectedList.listName);
@@ -321,17 +322,35 @@ $(document).ready(function () {
     // console.log(gamesList);
 
     $(".get-games").click(function(){
+        toggleView();
+
+        // Analytics
+        ga('send', 'pageview', "All Games Checklist");
+
+        // Fill out trophy List
+        var trophyCount = 0,
+            gameCount = 0;
+        $("#trophy-list").html("");
+
         for(var i = 0; i < gamesList.length; i++){
-            $("#all-games").append("" +
-                "<div id=\"game-list-"+ i +"\">" +
-                "<strong>" + gamesList[i] + "</strong><br/>" +
-                "<span class=\"game-list-trophies\"></span>" +
+            $("#trophy-list").addClass("all-games").append("" +
+                "<div id=\"game-list-"+ i +"\" class='trophy all-trophy'>" +
+                "<div class=\"row\">" +
+                "<div class=\"col-sm-12\">" +
+                "<h3>" + gamesList[i] + "</h3>" +
                 "</div>" +
-                "<br/>");
+                "</div>" +
+                "" +
+                "<div class=\"row game-list-trophies\">" +
+                "<div class=\"col-sm-12\">" +
+                "</div>" +
+                "</div>" +
+                "</div>" +
+                "");
         }
 
+        // Iterate over games and add trophies, and the lists they show up in
         for(var a = 0; a < lists.length; a++){
-            // console.log(lists[a].trophies);
             for(var b = 0; b < lists[a].trophies.length; b++){
                 var trophyName = lists[a].trophies[b].name,
                     gameName = lists[a].trophies[b].game,
@@ -339,19 +358,46 @@ $(document).ready(function () {
 
                 if($.inArray(gameName, gamesList) !== -1){
                     var gameID = $.inArray(gameName, gamesList),
-                        trophyGOT = "";
+                        trophyGOT;
 
                     if(localStorage.getItem("t-" + trophyName)){
-                        trophyGOT = " <span style='color:red'>&#10004;</span>";
+                        trophyGOT = true;
                     }
 
                     // console.log(trophyName + " found at: " + $.inArray(gameName, gamesList));
-                    $("#game-list-" + gameID).find(".game-list-trophies").append("<span class=\"game-list-trophy "+ trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() +"\">" + trophyName + trophyGOT +"<br/></span>");
-                    $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() + ":not(:first)").remove();
-                    $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase()).append("<em>"+ listName +"</em><br/>");
+                    $("#game-list-" + gameID).find(".game-list-trophies .col-sm-12").append("" +
+                        "<div class=\"row game-list-trophy\">" +
+                        "<div class=\"col-xs-12 all-games-trophy\">" +
+                        "<h4 class=\"game-list-trophy-name "+ trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() +"\">" + trophyName + "</h4>" +
+                        "<div class=\"col-xs-12 listsList\"></div>" +
+                        "</div>" +
+                        "</div>" +
+                        "");
+                    $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase()).parent().find(".listsList").append("<p><em>"+ listName +"</em></p>");
                 }
+
+                // Remove duplicate instances of a trophy per game
+                $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() + ":not(:first)").remove();
             }
         }
+
+        // Fill out header
+        $("#list-header")
+            .html("" +
+                "<div class=\"content\">" +
+                "<h2 id=\"list_name\">"+ selectedList.listName +"</h2>" +
+                "<img src=\""+ selectedList.award +"\" alt=\""+ selectedList.listName +" Site Award\">" +
+                "<h3><span id=\"trophy_count\">"+ trophyCount +"</span>/<span id=\"game_count\">"+ gameCount +"</span>/"+ selectedList.trophies.length +"</h3>" +
+                "</div>" +
+                "")
+            .attr("style","background: url('img/headerbg.png') repeat, url('"+ selectedList.banner +"') no-repeat; background-size: auto, cover;");
+
+    });
+
+    // Click game on all games list, show trophies
+    $("#trophy-list").on("click", ".all-trophy", function(e){
+        $(this).find(".game-list-trophies").slideToggle(200);
+        ga('send', 'event', "Games List / Clicked Game", $(this).find("h3").text());
     });
 
 });
