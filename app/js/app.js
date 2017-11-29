@@ -319,13 +319,15 @@ $(document).ready(function () {
     }
     gamesList = sort_unique(gamesList);
 
-    // console.log(gamesList);
-
     $(".get-games").click(function(){
         toggleView();
 
         // Analytics
         ga('send', 'pageview', "All Games Checklist");
+
+        $("#list-header").hide();
+        $(".container.trophy_list.top").css("margin-top","20px");
+        $(".container.trophy_list.top").html("<div class='col-xs-12'><p>Refresh the page to go back.</p></div>");
 
         // Fill out trophy List
         var trophyCount = 0,
@@ -358,16 +360,16 @@ $(document).ready(function () {
 
                 if($.inArray(gameName, gamesList) !== -1){
                     var gameID = $.inArray(gameName, gamesList),
-                        trophyGOT;
+                        trophyGOT = "";
 
                     if(localStorage.getItem("t-" + trophyName)){
-                        trophyGOT = true;
+                        trophyGOT = "checked";
                     }
 
-                    // console.log(trophyName + " found at: " + $.inArray(gameName, gamesList));
                     $("#game-list-" + gameID).find(".game-list-trophies .col-sm-12").append("" +
                         "<div class=\"row game-list-trophy\">" +
                         "<div class=\"col-xs-12 all-games-trophy\">" +
+                        "<input type=\"checkbox\" id=\"bygame-checkbox-trophy-"+ a +"-" + b + "\" class=\"bygame-check-trophy\" data-trophy-name=\"t-" + trophyName + "\" "+ trophyGOT +"/>" +
                         "<h4 class=\"game-list-trophy-name "+ trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() +"\">" + trophyName + "</h4>" +
                         "<div class=\"col-xs-12 listsList\"></div>" +
                         "</div>" +
@@ -377,7 +379,7 @@ $(document).ready(function () {
                 }
 
                 // Remove duplicate instances of a trophy per game
-                $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() + ":not(:first)").remove();
+                $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() + ":not(:first)").parent().remove();
             }
         }
 
@@ -395,9 +397,21 @@ $(document).ready(function () {
     });
 
     // Click game on all games list, show trophies
-    $("#trophy-list").on("click", ".all-trophy", function(e){
-        $(this).find(".game-list-trophies").slideToggle(200);
+    $("#trophy-list").on("click", ".all-trophy>.row:first-of-type", function(e){
+        $(this).parent().find(".game-list-trophies").slideToggle(200).parent().toggleClass("active");
         ga('send', 'event', "Games List / Clicked Game", $(this).find("h3").text());
     });
 
+    $("#trophy-list").on("click", ".bygame-check-trophy", function(e){
+        var checked = e.target.checked,
+            thisTrophy = $(this).data("trophy-name");
+
+        ga("send", "event", "Games List / Clicked Game", "Checked a trophy on a game", thisTrophy);
+
+        if(checked){
+            localStorage.setItem(thisTrophy, true);
+        } else {
+            localStorage.removeItem(thisTrophy);
+        }
+    });
 });
