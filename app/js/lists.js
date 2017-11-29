@@ -1883,6 +1883,31 @@ var lists = [{
         name: "250 Headshots",
         desc: "Defeat 250 enemies with headshots",
         imag: "http://www.playstationtrophies.org/images/trophies/4012/e89.jpg"
+    },{
+        game: "Crash Bandicoot 2: Cortex Strikes Back",
+        name: "A Helping Paw",
+        desc: "Don't feel guilty about jumping on him.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5957/bc2.jpg"
+    },{
+        game: "Call of Duty: Modern Warfare Remastered",
+        name: "The Shot",
+        desc: "Complete 'All Ghillied Up' and 'One Shot, One Kill' on Veteran difficulty.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4594/e4c.jpg"
+    },{
+        game: "Ratchet & Clank",
+        name: "I Hate Lamp",
+        desc: "Break every lamp in Aleero City.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2842/30b.jpg"
+    },{
+        game: "The Walking Dead: A New Frontier",
+        name: "Unexpected Guests",
+        desc: "Completed Chapter 2 of Episode 1.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4825/002.jpg"
+    },{
+        game: "Uncharted 4: A Thief's End",
+        name: "You Have a Head for this Business",
+        desc: "Defeat 50 Enemies with headshots.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2388/4e7.jpg"
     }]
 },{
     listName: "DaFaztFingaz' Faztezt Fingaz",
