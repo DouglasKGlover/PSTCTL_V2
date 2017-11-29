@@ -139,7 +139,7 @@ var lists = [{
         desc: "You got a turkey in 10 pin bowling.",
         imag: "http://www.ps3trophies.org/images/trophies/33/008.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Gold Finger",
         desc: "The Lizard - Cut your finger using axe, knife or pliers + disinfect or cauterize the wound",
         imag: "http://www.ps3trophies.org/images/trophies/321/25.jpg"
@@ -589,7 +589,7 @@ var lists = [{
         desc: "Defeat an enemy by destroying the object they stand on.",
         imag: "http://www.playstationtrophies.org/images/trophies/571/29.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Excessive Force",
         desc: "Use a Karmic Streak attack to defeat exactly one enemy",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/54c.jpg"
@@ -1099,7 +1099,7 @@ var lists = [{
         desc: "Defeat an enemy as a chicken",
         imag: "http://www.playstationtrophies.org/images/trophies/1568/848.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Smart Girl",
         desc: "The Doc - Do not drink the Doc's beverage",
         imag: "http://www.playstationtrophies.org/images/trophies/321/34.jpg"
@@ -1639,7 +1639,7 @@ var lists = [{
         desc: "Capture the Housefly",
         imag: "http://www.playstationtrophies.org/images/trophies/3234/72d.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "The Chef",
         desc: "Eureka - Prepare a good omelette on time",
         imag: "http://www.playstationtrophies.org/images/trophies/321/37.jpg"
@@ -2274,7 +2274,7 @@ var lists = [{
         desc: "Destroy 50 scarab eggs before they hatch",
         imag: "http://www.playstationtrophies.org/images/trophies/1870/38D.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Smart Girl",
         desc: "The Doc - Do not drink the Doc's beverage",
         imag: "http://www.playstationtrophies.org/images/trophies/321/34.jpg"
@@ -2619,7 +2619,7 @@ var lists = [{
         desc: "Complete the Challenge of the Gods",
         imag: "http://www.playstationtrophies.org/images/trophies/263/3.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Electrified",
         desc: "The Butterfly - Complete the Butterfly Trial successfully",
         imag: "http://www.playstationtrophies.org/images/trophies/321/22.jpg"
@@ -3149,7 +3149,7 @@ var lists = [{
         desc: "50 Hostage Saves",
         imag: "http://www.playstationtrophies.org/images/trophies/2878/332.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Reconciliation",
         desc: "Finish the story with Good Karma",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/000.jpg"
@@ -3489,7 +3489,7 @@ var lists = [{
         desc: "Get Ryouta ending (ED no.01)",
         imag: "http://www.playstationtrophies.org/images/trophies/3230/9a7.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Unstoppable (i)",
         desc: "Finish the game on Expert difficulty",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/3db.jpg"
@@ -3669,7 +3669,7 @@ var lists = [{
         desc: "Play the Horse Races game at the Fair with three of your friends.",
         imag: "http://www.playstationtrophies.org/images/trophies/121/012.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Good Friends",
         desc: "The Park - Play two games with Shaun successfully and buy him candy",
         imag: "http://www.playstationtrophies.org/images/trophies/321/08.jpg"
@@ -4204,7 +4204,7 @@ var lists = [{
         desc: "Entertain the Persian harem",
         imag: "http://www.playstationtrophies.org/images/trophies/1068/12.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Perfect Crime",
         desc: "Clean Manfred's shop of evidence + Let Lauren, Hassan and Kramer die + Kill Madison and Jayden",
         imag: "http://www.playstationtrophies.org/images/trophies/321/56.jpg"
@@ -4654,7 +4654,7 @@ var lists = [{
         desc: "Get the true ending.",
         imag: "https://www.playstationtrophies.org/images/trophies/4811/c2e.jpg"
     },{
-        game: "Doom",
+        game: "DOOM",
         name: "Overclocked",
         desc: "Fully upgrade all Praetor Suit categories on a single campaign run.",
         imag: "https://www.playstationtrophies.org/images/trophies/1237/9a7.jpg"
@@ -4854,7 +4854,7 @@ var lists = [{
         desc: "Make the angelitos cry.",
         imag: "http://www.playstationtrophies.org/images/trophies/2909/315.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Perfect Crime",
         desc: "Clean Manfred's shop of evidence + Let Lauren, Hassan and Kramer die + Kill Madison and Jayden + Origami Killer free",
         imag: "http://www.playstationtrophies.org/images/trophies/321/56.jpg"
@@ -5024,7 +5024,7 @@ var lists = [{
         desc: "Have Olivia recite one of your poems.",
         imag: "http://www.playstationtrophies.org/images/trophies/2909/271.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Nerd",
         desc: "Find all clues using ARI (Crime scene + Mad Jack + Fish tank) and find the Origami Killer",
         imag: "http://www.playstationtrophies.org/images/trophies/321/54.jpg"
@@ -5034,7 +5034,7 @@ var lists = [{
         desc: "Locate room 899",
         imag: "http://www.playstationtrophies.org/images/trophies/678/2FB.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Coloring Inside the Lines",
         desc: "Complete all the Stencil Art",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/df3.jpg"
@@ -5379,7 +5379,7 @@ var lists = [{
         desc: "Pick up 50% of blast shards scattered around New Marais.",
         imag: "http://www.playstationtrophies.org/images/trophies/571/05.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Bweep! Bweep! Bweep!",
         desc: "Collect half the Blast Shards",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/092.jpg"
@@ -5729,7 +5729,7 @@ var lists = [{
         desc: "Kill Hermes and acquire his Boots",
         imag: "http://www.playstationtrophies.org/images/trophies/3489/ec7.jpg"
     },{
-        game: "InFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Everyone's a Critic",
         desc: "Take out 10 street musicians",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/afe.jpg"
@@ -5874,7 +5874,7 @@ var lists = [{
         desc: "Discerned the full attributes of 100 enemies.",
         imag: "http://www.playstationtrophies.org/images/trophies/307/35.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Nerd",
         desc: "Find all clues using ARI (Crime scene + Mad Jack + Fish tank) and find the Origami Killer",
         imag: "http://www.playstationtrophies.org/images/trophies/321/54.jpg"
@@ -6054,7 +6054,7 @@ var lists = [{
         desc: "Die enough to get offered Easy Mode",
         imag: "http://www.playstationtrophies.org/images/trophies/263/1.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "I'm a Killer...",
         desc: "The Shark - Kill the Drug Dealer",
         imag: "http://www.playstationtrophies.org/images/trophies/321/32.jpg"
@@ -6224,7 +6224,7 @@ var lists = [{
         desc: "Complete your path to enlightenment... or not",
         imag: "http://www.playstationtrophies.org/images/trophies/687/05c.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Four Heroes",
         desc: "Complete the story with four characters alive",
         imag: "http://www.playstationtrophies.org/images/trophies/321/52.jpg"
@@ -6704,7 +6704,7 @@ var lists = [{
         desc: "Achieve 100% completion.",
         imag: "http://www.playstationtrophies.org/images/trophies/4198/eb7.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "All Endings",
         desc: "See all endings",
         imag: "http://www.playstationtrophies.org/images/trophies/321/57.jpg"
@@ -7481,7 +7481,7 @@ var lists = [{
         desc: "Complete the game on Easy difficulty.",
         imag: "http://www.playstationtrophies.org/images/trophies/397/09.jpg"
     },{
-        game: "Tales From The Borderlands",
+        game: "Tales from the Borderlands",
         name: "Welcome to Pandora, Kiddos",
         desc: "Completed Chapter 1 of Episode 1",
         imag: "http://www.playstationtrophies.org/images/trophies/3247/5a3.jpg"
@@ -7731,7 +7731,7 @@ var lists = [{
         desc: "Sonic The Hedgehog: Obtain a Chaos Emerald",
         imag: "http://www.playstationtrophies.org/images/trophies/173/22.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Fugitive",
         desc: "Manage to escape Blake in the subway station",
         imag: "http://www.playstationtrophies.org/images/trophies/321/27.jpg"
@@ -8231,7 +8231,7 @@ var lists = [{
         desc: "Kill 10 Bitch Babies with Deflection",
         imag: "http://www.playstationtrophies.org/images/trophies/671/39.jpg"
     },{
-        game: "Assassin's Creed: Brotherhood",
+        game: "Assassin's Creed Brotherhood",
         name: "Principessa in Another Castello",
         desc: "Complete DNA Sequence 4.",
         imag: "http://www.playstationtrophies.org/images/trophies/362/07.jpg"
@@ -8281,7 +8281,7 @@ var lists = [{
         desc: "Use the gold bullion crate to smash your way out of the Bank of England",
         imag: "http://www.playstationtrophies.org/images/trophies/1537/30C.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Shardcore (s)",
         desc: "Collect all the Blast Shards",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/dfb.jpg"
@@ -8426,7 +8426,7 @@ var lists = [{
         desc: "Acquire Blade of Artemis",
         imag: "http://www.playstationtrophies.org/images/trophies/263/1.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "Coloring Inside the Lines",
         desc: "Complete all the Stencil Art",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/df3.jpg"
@@ -8786,7 +8786,7 @@ var lists = [{
         desc: "Collected a total of 40,000 precious gems.",
         imag: "http://www.playstationtrophies.org/images/trophies/1392/39.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "FBI Investigator",
         desc: "Crime Scene - Find all clues related to the Origami Killer in the scene",
         imag: "http://www.playstationtrophies.org/images/trophies/321/07.jpg"
@@ -9146,7 +9146,7 @@ var lists = [{
         desc: "Play the game with an unlocked costume",
         imag: "http://www.playstationtrophies.org/images/trophies/1068/34.jpg"
     },{
-        game: "HEAVY RAIN",
+        game: "Heavy Rain",
         name: "Butcher (h)",
         desc: "The lizard, cut your finger using saw or scissors",
         imag: "http://www.playstationtrophies.org/images/trophies/321/26.jpg"
@@ -9371,7 +9371,7 @@ var lists = [{
         desc: "Earn full positive Karma.",
         imag: "http://www.playstationtrophies.org/images/trophies/571/12.jpg"
     },{
-        game: "inFAMOUS Second Son",
+        game: "inFamous Second Son ",
         name: "True Hero",
         desc: "Achieve Level 5 Good Karma",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/a42.jpg"
