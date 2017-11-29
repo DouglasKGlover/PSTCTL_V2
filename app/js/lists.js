@@ -979,7 +979,7 @@ var lists = [{
         desc: "Awarded for finding all hidden treasure chests.",
         imag: "http://www.playstationtrophies.org/images/trophies/1399/B5C.jpg"
     },{
-        game: "NIER",
+        game: "NieR",
         name: "Educated Warrior",
         desc: "Read the final novel segment.",
         imag: "http://www.playstationtrophies.org/images/trophies/379/17.jpg"
@@ -1449,7 +1449,7 @@ var lists = [{
         desc: "Earn the top score objective in any level",
         imag: "http://www.playstationtrophies.org/images/trophies/433/07.jpg"
     },{
-        game: "Life Is Strange",
+        game: "Life is Strange",
         name: "Selfie Awareness",
         desc: "Take all optional photos in Episode 5: Polarized.",
         imag: "http://www.playstationtrophies.org/images/trophies/2971/b94.jpg"
@@ -1703,6 +1703,31 @@ var lists = [{
         name: "Chemistry",
         desc: "Win Chemist",
         imag: "http://www.playstationtrophies.org/images/trophies/2176/039.jpg"
+    },{
+        game: "Resident Evil 7: Biohazard",
+        name: "1st Place at the Science Fair",
+        desc: "Create all items that contain Chem Fluid and Strong Chem Fluid",
+        imag: "https://www.playstationtrophies.org/images/trophies/4710/042.jpg"
+    },{
+        game: "Rise of the Tomb Raider",
+        name: "My Own Worst Enemy",
+        desc: "Complete a level in Score Attack with a score multiplier of 2 or more",
+        imag: "https://www.playstationtrophies.org/images/trophies/3818/16b.jpg"
+    },{
+        game: "Fallout 4",
+        name: "Dangerous Minds",
+        desc: "Complete \"Dangerous Minds\"",
+        imag: "https://www.playstationtrophies.org/images/trophies/2430/7c4.jpg"
+    },{
+        game: "My Name is Mayo ",
+        name: "Dad",
+        desc: "Like that old time Rock and Roll! (Hit this 50 times)",
+        imag: "https://www.playstationtrophies.org/images/trophies/5212/901.jpg"
+    },{
+        game: "Uncharted 4: A Thief's End",
+        name: "You Have a Head for this Business",
+        desc: "Defeat 50 enemies with headshots",
+        imag: "https://www.playstationtrophies.org/images/trophies/2388/4e7.jpg"
     }]
 },{
     listName: "Chrisheadshot's Aim Hacks Club",
@@ -1764,7 +1789,7 @@ var lists = [{
         desc: "Catch 200 Pounds of Fish",
         imag: "http://www.playstationtrophies.org/images/trophies/1217/4FA.jpg"
     },{
-        game: "Life Is Strange",
+        game: "Life is Strange",
         name: "Rangefinder",
         desc: "Take optional photo #4 in Episode 4: Dark Room",
         imag: "http://www.playstationtrophies.org/images/trophies/2971/ef9.jpg"
@@ -3055,7 +3080,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/2840/513.jpg"
     },{
         game: "Broken Age",
-        name: "\"What's up with all the feathers?\"",
+        name: "What's up with all the feathers?",
         desc: "Commission a custom garment",
         imag: "http://www.playstationtrophies.org/images/trophies/3501/1e7.jpg"
     },{
@@ -3075,7 +3100,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/2846/0ed.jpg"
     },{
         game: "Grim Fandango Remastered",
-        name: "\"Plus, we look good in these clothes!\"",
+        name: "Plus, we look good in these clothes!",
         desc: "Talk to Glottis about leaving.",
         imag: "http://www.playstationtrophies.org/images/trophies/2909/58c.jpg"
     },{
@@ -3748,31 +3773,6 @@ var lists = [{
         name: "Hunger Pangs",
         desc: "Complete \"The Old Hunger\" quest.",
         imag: "http://www.playstationtrophies.org/images/trophies/1542/45.jpg"
-    },{
-        game: "Dark Souls III",
-        name: "Archdragon Peak",
-        desc: "Reach Archdragon Peak.",
-        imag: "http://www.playstationtrophies.org/images/trophies/3720/488.jpg"
-    },{
-        game: "Batman: Arkham Knight",
-        name: "Be Not Afraid",
-        desc: "Win the war for Gotham.",
-        imag: "http://www.playstationtrophies.org/images/trophies/2589/ac9.jpg"
-    },{
-        game: "Fallout 4",
-        name: "The Molecular Level",
-        desc: "Complete \"The Molecular Level\"",
-        imag: "http://www.playstationtrophies.org/images/trophies/2430/804.jpg"
-    },{
-        game: "DOOM",
-        name: "Shoot it Until it Dies",
-        desc: "Defeat the Cyberdemon",
-        imag: "http://www.playstationtrophies.org/images/trophies/1237/5fd.jpg"
-    },{
-        game: "Destiny",
-        name: "Hunger Pangs",
-        desc: "Complete \"The Old Hunger\" quest.",
-        imag: "http://www.playstationtrophies.org/images/trophies/1542/45.jpg"
     }]
 },{
     listName: "Irvine's Idyllic Inventory of Trophies",
@@ -4034,7 +4034,7 @@ var lists = [{
         desc: "Pass through 15 gates while surfing through the sunken city.",
         imag: "http://www.playstationtrophies.org/images/trophies/3570/690.jpg"
     },{
-        game: "Life Is Strange",
+        game: "Life is Strange",
         name: "Shutterbug",
         desc: "Take all optional photos in Episode 4: Dark Room",
         imag: "http://www.playstationtrophies.org/images/trophies/2971/b9b.jpg"
@@ -4059,7 +4059,7 @@ var lists = [{
         desc: "Awarded for befriending Tengri.",
         imag: "http://www.playstationtrophies.org/images/trophies/1399/827.jpg"
     },{
-        game: "NIER",
+        game: "NieR",
         name: "Key Collector",
         desc: "You unlocked the key to the Shadowlord's castle.",
         imag: "http://www.playstationtrophies.org/images/trophies/379/06.jpg"
@@ -4614,7 +4614,7 @@ var lists = [{
         desc: "Complete the game playing as Spike.",
         imag: "https://www.playstationtrophies.org/images/trophies/4862/402.jpg"
     },{
-        game: "Bioshock Infinite",
+        game: "BioShock Infinite",
         name: "Scavenger Hunt",
         desc: "Completed the game in 1999 Mode without purchasing anything from a Dollar Bill machine.",
         imag: "https://www.playstationtrophies.org/images/trophies/700/878.jpg"
@@ -4659,7 +4659,7 @@ var lists = [{
         desc: "Escape the Skull Castle and complete Mega Man 4.",
         imag: "https://www.playstationtrophies.org/images/trophies/3697/f0a.jpg"
     },{
-        game: "Metal Gear Solid 3: Snake Eater",
+        game: "Metal Gear Solid 3",
         name: "Problem Solved, Series Over",
         desc: "Create the Ocelot Time Paradox.",
         imag: "https://www.playstationtrophies.org/images/trophies/1576/C56.jpg"
@@ -4689,12 +4689,12 @@ var lists = [{
         desc: "Stick 4 of Tracer's Pulse Bombs onto enemies in a single Quick or Competitive Play game.",
         imag: "https://www.playstationtrophies.org/images/trophies/4107/727.jpg"
     },{
-        game: "Persona 4: Golden",
+        game: "Persona 4 Golden",
         name: "A Favor for Marie",
         desc: "Register a Skill Card.",
         imag: "https://www.playstationtrophies.org/images/trophies/1790/447.jpg"
     },{
-        game: "Persona 4: Dancing All Night",
+        game: "Persona 4 Dancing All Night",
         name: "Senpai, You're So Cool!",
         desc: "Seen all Bond Fevers between Yu and Rise",
         imag: "https://www.playstationtrophies.org/images/trophies/4002/f2c.jpg"
@@ -4995,7 +4995,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/3057/127.jpg"
     },{
         game: "Grim Fandango Remastered",
-        name: "\"Consider it an homage.\"",
+        name: "Consider it an homage.",
         desc: "Have Olivia recite one of your poems.",
         imag: "http://www.playstationtrophies.org/images/trophies/2909/271.jpg"
     },{
@@ -5625,7 +5625,7 @@ var lists = [{
      imag: "http://www.playstationtrophies.org/images/trophies/4201/7b7.jpg"
      },{
      game: "Grim Fandango Remastered",
-     name: "\"...so large\"",
+     name: "...so large",
      desc: "Meet the mechanics.",
      imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
      }]
@@ -5704,7 +5704,7 @@ var lists = [{
         desc: "Kill Hermes and acquire his Boots",
         imag: "http://www.playstationtrophies.org/images/trophies/3489/ec7.jpg"
     },{
-        game: "Infamous Second Son",
+        game: "InFAMOUS Second Son",
         name: "Everyone's a Critic",
         desc: "Take out 10 street musicians",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/afe.jpg"
@@ -5774,7 +5774,7 @@ var lists = [{
         desc: "Chris chose to shoot Ashley",
         imag: "http://www.playstationtrophies.org/images/trophies/1672/454.jpg"
     },{
-        game: "Wipeout HD",
+        game: "WipEout HD",
         name: "Beat Zico",
         desc: "Equal or beat the lap time of 30.82 seconds on Anulpha Pass (Forward), Speed Lap, Venom using the Piranha.",
         imag: "http://www.playstationtrophies.org/images/trophies/21/025.jpg"
@@ -5805,7 +5805,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/4201/7b7.jpg"
     },{
         game: "Grim Fandango Remastered",
-        name: "\"...so large\"",
+        name: "...so large",
         desc: "Meet the mechanics.",
         imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
     }]
@@ -5874,7 +5874,7 @@ var lists = [{
         desc: "Awarded for taming 250 different species.",
         imag: "http://www.playstationtrophies.org/images/trophies/1399/978.jpg"
     },{
-        game: "NIER",
+        game: "NieR",
         name: "Educated Warrior",
         desc: "Read the final novel segment.",
         imag: "http://www.playstationtrophies.org/images/trophies/379/17.jpg"
@@ -5929,7 +5929,7 @@ var lists = [{
         desc: "You've unlocked all of the upgrades for a New Kid ability.",
         imag: "http://www.playstationtrophies.org/images/trophies/1314/BAA.jpg"
     },{
-        game: "The LEGO Movie - Videogame",
+        game: "The LEGO Movie Videogame",
         name: "Always Read The Instructions!",
         desc: "Complete all Instruction Builds in Story Mode.",
         imag: "http://www.playstationtrophies.org/images/trophies/2182/39B.jpg"
@@ -6019,7 +6019,7 @@ var lists = [{
         desc: "Defeat Seymour Omnis",
         imag: "http://www.playstationtrophies.org/images/trophies/1184/5d8.jpg"
     },{
-        game: "Game Of Thrones",
+        game: "Game of Thrones",
         name: "Warlord",
         desc: "Reach the maximum level",
         imag: "http://www.playstationtrophies.org/images/trophies/1275/AAB.jpg"
@@ -6576,7 +6576,7 @@ var lists = [{
     },{
         game: "Skate 2",
         name: "Juggling Chainsaws",
-        desc: "Wipeout at high speed in career mode",
+        desc: "WipEout at high speed in career mode",
         imag: "http://www.playstationtrophies.org/images/trophies/79/032.jpg"
     },{
         game: "Sly Cooper and the Thievius Raccoonus",
@@ -6971,9 +6971,9 @@ var lists = [{
             imag: "https://www.playstationtrophies.org/images/trophies/3726/b71.jpg"
         },{
             game: "Nioh",
-            name: "https://www.playstationtrophies.org/images/trophies/4211/09f.jpg",
-            desc: "Keeper of the Flame",
-            imag: "Lit all three evil-warding bonfires in Itsukushima."
+            name: "Keeper of the Flame",
+            desc: "Lit all three evil-warding bonfires in Itsukushima.",
+            image: "https://www.playstationtrophies.org/images/trophies/4211/09f.jpg"
         }
     ]
 },{
@@ -7066,7 +7066,7 @@ var lists = [{
         desc: "Make 10 Spiders flip belly-up.",
         imag: "http://www.playstationtrophies.org/images/trophies/1046/C9D.jpg"
     },{
-        game: "NIER",
+        game: "NieR",
         name: "The Sheep Whisperer",
         desc: "You killed 100 sheep",
         imag: "http://www.playstationtrophies.org/images/trophies/379/30.jpg"
@@ -7361,7 +7361,7 @@ var lists = [{
         desc: "Collect the Chaos Form Ability",
         imag: "http://www.playstationtrophies.org/images/trophies/276/30.jpg"
     },{
-        game: "Game Of Thrones",
+        game: "Game of Thrones",
         name: "Hear me roar",
         desc: "Finish chapter 4",
         imag: "http://www.playstationtrophies.org/images/trophies/1565/8F8.jpg"
@@ -8256,7 +8256,7 @@ var lists = [{
         desc: "Use the gold bullion crate to smash your way out of the Bank of England",
         imag: "http://www.playstationtrophies.org/images/trophies/1537/30C.jpg"
     },{
-        game: "inFamous: Second Son",
+        game: "inFAMOUS Second Son",
         name: "Shardcore (s)",
         desc: "Collect all the Blast Shards",
         imag: "http://www.playstationtrophies.org/images/trophies/1936/dfb.jpg"
@@ -9226,7 +9226,7 @@ var lists = [{
         desc: "Took a Brief Nap.",
         imag: "http://www.playstationtrophies.org/images/trophies/3762/3a2.jpg"
     },{
-        game: "Life Is Strange",
+        game: "Life is Strange",
         name: "Macro Eyes",
         desc: "Take optional photo #1 in Episode 1: Chrysalis",
         imag: "http://www.playstationtrophies.org/images/trophies/3366/c78.jpg"
@@ -9541,7 +9541,7 @@ var lists = [{
         desc: "Complete 'Hail Sithis!'",
         imag: "http://www.playstationtrophies.org/images/trophies/826/21.jpg"
     },{
-        game: "The LEGO Movie - Videogame",
+        game: "The LEGO Movie Videogame",
         name: "SPACESHIP SPACESHIP!",
         desc: "Complete all Master Builds in Server Room as Benny.",
         imag: "http://www.playstationtrophies.org/images/trophies/2182/E32.jpg"
@@ -9681,7 +9681,7 @@ var lists = [{
         desc: "Stop all resource recovery units.",
         imag: "https://www.playstationtrophies.org/images/trophies/4086/593.jpg"
     },{
-        game: "Persona 4: Golden",
+        game: "Persona 4 Golden",
         name: "Welcome Back",
         desc: "Rescue Marie",
         imag: "https://www.playstationtrophies.org/images/trophies/1926/216.jpg"
