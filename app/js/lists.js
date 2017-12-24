@@ -564,11 +564,6 @@ var lists = [{
         desc: "Acquire the BFG",
         imag: "https://www.playstationtrophies.org/images/trophies/1237/bd9.jpg"
     },{
-        game: "GAME",
-        name: "NAME",
-        desc: "DESC",
-        imag: "https://www.playstationtrophies.org/images/trophies/1933/c4d.jpg"
-    },{
         game: "Driveclub",
         name: "Tonnage",
         desc: "Complete a point to point Event with an average speed of 100mph or 161 km/h.",
@@ -675,9 +670,14 @@ var lists = [{
         imag: "https://www.playstationtrophies.org/images/trophies/1904/3f5.jpg"
     },{
         game: "The Witness",
+        name: "Symmetry",
+        desc: "Activate the Symmetry laser.",
+        imag: "https://www.playstationtrophies.org/images/trophies/1932/5a2.jpg"
+    },{
+        game: "Titanfall 2",
         name: "...Becomes the Master",
         desc: "Place in the top 3 on the Gauntlet scoreboard",
-        imag: "https://www.playstationtrophies.org/images/trophies/1932/5a2.jpg"
+        imag: "https://www.playstationtrophies.org/images/trophies/4305/212.jpg"
     },{
         game: "Uncharted: The Lost Legacy",
         name: "Marco Po-No",
