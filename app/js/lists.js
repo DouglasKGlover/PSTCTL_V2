@@ -515,6 +515,186 @@ var lists = [{
         imag: "http://www.ps3trophies.org/images/trophies/1350/000.jpg"
     }]
 },{
+    listName: "PST Custom Trophy List 3.0",
+    banner: "https://i.imgur.com/dtghVuJ.png",
+    award: "https://i.imgur.com/HrxMkzZ.png",
+    trophies: [{
+        game: "Alien: Isolation",
+        name: "Hide. Run. Survive.",
+        desc: "Complete the fifth mission without being killed by the Alien",
+        imag: "https://www.playstationtrophies.org/images/trophies/2453/fc7.jpg"
+    },{
+        game: "Assassin's Creed Origins",
+        name: "Where's My Black Flag?",
+        desc: "Defeat 8 Ship Captains.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5865/8e5.jpg"
+    },{
+        game: "Batman: Arkham Knight",
+        name: "The Long Halloween",
+        desc: "Wayne vs Crane in New Story +.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2589/e39.jpg"
+    },{
+        game: "Bloodborne",
+        name: "Yharnam Sunrise",
+        desc: "You lived through the hunt, and saw another day.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2840/4cb.jpg"
+    },{
+        game: "Call of Duty: Modern Warfare Remastered",
+        name: "Retro Shooter",
+        desc: "Complete any level without reloading your weapon (excluding 'The Coup' and 'Aftermath').",
+        imag: "https://www.playstationtrophies.org/images/trophies/4594/98e.jpg"
+    },{
+        game: "Destiny 2",
+        name: "Show Me What You Got",
+        desc: "Complete Shaxx's Call to Arms.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5681/c81.jpg"
+    },{
+        game: "Deus Ex: Mankind Divided",
+        name: "Ghost",
+        desc: "Cross enemy territory like a ghost, raising no hostile reaction from anyone.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2308/985.jpg"
+    },{
+        game: "Dishonored 2",
+        name: "Ghostly",
+        desc: "Finish an entire mission without being spotted",
+        imag: "https://www.playstationtrophies.org/images/trophies/3717/4a9.jpg"
+    },{
+        game: "Doom",
+        name: "An Old Friend",
+        desc: "Acquire the BFG",
+        imag: "https://www.playstationtrophies.org/images/trophies/1237/bd9.jpg"
+    },{
+        game: "GAME",
+        name: "NAME",
+        desc: "DESC",
+        imag: "https://www.playstationtrophies.org/images/trophies/1933/c4d.jpg"
+    },{
+        game: "Driveclub",
+        name: "Tonnage",
+        desc: "Complete a point to point Event with an average speed of 100mph or 161 km/h.",
+        imag: "https://www.playstationtrophies.org/images/trophies/1933/c4d.jpg"
+    },{
+        game: "Dying Light",
+        name: "Italian Plumber",
+        desc: "Kill an enemy with a wrench, using Vault followed by Drop Attack",
+        imag: "https://www.playstationtrophies.org/images/trophies/2070/0df.jpg"
+    },{
+        game: "Everybody's Gone to the Rapture",
+        name: "Radio Enthusiast",
+        desc: "Listened to all the radios before doing anything else",
+        imag: "https://www.playstationtrophies.org/images/trophies/2230/791.jpg"
+    },{
+        game: "Fallout 4",
+        name: "Homerun!",
+        desc: "Get a Homerun",
+        imag: "https://www.playstationtrophies.org/images/trophies/2430/f3f.jpg"
+    },{
+        game: "Final Fantasy XV ",
+        name: "Chocobo Jockey",
+        desc: "Rode a Chocobo.",
+        imag: "https://www.playstationtrophies.org/images/trophies/462/4cf.jpg"
+    },{
+        game: "Hitman",
+        name: "Unseen Assassin",
+        desc: "Assassinate a Target without getting spotted.",
+        imag: "https://www.playstationtrophies.org/images/trophies/3727/039.jpg"
+    },{
+        game: "Horizon: Zero Dawn",
+        name: "Discovered the truth",
+        desc: "Discovered the truth of Zero Dawn.",
+        imag: "https://www.playstationtrophies.org/images/trophies/3726/850.jpg"
+    },{
+        game: "Mafia III",
+        name: "Next Time Swim Faster",
+        desc: "Got eaten by an alligator",
+        imag: "https://www.playstationtrophies.org/images/trophies/3853/8e0.jpg"
+    },{
+        game: "Mass Effect: Andromeda",
+        name: "Terraformer",
+        desc: "Increase a discovered planet to 100% viability.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2373/679.jpg"
+    },{
+        game: "Middle-Earth: Shadow of Mordor",
+        name: "Ratbag the Great and Powerful",
+        desc: "Get Ratbag promoted to Warchief.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2378/29b.jpg"
+    },{
+        game: "NieR: Automata",
+        name: "A Round by the Pond",
+        desc: "20 different kinds of fish caught.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4086/7a0.jpg"
+    },{
+        game: "Nioh",
+        name: "Master of Chaos",
+        desc: "Confused an enemy for the first time.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4211/df0.jpg"
+    },{
+        game: "No Man's Sky",
+        name: "A Space Odyssey",
+        desc: "Attain ‘Discoverer’ status in Space Exploration",
+        imag: "https://www.playstationtrophies.org/images/trophies/2440/5d0.jpg"
+    },{
+        game: "Overwatch",
+        name: "Game Over",
+        desc: "Kill 4 enemies with a single use of D.va's Self Destruct in Quick or Competitive Play.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4107/83e.jpg"
+    },{
+        game: "Persona 5",
+        name: "A Phantom Thief's Duty",
+        desc: "Obtain a Treasure Demon.",
+        imag: "https://www.playstationtrophies.org/images/trophies/471/1fa.jpg"
+    },{
+        game: "Prey",
+        name: "TranStar Gourmand",
+        desc: "You consumed one of every type of food and drink on Talos I.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4699/c42.jpg"
+    },{
+        game: "Resident Evil 7: Biohazard",
+        name: "Nice Try",
+        desc: "Put an unrelated object on a shadow plinth.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4710/016.jpg"
+    },{
+        game: "Rise of the Tomb Raider",
+        name: "Trick Shot",
+        desc: "Shoot a bottle out of the air",
+        imag: "https://www.playstationtrophies.org/images/trophies/3818/d81.jpg"
+    },{
+        game: "The Last Guardian",
+        name: "The Call of Nature",
+        desc: "Catch Trico... in the act.",
+        imag: "https://www.playstationtrophies.org/images/trophies/341/654.jpg"
+    },{
+        game: "The Order: 1886",
+        name: "Brilliant!",
+        desc: "Shoot an airborne grenade during Blacksight",
+        imag: "https://www.playstationtrophies.org/images/trophies/2104/89e.jpg"
+    },{
+        game: "The Witcher 3: Wild Hunt",
+        name: "The Doppler Effect",
+        desc: "Resolve the doppler problem in Novigrad.",
+        imag: "https://www.playstationtrophies.org/images/trophies/1904/3f5.jpg"
+    },{
+        game: "The Witness",
+        name: "...Becomes the Master",
+        desc: "Place in the top 3 on the Gauntlet scoreboard",
+        imag: "https://www.playstationtrophies.org/images/trophies/1932/5a2.jpg"
+    },{
+        game: "Uncharted: The Lost Legacy",
+        name: "Marco Po-No",
+        desc: "Play in the water in the dam in Halebidu",
+        imag: "https://www.playstationtrophies.org/images/trophies/5325/019.jpg"
+    },{
+        game: "Until Dawn",
+        name: "The Skillful Wolf Man",
+        desc: "Mike kept the wolf alive throughout the Sanatorium",
+        imag: "https://www.playstationtrophies.org/images/trophies/1672/027.jpg"
+    },{
+        game: "Watch Dogs 2",
+        name: "Doggyland",
+        desc: "Pet 10 dogs",
+        imag: "https://www.playstationtrophies.org/images/trophies/4673/965.jpg"
+    }]
+},{
     listName: "Aeirou's Virtual Murder Club",
     banner: "http://i.imgur.com/eZJLWU1.png",
     award: "http://i.imgur.com/G0DzSFM.jpg",
