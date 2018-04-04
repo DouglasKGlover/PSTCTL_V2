@@ -519,6 +519,16 @@ var lists = [{
     banner: "https://i.imgur.com/dtghVuJ.png",
     award: "https://i.imgur.com/HrxMkzZ.png",
     trophies: [{
+        game: "A Hat in Time",
+        name: "No Time to Explain",
+        desc: "Complete Train Rush without dying or time bonuses!",
+        imag: "https://www.playstationtrophies.org/images/trophies/6166/1e4.jpg"
+    },{
+        game: "Abzu",
+        name: "Kraken ",
+        desc: "Discover those that lurk in the abyss.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2843/d25.jpg"
+    },{
         game: "Alien: Isolation",
         name: "Hide. Run. Survive.",
         desc: "Complete the fifth mission without being killed by the Alien",
@@ -543,6 +553,11 @@ var lists = [{
         name: "Retro Shooter",
         desc: "Complete any level without reloading your weapon (excluding 'The Coup' and 'Aftermath').",
         imag: "https://www.playstationtrophies.org/images/trophies/4594/98e.jpg"
+    },{
+        game: "Crash Bandicoot",
+        name: "On Cloud 99",
+        desc: "Earn 99 Lives.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5342/6e4.jpg"
     },{
         game: "Destiny 2",
         name: "Show Me What You Got",
@@ -584,10 +599,25 @@ var lists = [{
         desc: "Get a Homerun",
         imag: "https://www.playstationtrophies.org/images/trophies/2430/f3f.jpg"
     },{
-        game: "Final Fantasy XV ",
+        game: "Final Fantasy XV",
         name: "Chocobo Jockey",
         desc: "Rode a Chocobo.",
         imag: "https://www.playstationtrophies.org/images/trophies/462/4cf.jpg"
+    },{
+        game: "Firewatch",
+        name: "The Life and Times of Raccoon Carter",
+        desc: "Got attacked by a raccoon; probably didn't get rabies.",
+        imag: "https://www.playstationtrophies.org/images/trophies/3733/36c.jpg"
+    },{
+        game: "Grim Fandango Remastered",
+        name: "\"Oh Rusty Anchor\"",
+        desc: "Have Glottis sing you the rusty anchor song.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2909/a39.jpg"
+    },{
+        game: "Hellblade: Senua's Sacrifice",
+        name: "The Final Battle",
+        desc: "Confront Hela",
+        imag: "https://www.playstationtrophies.org/images/trophies/6193/ec6.jpg"
     },{
         game: "Hitman",
         name: "Unseen Assassin",
@@ -598,6 +628,16 @@ var lists = [{
         name: "Discovered the truth",
         desc: "Discovered the truth of Zero Dawn.",
         imag: "https://www.playstationtrophies.org/images/trophies/3726/850.jpg"
+    },{
+        game: "Knack 2",
+        name: "Sucker for Punishment",
+        desc: "Cleared one chapter on the Very Hard difficulty level.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5326/529.jpg"
+    },{
+        game: "LEGO City Undercover",
+        name: "Building Model Citizens",
+        desc: "Play with all 8 disguise slots customised at the same time",
+        imag: "https://www.playstationtrophies.org/images/trophies/5284/23d.jpg"
     },{
         game: "Mafia III",
         name: "Next Time Swim Faster",
@@ -613,6 +653,11 @@ var lists = [{
         name: "Ratbag the Great and Powerful",
         desc: "Get Ratbag promoted to Warchief.",
         imag: "https://www.playstationtrophies.org/images/trophies/2378/29b.jpg"
+    },{
+        game: "My Name is Mayo",
+        name: "You can see the hits!",
+        desc: "Hit the Mayo 5 times!",
+        imag: "https://www.playstationtrophies.org/images/trophies/5213/c67.jpg"
     },{
         game: "NieR: Automata",
         name: "A Round by the Pond",
@@ -654,6 +699,21 @@ var lists = [{
         desc: "Shoot a bottle out of the air",
         imag: "https://www.playstationtrophies.org/images/trophies/3818/d81.jpg"
     },{
+        game: "Rocket League",
+        name: "Grease Monkey",
+        desc: "Customize every slot on a single Battle-Car",
+        imag: "https://www.playstationtrophies.org/images/trophies/3583/853.jpg"
+    },{
+        game: "South Park: The Fractured But Whole",
+        name: "Diabetes Defender",
+        desc: "Defend a helpless child from a drunk lunatic",
+        imag: "https://www.playstationtrophies.org/images/trophies/3723/479.jpg"
+    },{
+        game: "Tekken 7",
+        name: "Roar! (Nice Moves!)",
+        desc: "Got promoted to Brawler.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2915/403.jpg"
+    },{
         game: "The Last Guardian",
         name: "The Call of Nature",
         desc: "Catch Trico... in the act.",
@@ -683,6 +743,11 @@ var lists = [{
         name: "Marco Po-No",
         desc: "Play in the water in the dam in Halebidu",
         imag: "https://www.playstationtrophies.org/images/trophies/5325/019.jpg"
+    },{
+        game: "Undertale",
+        name: "Help Me, I'm Out of Ideas",
+        desc: "Get four items.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5971/a01.jpg"
     },{
         game: "Until Dawn",
         name: "The Skillful Wolf Man",
@@ -5809,31 +5874,31 @@ var lists = [{
         desc: "Shoot down 40 UFOs.",
         imag: "http://www.playstationtrophies.org/images/trophies/1350/415.jpg"
     },{
-     game: "Bully",
-     name: "Skidmark",
-     desc: "Give 50 wedgies.",
-     imag: "http://www.playstationtrophies.org/images/trophies/4480/854.jpg"
-     },{
-     game: "Call of Duty: Modern Warfare Remastered",
-     name: "Deep and Hard",
-     desc: "Complete the game on Hardened or Veteran difficulty.",
-     imag: "http://www.playstationtrophies.org/images/trophies/4594/5e1.jpg"
-     },{
-     game: "Fallout 4",
-     name: "Masshole",
-     desc: "Kill 300 People",
-     imag: "http://www.playstationtrophies.org/images/trophies/2430/72e.jpg"
-     },{
-     game: "Grand Theft Auto: San Andreas",
-     name: "Beat the Cock",
-     desc: "Win the Beat the Cock marathon.",
-     imag: "http://www.playstationtrophies.org/images/trophies/4201/7b7.jpg"
-     },{
-     game: "Grim Fandango Remastered",
-     name: "...so large",
-     desc: "Meet the mechanics.",
-     imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
-     }]
+        game: "Bully",
+        name: "Skidmark",
+        desc: "Give 50 wedgies.",
+        imag: "http://www.playstationtrophies.org/images/trophies/4480/854.jpg"
+    },{
+        game: "Call of Duty: Modern Warfare Remastered",
+        name: "Deep and Hard",
+        desc: "Complete the game on Hardened or Veteran difficulty.",
+        imag: "http://www.playstationtrophies.org/images/trophies/4594/5e1.jpg"
+    },{
+        game: "Fallout 4",
+        name: "Masshole",
+        desc: "Kill 300 People",
+        imag: "http://www.playstationtrophies.org/images/trophies/2430/72e.jpg"
+    },{
+        game: "Grand Theft Auto: San Andreas",
+        name: "Beat the Cock",
+        desc: "Win the Beat the Cock marathon.",
+        imag: "http://www.playstationtrophies.org/images/trophies/4201/7b7.jpg"
+    },{
+        game: "Grim Fandango Remastered",
+        name: "...so large",
+        desc: "Meet the mechanics.",
+        imag: "http://www.playstationtrophies.org/images/trophies/2909/b41.jpg"
+    }]
 },{
     listName: "Olsen's Dick Move",
     banner: "http://i.imgur.com/Iu5gkG9.png",
@@ -6818,6 +6883,161 @@ var lists = [{
         name: "Check Out the New Threads",
         desc: "Create ALTERNATE ATTIRE for a CREATED SUPERSTAR and new THREADS for a WWE SUPERSTAR.",
         imag: "http://www.playstationtrophies.org/images/trophies/235/16.jpg"
+    }]
+},{
+    listName: "Robinworldwide's Out of this World Custom Trophy List",
+    banner: "https://i.imgur.com/V88yJM6.png",
+    award: "https://i.imgur.com/r5FcYsI.gif",
+    trophies: [{
+        game: "A Hat in Time",
+        name: "Let there be light",
+        desc: "Light up the spaceship!",
+        imag: "https://www.playstationtrophies.org/images/trophies/6166/415.jpg"
+    },{
+        game: "Abzu",
+        name: "Connection ",
+        desc: "Ride the Great White Shark.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2843/815.jpg"
+    },{
+        game: "Assassin's Creed Origins",
+        name: "Stargazer ",
+        desc: "Complete all 12 Stone Circles.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5865/e9d.jpg"
+    },{
+        game: "Day Of The Tentacle Remastered",
+        name: "And Then the Universe Explodes",
+        desc: "Try to mix the decaf and caffeinated coffees",
+        imag: "https://www.playstationtrophies.org/images/trophies/4077/8cc.jpg"
+    },{
+        game: "Destiny 2",
+        name: "Long and Winding Road",
+        desc: "Reach level 20.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5681/a0f.jpg"
+    },{
+        game: "Destroy All Humans",
+        name: "Mars Needs Information",
+        desc: "Complete \"The Island Suburbia.\"",
+        imag: "https://www.playstationtrophies.org/images/trophies/5173/e4f.jpg"
+    },{
+        game: "DOOM",
+        name: "Into the Unkown",
+        desc: "Warp to Hell",
+        imag: "https://www.playstationtrophies.org/images/trophies/1237/7d3.jpg"
+    },{
+        game: "Everybody's Golf (2017)",
+        name: "Rocket Launch",
+        desc: "Successfully perform a long drive of 300y or more in a recorded official round",
+        imag: "https://www.playstationtrophies.org/images/trophies/4214/6c9.jpg"
+    },{
+        game: "Firewatch",
+        name: "\"Someone's out here.\"",
+        desc: "Completed Day 76",
+        imag: "https://www.playstationtrophies.org/images/trophies/3733/391.jpg"
+    },{
+        game: "Gone Home",
+        name: "Gone Home",
+        desc: "Completed the game.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2605/41e.jpg"
+    },{
+        game: "Guardians of the Galaxy",
+        name: "Space Oddity",
+        desc: "Completed Chapter 6 of Episode 2",
+        imag: "https://www.playstationtrophies.org/images/trophies/5629/25c.jpg"
+    },{
+        game: "Helldivers",
+        name: "See the Galaxy they said",
+        desc: "Play at least once on a desert, a forest, and a snow planet.",
+        imag: "https://www.playstationtrophies.org/images/trophies/2221/772.jpg"
+    },{
+        game: "Horizon: Zero Dawn",
+        name: "All Suns at one Ground",
+        desc: "Earned at least a Half Sun mark in all three trials at one Hunting Ground.",
+        imag: "https://www.playstationtrophies.org/images/trophies/3726/c8c.jpg"
+    },{
+        game: "Journey",
+        name: "Explore",
+        desc: "Discover all cloth creatures in the desert.",
+        imag: "https://www.playstationtrophies.org/images/trophies/844/11A.jpg"
+    },{
+        game: "L.A. Noire",
+        name: "Star Map",
+        desc: "Discover all landmark buildings around the city.",
+        imag: "https://www.playstationtrophies.org/images/trophies/358/34.jpg"
+    },{
+        game: "LEGO Star Wars: The Force Awakens",
+        name: "Traveled Too Far. Seen Too Much",
+        desc: "Complete Lor San Tekka's Return",
+        imag: "https://www.playstationtrophies.org/images/trophies/4756/e08.jpg"
+    },{
+        game: "Life is Strange: Before the Storm",
+        name: "Pioneer Spirit",
+        desc: "Complete the optional graffiti #8 in Episode 1: Awake",
+        imag: "https://www.playstationtrophies.org/images/trophies/5960/d74.jpg"
+    },{
+        game: "LittleBigPlanet 3",
+        name: "Moon on a Stick",
+        desc: "Moons don't belong on sticks! Get rid of it!",
+        imag: "https://www.playstationtrophies.org/images/trophies/2943/810.jpg"
+    },{
+        game: "Need for Speed Payback",
+        name: "Hyperspeed ",
+        desc: "Hit 240 mph using any car",
+        imag: "https://www.playstationtrophies.org/images/trophies/5927/8bf.jpg"
+    },{
+        game: "Overcooked",
+        name: "Out of this world",
+        desc: "Complete a kitchen in low earth orbit",
+        imag: "https://www.playstationtrophies.org/images/trophies/4418/df1.jpg"
+    },{
+        game: "Project CARS 2",
+        name: "No Man's Fly",
+        desc: "Did a Rallycross jump longer than 20 metres",
+        imag: "https://www.playstationtrophies.org/images/trophies/5531/489.jpg"
+    },{
+        game: "South Park: The Fractured but Whole",
+        name: "Toxic Environment",
+        desc: "Loot 100 Biohazard items",
+        imag: "https://www.playstationtrophies.org/images/trophies/3723/a99.jpg"
+    },{
+        game: "South Park: The Stick of Truth",
+        name: "Too Far",
+        desc: "You farted on the corpse of an aborted Nazi Zombie fetus.",
+        imag: "https://www.playstationtrophies.org/images/trophies/1314/25E.jpg"
+    },{
+        game: "Star Wars Battlefront",
+        name: "Together we can rule the galaxy",
+        desc: "Complete any mission with a friend",
+        imag: "https://www.playstationtrophies.org/images/trophies/2097/c45.jpg"
+    },{
+        game: "Star Wars Battlefront II",
+        name: "Battle Beyond the Stars",
+        desc: "Win a match of Galactic Assault.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5751/2de.jpg"
+    },{
+        game: "Uncharted : The Lost Legacy",
+        name: "I Was never Here",
+        desc: "Open a lockbox with enemies nearby",
+        imag: "https://www.playstationtrophies.org/images/trophies/5325/441.jpg"
+    },{
+        game: "Uncharted 4: A Thief's End",
+        name: "I Can See My House From Here!",
+        desc: "Climb to the very top of the Clocktower in the City",
+        imag: "https://www.playstationtrophies.org/images/trophies/2388/0a8.jpg"
+    },{
+        game: "Watch Dogs 2",
+        name: "No Place Like Haum",
+        desc: "Finish Operation: Haum Sweet Haum",
+        imag: "https://www.playstationtrophies.org/images/trophies/4673/9b4.jpg"
+    },{
+        game: "World of Final Fantasy",
+        name: "Across the Unknown",
+        desc: "Braved and completed the new dungeons that appeared.",
+        imag: "https://www.playstationtrophies.org/images/trophies/3729/01f.jpg"
+    },{
+        game: "Yooka-Laylee",
+        name: "Planetary Annihilation",
+        desc: "Defeat the World 5 boss",
+        imag: "https://www.playstationtrophies.org/images/trophies/3604/2d4.jpg"
     }]
 },{
     listName: "Sav's: For the Love of Platinum",
