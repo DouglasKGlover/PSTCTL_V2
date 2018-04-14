@@ -2139,7 +2139,7 @@ var lists = [{
         desc: "Complete 'All Ghillied Up' and 'One Shot, One Kill' on Veteran difficulty.",
         imag: "https://www.playstationtrophies.org/images/trophies/4594/e4c.jpg"
     },{
-        game: "Ratchet & Clank",
+        game: "Ratchet & Clank (2016)",
         name: "I Hate Lamp",
         desc: "Break every lamp in Aleero City.",
         imag: "https://www.playstationtrophies.org/images/trophies/2842/30b.jpg"
