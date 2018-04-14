@@ -315,7 +315,7 @@ var lists = [{
         imag: "http://www.ps3trophies.org/images/trophies/1559/639.jpg"
     },{
         game: "Dishonored",
-        name: "Ghost (d)",
+        name: "Ghost (di)",
         desc: "You completed all missions after the prologue, alerting or killing no one but key targets",
         imag: "http://www.ps3trophies.org/images/trophies/1123/F84.jpg"
     },{
@@ -565,7 +565,7 @@ var lists = [{
         imag: "https://www.playstationtrophies.org/images/trophies/5681/c81.jpg"
     },{
         game: "Deus Ex: Mankind Divided",
-        name: "Ghost",
+        name: "Ghost (de)",
         desc: "Cross enemy territory like a ghost, raising no hostile reaction from anyone.",
         imag: "https://www.playstationtrophies.org/images/trophies/2308/985.jpg"
     },{
@@ -6750,7 +6750,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/1/049.jpg"
     },{
         game: "Call of Duty: Modern Warfare 2",
-        name: "Ghost",
+        name: "Ghost (c)",
         desc: "Plant the C4 in 'Cliffhanger' without alerting or injuring anyone in the blizzard.",
         imag: "http://www.playstationtrophies.org/images/trophies/240/24.jpg"
     },{
@@ -7266,7 +7266,7 @@ var lists = [{
             imag: "http://www.playstationtrophies.org/images/trophies/150/11.jpg"
         },{
             game: "Deus Ex: Human Revolution",
-            name: "Ghost (d)",
+            name: "Ghost (de)",
             desc: "You made it through an entire hostile area without so much as a squeak.",
             imag: "http://www.playstationtrophies.org/images/trophies/2341/887.jpg"
         },{
