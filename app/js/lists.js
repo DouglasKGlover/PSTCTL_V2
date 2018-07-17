@@ -664,11 +664,6 @@ var lists = [{
         desc: "Play with all 8 disguise slots customised at the same time",
         imag: "https://www.playstationtrophies.org/images/trophies/5284/23d.jpg"
     },{
-		game: "Owlboy",
-        name: "...",
-        desc: "Survived the Destruction of Advent",
-        imag: "https://www.playstationtrophies.org/images/trophies/6609/ec1.jpg"
-	},{
         game: "Mafia III",
         name: "Next Time Swim Faster",
         desc: "Got eaten by an alligator",
@@ -708,6 +703,11 @@ var lists = [{
         name: "Game Over",
         desc: "Kill 4 enemies with a single use of D.va's Self Destruct in Quick or Competitive Play.",
         imag: "https://www.playstationtrophies.org/images/trophies/4107/83e.jpg"
+    },{
+        game: "Owlboy",
+        name: "...",
+        desc: "Survived the Destruction of Advent",
+        imag: "https://www.playstationtrophies.org/images/trophies/6609/ec1.jpg"
     },{
         game: "Persona 5",
         name: "A Phantom Thief's Duty",
@@ -814,10 +814,10 @@ var lists = [{
         desc: "Achieve Level 5 Good Karma",
         imag: "https://www.playstationtrophies.org/images/trophies/1936/a42.jpg"
 	},{
-		game: "https://www.playstationtrophies.org/images/trophies/2388/004.jpg",
-        name: "Uncharted 4: A Thief's End",
-        desc: "Best Score!",
-        imag: "Beat the best score in the retro videogame"
+		game: "Uncharted 4: A Thief's End",
+        name: "Best Score!",
+        desc: "Beat the best score in the retro videogame",
+        imag: "https://www.playstationtrophies.org/images/trophies/2388/004.jpg"
 	},{
 		game: "Horizon Zero Dawn",
         name: "All Tallnecks Overridden",
@@ -9413,8 +9413,8 @@ var lists = [{
 	},{
 		game: "Burly Men at Sea",
 		name: "The Backdoor",
-		desc: "https://www.playstationtrophies.org/images/trophies/6232/988.jpg",
-		imag: "Following the glow of moonlight, the men step out eagerly into the night."
+		desc: "Following the glow of moonlight, the men step out eagerly into the night.",
+		imag: "https://www.playstationtrophies.org/images/trophies/6232/988.jpg"
 	},{
 		game: "Call of Duty: Modern Warfare Remastered",
 		name: "Feel The Heat",
@@ -9438,7 +9438,7 @@ var lists = [{
 	},{
 		game: "Fallout 4",
 		name: "Hunter/Hunted",
-		desc: "Complete "Hunter/Hunted"",
+		desc: "Complete \"Hunter/Hunted\"",
 		imag: "https://www.playstationtrophies.org/images/trophies/2430/bfb.jpg"
 	},{
 		game: "Final Fantasy XV",
