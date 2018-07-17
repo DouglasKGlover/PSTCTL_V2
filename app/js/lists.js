@@ -12,7 +12,7 @@ var lists = [{
         game: "3D Dot Game Heroes",
         name: "That's a Big Fat Sword!",
         desc: "Maxed out the Giga Sword.",
-        imag: "http://www.playstationtrophies.org/images/trophies/365/41.jpg "
+        imag: "http://www.playstationtrophies.org/images/trophies/365/41.jpg"
     },{
         game: "Alice: Madness Returns",
         name: "Seasoned Campaigner",
@@ -27,7 +27,7 @@ var lists = [{
         game: "Batman: Arkham Asylum",
         name: "Invisible Predator",
         desc: "Complete one predator challenge by using only Silent Takedowns.",
-        imag: "http://www.playstationtrophies.org/images/trophies/192/37.jpg "
+        imag: "http://www.playstationtrophies.org/images/trophies/192/37.jpg"
     },{
         game: "Battlefield: Bad Company 2",
         name: "Mission...Accomplished",
@@ -866,7 +866,7 @@ var lists = [{
 	},{
 		game: "Wolfenstein II: The New Colossus",
         name: "Mein leben",
-        desc: "Beat the game on "Mein leben" difficulty",
+        desc: "Beat the game on \"Mein leben\" difficulty",
         imag: "https://www.playstationtrophies.org/images/trophies/5961/f05.jpg"
 	},{
 		game: "The Order: 1886",
@@ -976,7 +976,7 @@ var lists = [{
 	},{
 		game: "Gravity Rush",
         name: "Top Cat",
-        desc: "Raised Kat’s reputation to 'Top Cat.'",
+        desc: "Raised Kat’s reputation to \"Top Cat.\"",
         imag: "https://www.playstationtrophies.org/images/trophies/1392/40.jpg"
 	},{
 		game: "Furi",
