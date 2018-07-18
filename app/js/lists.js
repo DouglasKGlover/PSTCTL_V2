@@ -40,7 +40,7 @@ var lists = [{
         imag: "http://www.playstationtrophies.org/images/trophies/52/48.jpg"
     },{
 		game: "Beyond Good & Evil HD",
-        name: "Kicking ***",
+        name: "Kicking \*\*\*",
         desc: "Kill 10 Alpha Section guards",
         imag: "https://www.playstationtrophies.org/images/trophies/764/04.jpg"
 	},{
@@ -7502,7 +7502,7 @@ var lists = [{
         game: "Fallout 4",
         name: "Benevolent Leader",
         desc: "Reach Maximum Happiness in a Large Settlement",
-        imag: "http://www.playstationtrophies.org/images/trophies/2430/ad6.jpg"
+        imag: "https://www.playstationtrophies.org/images/trophies/2430/001.jpg"
     },{
         game: "Grand Theft Auto IV",
         name: "Gobble Gobble",
