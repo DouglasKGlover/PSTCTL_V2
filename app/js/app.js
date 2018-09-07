@@ -358,7 +358,7 @@ $(document).ready(function () {
                     gameName = lists[a].trophies[b].game,
                     listName = lists[a].listName;
 
-                if($.inArray(gameName, gamesList) !== -1){
+                if($.inArray(gameName, gamesList) >= 0){
                     var gameID = $.inArray(gameName, gamesList),
                         trophyGOT = "";
 
@@ -382,18 +382,6 @@ $(document).ready(function () {
                 $("." + trophyName.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLocaleLowerCase() + ":not(:first)").parent().remove();
             }
         }
-
-        // Fill out header
-        $("#list-header")
-            .html("" +
-                "<div class=\"content\">" +
-                "<h2 id=\"list_name\">"+ selectedList.listName +"</h2>" +
-                "<img src=\""+ selectedList.award +"\" alt=\""+ selectedList.listName +" Site Award\">" +
-                "<h3><span id=\"trophy_count\">"+ trophyCount +"</span>/<span id=\"game_count\">"+ gameCount +"</span>/"+ selectedList.trophies.length +"</h3>" +
-                "</div>" +
-                "")
-            .attr("style","background: url('img/headerbg.png') repeat, url('"+ selectedList.banner +"') no-repeat; background-size: auto, cover;");
-
     });
 
     // Click game on all games list, show trophies

@@ -705,7 +705,7 @@ var lists = [{
         imag: "https://www.playstationtrophies.org/images/trophies/4107/83e.jpg"
     },{
         game: "Owlboy",
-        name: "...",
+        name: "&hellip;",
         desc: "Survived the Destruction of Advent",
         imag: "https://www.playstationtrophies.org/images/trophies/6609/ec1.jpg"
     },{
