@@ -39,7 +39,8 @@ function updateListProgress(){
 
             // Add class to style based on progress
             var color;
-            if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0"){
+            if(thisList != "PST Custom Trophy List 1.0" && thisList != "PST Custom Trophy List 2.0" 
+            	&& thisList != "PST Custom Trophy List 3.0" && thisList != "Build a Custom List v3.0"){
                 if(totalEarned > 0){ color = "bronze" }
                 if(totalEarned > 9){ color = "silver" }
                 if(totalEarned > 19){ color = "gold" }
