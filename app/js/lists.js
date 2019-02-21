@@ -429,6 +429,11 @@ var lists = [{
         desc: "Killed many enemies in one area, and vomited",
         imag: "http://www.playstationtrophies.org/images/trophies/515/4DD.jpg"
     },{
+        game: "Metro: Last Light",
+        name: "Antibiotic",
+        desc: "Kill 100 Mutants",
+        imag: "https://www.playstationtrophies.org/images/trophies/2939/003.png"
+    },{
         game: "Need for Speed: Most Wanted",
         name: "Mauled",
         desc: "Wreck 10 cops in a single pursuit in the Ford F-150 SVT Raptor",
@@ -4689,6 +4694,11 @@ var lists = [{
         desc: "Earn 26 Relics (gold or better).",
         imag: "https://www.playstationtrophies.org/images/trophies/5342/ca8.jpg"
     },{
+        game: "ChromaGun",
+        name: "Wait, what?",
+        desc: "Solve a chamber without firing a single shot",
+        imag: "https://www.playstationtrophies.org/images/trophies/6051/3bf.jpg"
+    },{
         game: "Crash Bandicoot: Warped",
         name: "Accept No Substitues",
         desc: "Shoot the imposter.",
@@ -4808,6 +4818,11 @@ var lists = [{
         name: "Deadeye (s)",
         desc: "Snipe an enemy through his eye",
         imag: "http://www.playstationtrophies.org/images/trophies/988/360.jpg"
+    },{
+        game: "Spyro the Dragon",
+        name: "What's in the Box?",
+        desc: "Unlock the strong chest in Doctor Shemp",
+        imag: "https://www.playstationtrophies.org/images/trophies/7210/321.jpg"
     },{
         game: "The Cave",
         name: "Win-win-win-win-win-win-win",
@@ -5158,6 +5173,31 @@ var lists = [{
         name: "Bracket()",
         desc: "Confront Royce beyond Cloudbank.",
         imag: "http://www.playstationtrophies.org/images/trophies/2113/e42.jpg"
+    },{
+        game: "Horizon Zero Dawn",
+        name: "All machines catalogued",
+        desc: "Encountered and Focus scanned every type of machine.",
+        imag: "https://www.playstationtrophies.org/images/trophies/3726/593.jpg"
+    },{
+        game: "Persona 5",
+        name: "My Backyard",
+        desc: "Unlock all hangout spots.",
+        imag: "https://www.playstationtrophies.org/images/trophies/471/668.jpg"
+    },{
+        game: "Uncharted 4: A Thief's End",
+        name: "Marco Polo Returns!",
+        desc: "Play in the ocean near the sunken ship",
+        imag: "https://www.playstationtrophies.org/images/trophies/2388/031.jpg"
+    },{
+        game: "Valkyria Chronicles",
+        name: "Savior of Gallia",
+        desc: "Obtain the decoration given to a person who helped save Gallia in times of need. Awarded only four times thus far, once to General Gunther.",
+        imag: "https://www.playstationtrophies.org/images/trophies/416/c7f.jpg"
+    },{
+        game: "The Witcher 3: Wild Hunt",
+        name: "The Grapes of Wrath Stomped",
+        desc: "Help unite the warring vineyards and have a wine named in your honor.",
+        imag: "https://www.playstationtrophies.org/images/trophies/4946/a29.jpg"
     }]
 },{
     listName: "Krid's Korrupt Kollection",
@@ -9549,6 +9589,11 @@ var lists = [{
         desc: "Defeat Mayor Hamm in the Woody's Roundup boss battle",
         imag: "http://www.playstationtrophies.org/images/trophies/468/25.jpg"
     },{
+        game: "Vampyr",
+        name: "Anarchy in the UK",
+        desc: "Turn a district to hostile status",
+        imag: "https://www.playstationtrophies.org/images/trophies/3735/b76.jpg"
+    },{
         game: "WATCH DOGS",
         name: "Disk Space Full",
         desc: "Unlock every song with the SongSneak app",
@@ -10734,6 +10779,11 @@ var lists = [{
         desc: "Cook the hamster in Maniac Mansion (Don't try this at home, kids!)",
         imag: "http://www.playstationtrophies.org/images/trophies/4077/a11.jpg"
     },{
+        game: "Don't Starve Together",
+        name: "Beast of the Bottomless Stomach",
+        desc: "Domesticated a wild beefalo.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5013/4da.jpg"
+    },{
         game: "God of War",
         name: "Get Me a Beer Kid",
         desc: "Free yourself from the depths of Hades",
@@ -10784,6 +10834,11 @@ var lists = [{
         desc: "Turn wheat into bread.",
         imag: "http://www.playstationtrophies.org/images/trophies/3104/c48.jpg"
     },{
+        game: "Perils of Baking",
+        name: "Big cookie, big fall",
+        desc: "Lure a big cookie off an edge, to it's death",
+        imag: "https://www.playstationtrophies.org/images/trophies/7843/034.jpg"
+    },{
         game: "PlayStation All-Stars Battle Royale",
         name: "Cake, please!",
         desc: "Complete Arcade Mode with Fat Princess",
@@ -10833,6 +10888,11 @@ var lists = [{
         name: "Wine Not",
         desc: "Open the Wine Cellar Passage",
         imag: "http://www.playstationtrophies.org/images/trophies/3764/c5b.jpg"
+    },{
+    	game: "Word Search by POWGI",
+        name: "Bone Appetit",
+        desc: "Solve every puzzle in 'Time to Eat'",
+        imag: "https://www.playstationtrophies.org/images/trophies/7747/844.jpg"
     },{
         game: "Crash Bandicoot",
         name: "Feeeed Meeeee!",
