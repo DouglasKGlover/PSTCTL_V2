@@ -328,6 +328,11 @@ var lists = [{
         name: "Legendary Tabatha",
         desc: "You'll never catch [Tabatha] with your current fishing rod. Borrow the legendary fishing rod from Jim and try again. [Tabatha] appears near the waterfall only on rainy days.",
         imag: "http://www.playstationtrophies.org/images/trophies/1448/E18.jpg"
+	},{
+        game: "Dead Island: Riptide",
+        name: "Better than the arm",
+        desc: "Kill 25 monsters with a chainsaw",
+        imag: "https://www.playstationtrophies.org/images/trophies/1590/B2F.jpg"
     },{
         game: "Dead Rising 2: Off The Record",
         name: "Adult Content",
@@ -6839,7 +6844,7 @@ var lists = [{
         desc: "Slap more than one player at once",
         imag: "http://www.playstationtrophies.org/images/trophies/533/29.jpg"
     },{
-        game: "LEGO Lord of the Rings",
+        game: "LEGO The Lord of the Rings",
         name: "Return of the Mushroom King",
         desc: "Equip Aragorn with the Mushroom Crown.",
         imag: "http://www.playstationtrophies.org/images/trophies/1535/901.jpg"
@@ -8417,7 +8422,7 @@ var lists = [{
         game: "Nioh",
         name: "Keeper of the Flame",
         desc: "Lit all three evil-warding bonfires in Itsukushima.",
-        image: "https://www.playstationtrophies.org/images/trophies/4211/09f.jpg"
+        imag: "https://www.playstationtrophies.org/images/trophies/4211/09f.jpg"
     }]
 },{
     listName: "Shadow's ''Box of Variety''",
@@ -8763,6 +8768,31 @@ var lists = [{
         name: "Reveal()",
         desc: "Inspect all completed Function Files.",
         imag: "http://www.playstationtrophies.org/images/trophies/2113/cdb.jpg"
+	},{
+        game: "2064: Read Only Memories",
+        name: "Put The Thing in the Doohickey",
+        desc: "Puzzle your first puzzle",
+        imag: "https://www.playstationtrophies.org/images/trophies/5449/00c.jpg"
+	},{
+        game: "Crash Bandicoot",
+        name: "I See London, I See France",
+        desc: "Die.",
+        imag: "https://www.playstationtrophies.org/images/trophies/5342/8d2.jpg"
+	},{
+        game: "Marvel's Spider-Man",
+        name: "Shock and Awe",
+        desc: "Defeat Shocker",
+        imag: "https://www.playstationtrophies.org/images/trophies/4712/d8e.jpg"
+	},{
+        game: "My Name is Mayo",
+        name: "Crème a la Mayo",
+        desc: "Tap it wild and free. (Hit this 125 times)",
+        imag: "https://www.playstationtrophies.org/images/trophies/5212/815.jpg"
+	},{
+        game: "Uncharted: The Lost Legacy",
+        name: "Fingersmith",
+        desc: "Pick a three pin lock in under 15 seconds",
+        imag: "https://www.playstationtrophies.org/images/trophies/5325/015.jpg"
     }]
 },{
     listName: "Sylar's Super List",
